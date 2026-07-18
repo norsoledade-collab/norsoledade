@@ -182,54 +182,78 @@ function NorLanding() {
         </div>
       </section>
 
-      {/* ESPECIALISTAS — editorial split */}
+      {/* MÉTODO — sensory editorial grid */}
       <section id="especialistas" className="border-y border-nor-cream/10 bg-nor-green">
-        <div className="mx-auto max-w-[1500px] px-6 md:px-10 py-24 md:py-36 grid md:grid-cols-12 gap-12 items-center">
+        <div className="mx-auto max-w-[1500px] px-6 md:px-10 py-28 md:py-44 grid grid-cols-1 lg:grid-cols-12 gap-16 lg:gap-24 items-start">
+          {/* Brand & vision column */}
           <motion.div
-            initial={{ opacity: 0, x: -30 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            transition={{ duration: 1, ease: [0.22, 1, 0.36, 1] }}
-            viewport={{ once: true }}
-            className="md:col-span-6"
+            initial={{ opacity: 0, y: 24 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 1.1, ease: [0.22, 1, 0.36, 1] }}
+            viewport={{ once: true, margin: "-10%" }}
+            className="lg:col-span-5 lg:sticky lg:top-28 space-y-12"
           >
-            <img
-              src={methodImg}
-              alt="Time NOR"
-              loading="lazy"
-              className="w-full h-[520px] md:h-[680px] object-cover"
-            />
-          </motion.div>
-          <div className="md:col-span-6 md:pl-10">
-            <div className="eyebrow text-nor-beige mb-6">— Como funciona o nosso método</div>
-            <h2 className="font-display text-4xl md:text-6xl leading-[1.05] text-nor-cream">
-              Uma abordagem
-              <br />
-              <span className="italic font-light">única.</span>
-            </h2>
-            <p className="mt-8 max-w-md text-nor-cream/75 font-light leading-relaxed">
-              Cada detalhe do método NOR foi desenhado para colocar o aluno no
-              centro — com presença, planejamento e dados que sustentam sua
-              evolução ao longo do tempo.
+            <div className="space-y-8">
+              <div className="flex items-center gap-4">
+                <span className="h-px w-10 bg-nor-beige/60" />
+                <span className="eyebrow text-nor-beige">Método NOR</span>
+              </div>
+              <h2 className="font-display italic font-light text-6xl md:text-7xl lg:text-[6.5rem] leading-[0.88] tracking-tight text-nor-cream">
+                Uma
+                <br />
+                abordagem
+                <br />
+                única
+              </h2>
+            </div>
+
+            <p className="max-w-md text-lg md:text-xl font-light leading-relaxed text-nor-cream/80">
+              Onde a precisão técnica encontra o cuidado artesanal. Uma
+              experiência desenhada para quem exige o extraordinário.
             </p>
 
-            <ol className="mt-12 space-y-6 max-w-lg">
-              {[
-                { n: "I.", t: "Professor acompanha todo o treino", d: "Presença ativa do início ao fim, corrigindo, motivando e garantindo sua segurança em cada movimento." },
-                { n: "II.", t: "Até 5 alunos por professor", d: "Grupos reduzidos que permitem atenção individualizada e correção personalizada para cada aluno." },
-                { n: "III.", t: "Planejamento individual", d: "Cada treino é planejado de acordo com seus objetivos, histórico e momento atual." },
-                { n: "IV.", t: "Nutrição inteligente", d: "Plano nutricional inteligente integrado ao seu programa de treinos para potencializar seus resultados." },
-                { n: "V.", t: "Bioimpedância mensal", d: "Avaliação mensal completa para acompanhar sua evolução com dados reais e mensuráveis." },
-                { n: "VI.", t: "Ajustes constantes", d: "Seu programa evolui com você. Revisões e adaptações periódicas para manter você sempre progredindo." },
-              ].map((s) => (
-                <li key={s.n} className="grid grid-cols-[auto,1fr] gap-6 border-t border-nor-cream/15 pt-5">
-                  <span className="font-display text-2xl text-nor-beige">{s.n}</span>
-                  <div>
-                    <div className="font-display text-xl text-nor-cream">{s.t}</div>
-                    <p className="mt-2 text-sm text-nor-cream/70 font-light leading-relaxed">{s.d}</p>
-                  </div>
-                </li>
-              ))}
-            </ol>
+            <div className="relative w-full aspect-[3/4] overflow-hidden border border-nor-cream/10 group">
+              <img
+                src={methodImg}
+                alt="Detalhe NOR"
+                loading="lazy"
+                className="w-full h-full object-cover opacity-90 transition-transform duration-[2000ms] ease-out group-hover:scale-105"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-nor-green/40 to-transparent pointer-events-none" />
+            </div>
+          </motion.div>
+
+          {/* Pillars column */}
+          <div className="lg:col-span-7 divide-y divide-nor-cream/15">
+            {[
+              { n: "I", t: "Professor acompanha todo o treino", d: "Presença ativa do início ao fim, corrigindo, motivando e garantindo sua segurança em cada movimento." },
+              { n: "II", t: "Até 5 alunos por professor", d: "Grupos reduzidos que permitem atenção individualizada e correção personalizada para cada aluno." },
+              { n: "III", t: "Planejamento individual", d: "Cada treino é planejado de acordo com seus objetivos, histórico e momento atual." },
+              { n: "IV", t: "Nutrição inteligente", d: "Plano nutricional inteligente integrado ao seu programa de treinos para potencializar seus resultados." },
+              { n: "V", t: "Bioimpedância mensal", d: "Avaliação mensal completa para acompanhar sua evolução com dados reais e mensuráveis." },
+              { n: "VI", t: "Ajustes constantes", d: "Seu programa evolui com você. Revisões e adaptações periódicas para manter você sempre progredindo." },
+            ].map((s, i) => (
+              <motion.div
+                key={s.n}
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.9, delay: i * 0.06, ease: [0.22, 1, 0.36, 1] }}
+                viewport={{ once: true, margin: "-10%" }}
+                className="group py-10 md:py-14 flex flex-col md:flex-row gap-4 md:gap-14 transition-all duration-500 ease-out hover:pl-3"
+              >
+                <span className="font-display italic font-light text-4xl md:text-5xl leading-none text-nor-beige/70 md:w-16 shrink-0">
+                  {s.n}
+                </span>
+                <div className="space-y-3">
+                  <h3 className="font-display text-2xl md:text-[1.75rem] leading-tight tracking-tight text-nor-cream">
+                    {s.t}
+                  </h3>
+                  <p className="max-w-lg text-nor-cream/70 font-light text-[15px] leading-relaxed">
+                    {s.d}
+                  </p>
+                </div>
+              </motion.div>
+            ))}
           </div>
         </div>
       </section>
