@@ -67,7 +67,7 @@ function NorLanding() {
               variants={fadeUp}
               className="font-display text-[12vw] md:text-[6.5vw] leading-[0.95] tracking-[-0.02em] text-nor-cream"
             >
-              Cada treino é <span className="italic font-light">único.</span>
+              Mais que uma <span className="italic font-light">academia.</span>
             </motion.h1>
             <motion.p
               variants={fadeUp}
