@@ -200,24 +200,26 @@ function NorLanding() {
             />
           </motion.div>
           <div className="md:col-span-6 md:pl-10">
-            <div className="eyebrow text-nor-beige mb-6">— Time de Especialistas</div>
+            <div className="eyebrow text-nor-beige mb-6">— Como funciona o nosso método</div>
             <h2 className="font-display text-4xl md:text-6xl leading-[1.05] text-nor-cream">
               Uma abordagem
               <br />
               <span className="italic font-light">única.</span>
             </h2>
             <p className="mt-8 max-w-md text-nor-cream/75 font-light leading-relaxed">
-              Adotamos uma abordagem única, oferecendo soluções de última geração
-              e redefinindo os padrões da indústria fitness. Nosso time redesenha
-              o que significa ser cuidado dentro de uma academia.
+              Cada detalhe do método NOR foi desenhado para colocar o aluno no
+              centro — com presença, planejamento e dados que sustentam sua
+              evolução ao longo do tempo.
             </p>
 
             <ol className="mt-12 space-y-6 max-w-lg">
               {[
-                { n: "I.", t: "Avaliação sensorial", d: "Escutamos objetivos, histórico e rotina antes de qualquer prescrição." },
-                { n: "II.", t: "Protocolo assinado", d: "Um plano periodizado, revisado semana a semana." },
-                { n: "III.", t: "Acompanhamento próximo", d: "Um professor de referência conduz toda a sua jornada." },
-                { n: "IV.", t: "Evolução mensurável", d: "Marcos claros, ajustes finos, resultados que se mantêm." },
+                { n: "I.", t: "Professor acompanha todo o treino", d: "Presença ativa do início ao fim, corrigindo, motivando e garantindo sua segurança em cada movimento." },
+                { n: "II.", t: "Até 5 alunos por professor", d: "Grupos reduzidos que permitem atenção individualizada e correção personalizada para cada aluno." },
+                { n: "III.", t: "Planejamento individual", d: "Cada treino é planejado de acordo com seus objetivos, histórico e momento atual." },
+                { n: "IV.", t: "Nutrição inteligente", d: "Plano nutricional inteligente integrado ao seu programa de treinos para potencializar seus resultados." },
+                { n: "V.", t: "Bioimpedância mensal", d: "Avaliação mensal completa para acompanhar sua evolução com dados reais e mensuráveis." },
+                { n: "VI.", t: "Ajustes constantes", d: "Seu programa evolui com você. Revisões e adaptações periódicas para manter você sempre progredindo." },
               ].map((s) => (
                 <li key={s.n} className="grid grid-cols-[auto,1fr] gap-6 border-t border-nor-cream/15 pt-5">
                   <span className="font-display text-2xl text-nor-beige">{s.n}</span>
