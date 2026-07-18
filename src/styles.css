@@ -5,8 +5,8 @@
 @custom-variant dark (&:is(.dark *));
 
 @theme inline {
-  --font-display: "Cormorant Garamond", serif;
-  --font-body: "Inter", sans-serif;
+  --font-display: "Schibsted Grotesk", sans-serif;
+  --font-body: "Schibsted Grotesk", sans-serif;
 
   --color-background: var(--nor-cream);
   --color-foreground: var(--nor-green);
@@ -16,6 +16,7 @@
   --color-nor-cream: var(--nor-cream);
   --color-beige: var(--nor-beige);
   --color-nor-beige: var(--nor-beige);
+  --color-nor-brown: var(--nor-brown);
 
   --color-primary: var(--nor-green);
   --color-primary-foreground: var(--nor-cream);
@@ -23,7 +24,7 @@
   --color-secondary-foreground: var(--nor-green);
   --color-muted: var(--nor-beige);
   --color-muted-foreground: var(--nor-green-light);
-  --color-accent: var(--nor-green-light);
+  --color-accent: var(--nor-brown);
   --color-accent-foreground: var(--nor-cream);
   --color-card: var(--nor-cream);
   --color-card-foreground: var(--nor-green);
@@ -42,10 +43,12 @@
 }
 
 :root {
-  --nor-green: #1C3B34;
-  --nor-green-light: #2F5C4F;
-  --nor-cream: #EDE6D6;
-  --nor-beige: #D8CCB8;
+  /* Cores oficiais NOR — Manual de Marca */
+  --nor-green: #002B2A;        /* PANTONE 20-0182 TPM */
+  --nor-green-light: #0F4544;  /* tom auxiliar */
+  --nor-cream: #E8E2D0;        /* PANTONE 11-0202 TCX */
+  --nor-beige: #D4CBB4;        /* tom auxiliar */
+  --nor-brown: #594535;        /* PANTONE 19-1119 TCX */
   --radius: 0.375rem;
 }
 
