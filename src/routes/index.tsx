@@ -129,20 +129,20 @@ function NorLanding() {
           {[
             {
               img: methodImg,
-              tag: "N.Personal",
+              tag: "Musculação",
               t: "NOR Personal",
               d: "Treinamento personalizado com acompanhamento próximo em grupos de até 5 alunos. Sessões planejadas conforme seus objetivos, com avaliações periódicas e ajustes constantes para um processo seguro, eficiente e consistente.",
             },
             {
               img: experienceImg,
-              tag: "N.Cross",
+              tag: "Funcional",
               t: "NOR Cross",
               d: "Metodologia que combina força, condicionamento, mobilidade e resistência em sessões dinâmicas. Cada treino é adaptado ao seu nível, elevando capacidade física e qualidade de movimento.",
             },
             {
               img: detailImg,
-              tag: "N.Run",
-              t: "Clube de Corrida NOR",
+              tag: "Clube de Corrida",
+              t: "NOR Run",
               d: "Mais do que correr: uma experiência de comunidade e evolução. Treinos orientados para desenvolver performance e compartilhar a jornada com quem tem o mesmo propósito.",
             },
           ].map((p, i) => (
