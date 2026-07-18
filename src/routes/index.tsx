@@ -129,21 +129,21 @@ function NorLanding() {
           {[
             {
               img: methodImg,
-              tag: "N.Force",
-              t: "Musculação Assinada",
-              d: "Treinos de força periodizados, com progressão semanal e correção milimétrica de cada movimento.",
+              tag: "N.Personal",
+              t: "NOR Personal",
+              d: "Treinamento personalizado com acompanhamento próximo em grupos de até 5 alunos. Sessões planejadas conforme seus objetivos, com avaliações periódicas e ajustes constantes para um processo seguro, eficiente e consistente.",
             },
             {
               img: experienceImg,
-              tag: "N.Flow",
-              t: "Mobilidade & Pilates",
-              d: "Preparação corporal integrada que devolve amplitude, postura e longevidade ao seu treino.",
+              tag: "N.Cross",
+              t: "NOR Cross",
+              d: "Metodologia que combina força, condicionamento, mobilidade e resistência em sessões dinâmicas. Cada treino é adaptado ao seu nível, elevando capacidade física e qualidade de movimento.",
             },
             {
               img: detailImg,
-              tag: "N.One",
-              t: "Personal Exclusivo",
-              d: "Sessões 1:1 com professor de referência. Um plano, um olhar, uma jornada.",
+              tag: "N.Run",
+              t: "Clube de Corrida NOR",
+              d: "Mais do que correr: uma experiência de comunidade e evolução. Treinos orientados para desenvolver performance e compartilhar a jornada com quem tem o mesmo propósito.",
             },
           ].map((p, i) => (
             <motion.article
