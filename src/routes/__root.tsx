@@ -77,10 +77,10 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "Verdant — design tranquilo em verde profundo" },
-      { name: "description", content: "Site com paleta verde profunda, tipografia Inter e composição centrada." },
-      { property: "og:title", content: "Verdant" },
-      { property: "og:description", content: "Design tranquilo em verde profundo com tipografia Inter." },
+      { title: "NOR Academia Boutique — Mais que treino. Construção de resultados." },
+      { name: "description", content: "Academia boutique com acompanhamento individualizado, treinos planejados e atendimento de excelência. Exclusividade, método e evolução." },
+      { property: "og:title", content: "NOR Academia Boutique" },
+      { property: "og:description", content: "Mais que treino. Construção de resultados." },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
     ],
@@ -91,7 +91,7 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       { rel: "preconnect", href: "https://fonts.gstatic.com", crossOrigin: "anonymous" },
       {
         rel: "stylesheet",
-        href: "https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap",
+        href: "https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,400&family=Inter:wght@300;400;500;600&display=swap",
       },
     ],
   }),
