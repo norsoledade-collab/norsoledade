@@ -413,15 +413,23 @@ function NorLanding() {
           <div className="grid grid-cols-2 sm:grid-cols-3 gap-8 text-xs uppercase tracking-[0.24em] text-nor-cream/70">
             <div>
               <div className="text-nor-beige mb-2">Endereço</div>
-              Sudoeste · Brasília
+              Rua 7 de Setembro, 827
+              <br />
+              Centro, Soledade/RS
             </div>
             <div>
               <div className="text-nor-beige mb-2">Contato</div>
-              contato@nor.club
+              <div className="space-y-1">
+                <div>nor.soledade@gmail.com</div>
+                <div>WhatsApp</div>
+                <div>@nor.soledade</div>
+              </div>
             </div>
             <div>
               <div className="text-nor-beige mb-2">Horário</div>
-              Seg–Sáb · 06h–22h
+              Seg–Sex · 06h–21h
+              <br />
+              Sáb · 08h–12h
             </div>
           </div>
         </div>
