@@ -21,7 +21,7 @@ const fadeUp = {
 
 function NorLanding() {
   return (
-    <div className="bg-nor-green text-nor-cream min-h-screen selection:bg-nor-cream selection:text-nor-green font-body">
+    <div className="bg-nor-green text-nor-cream min-h-screen selection:bg-nor-cream selection:text-nor-green font-body overflow-x-hidden">
       {/* NAV — minimal, centered like Unique */}
       <header className="fixed top-0 left-0 right-0 z-40 backdrop-blur-md bg-nor-green/70 border-b border-nor-cream/10">
         <div className="mx-auto max-w-[1500px] px-6 md:px-10 h-16 flex items-center justify-between">
