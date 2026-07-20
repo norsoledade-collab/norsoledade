@@ -5,6 +5,7 @@ import methodImg from "@/assets/nor-method.jpg";
 import experienceImg from "@/assets/nor-experience.jpg";
 import detailImg from "@/assets/nor-detail.jpg";
 import norLogo from "@/assets/nor-logo.jpeg.asset.json";
+import heroVideo from "@/assets/nor-hero.mp4.asset.json";
 
 export const Route = createFileRoute("/")({
   component: NorLanding,
