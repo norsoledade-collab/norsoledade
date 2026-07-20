@@ -80,7 +80,7 @@ function NorLanding() {
               variants={fadeUp}
               className="mt-8 text-base md:text-lg text-nor-cream/85 font-light max-w-xl mx-auto"
             >
-              O refúgio perfeito para construir a melhor versão de você.
+              O lugar perfeito para construir a melhor versão de você.
             </motion.p>
             <motion.div variants={fadeUp} className="mt-14">
               <a
