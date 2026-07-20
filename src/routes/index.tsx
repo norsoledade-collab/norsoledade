@@ -260,7 +260,7 @@ function NorLanding() {
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.9, delay: i * 0.06, ease: [0.22, 1, 0.36, 1] }}
                 viewport={{ once: true, margin: "-10%" }}
-                className="group border border-nor-cream/15 p-5 flex flex-col gap-2 md:border-0 md:p-0 md:py-10 md:flex-row md:gap-14 md:py-14 transition-all duration-500 ease-out md:hover:pl-3"
+                className="group border border-nor-cream/15 p-5 flex flex-col gap-2 md:border-0 md:p-0 md:py-14 md:flex-row md:gap-14 transition-all duration-500 ease-out md:hover:pl-3"
               >
                 <span className="font-display italic font-light text-3xl md:text-5xl leading-none text-nor-beige/70 md:w-16 shrink-0">
                   {s.n}
