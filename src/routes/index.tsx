@@ -158,8 +158,15 @@ function NorLanding() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, margin: "-80px" }}
               transition={{ duration: 0.9, delay: i * 0.1, ease: [0.22, 1, 0.36, 1] }}
-              className="group relative overflow-hidden bg-nor-green-light/20 border border-nor-cream/10"
+              className="group flex flex-col bg-nor-green"
             >
+              <div className="p-8 md:p-10 min-h-[280px] flex flex-col justify-center">
+                <div className="eyebrow text-nor-beige mb-4">{p.tag}</div>
+                <h3 className="font-display text-3xl md:text-4xl text-nor-cream">{p.t}</h3>
+                <p className="mt-5 text-sm text-nor-cream/75 font-light leading-relaxed">
+                  {p.d}
+                </p>
+              </div>
               <div className="aspect-[4/5] overflow-hidden">
                 <img
                   src={p.img}
@@ -167,21 +174,6 @@ function NorLanding() {
                   loading="lazy"
                   className="w-full h-full object-cover transition-transform duration-[1400ms] ease-out group-hover:scale-105"
                 />
-              </div>
-              <div className="absolute inset-0 bg-gradient-to-t from-nor-green via-nor-green/40 to-transparent" />
-              <div className="absolute inset-0 p-8 md:p-10 flex flex-col justify-end">
-                <div className="eyebrow text-nor-beige mb-3">{p.tag}</div>
-                <h3 className="font-display text-3xl md:text-4xl text-nor-cream">{p.t}</h3>
-                <p className="mt-3 text-sm text-nor-cream/75 font-light leading-relaxed max-w-xs">
-                  {p.d}
-                </p>
-                <a
-                  href="#contato"
-                  className="mt-6 inline-flex items-center gap-2 text-[11px] uppercase tracking-[0.28em] text-nor-cream/90 hover:text-nor-cream"
-                >
-                  Saiba mais
-                  <span className="inline-block w-6 h-px bg-current transition-all group-hover:w-10" />
-                </a>
               </div>
             </motion.article>
           ))}
