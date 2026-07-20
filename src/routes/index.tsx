@@ -29,7 +29,6 @@ function NorLanding() {
           </a>
           <nav className="hidden md:flex items-center gap-12 text-[11px] uppercase tracking-[0.28em] text-nor-cream/80">
             <a href="#programas" className="hover:text-nor-cream transition">Programas</a>
-            <a href="#unidades" className="hover:text-nor-cream transition">Unidades</a>
             <a href="#especialistas" className="hover:text-nor-cream transition">Especialistas</a>
             <a href="#experiencia" className="hover:text-nor-cream transition">Experiência</a>
             <a href="#contato" className="hover:text-nor-cream transition">Contato</a>
@@ -142,7 +141,7 @@ function NorLanding() {
             {
               img: detailImg,
               tag: "Clube de Corrida",
-              t: "NOR Run",
+              t: "Clube de Corrida NOR",
               d: "Mais do que correr: uma experiência de comunidade e evolução. Treinos orientados para desenvolver performance e compartilhar a jornada com quem tem o mesmo propósito.",
             },
           ].map((p, i) => (
@@ -276,9 +275,9 @@ function NorLanding() {
             <dl className="grid grid-cols-2 gap-10">
               {[
                 { k: "12", l: "Alunos por horário" },
-                { k: "1:4", l: "Proporção professor/aluno" },
+                { k: "1:5", l: "Proporção professor/aluno" },
                 { k: "24m", l: "Sessão personalizada" },
-                { k: "07", l: "Pilares do método" },
+                { k: "06", l: "Pilares do método" },
               ].map((d) => (
                 <div key={d.l}>
                   <div className="font-display text-5xl md:text-6xl text-nor-cream">{d.k}</div>
@@ -304,69 +303,6 @@ function NorLanding() {
         </div>
       </section>
 
-      {/* UNIDADES */}
-      <section id="unidades" className="border-t border-nor-cream/10">
-        <div className="mx-auto max-w-[1500px] px-6 md:px-10 py-24 md:py-36">
-          <div className="text-center mb-16">
-            <div className="eyebrow text-nor-beige mb-6">— Nossas Unidades</div>
-            <h2 className="font-display text-4xl md:text-6xl leading-[1.05] text-nor-cream">
-              Cada unidade é <span className="italic font-light">única.</span>
-              <br />
-              Encontre a sua.
-            </h2>
-          </div>
-
-          <div className="grid md:grid-cols-2 gap-6">
-            {[
-              {
-                img: heroImg,
-                tag: "Matriz",
-                t: "NOR Sudoeste",
-                d: "Nossa flagship. Ambiente boutique com vista aberta, luz natural e o time completo de especialistas.",
-              },
-              {
-                img: experienceImg,
-                tag: "Em breve",
-                t: "NOR Asa Sul",
-                d: "Uma nova casa, projetada com o mesmo cuidado. Vagas limitadas para os fundadores da unidade.",
-              },
-            ].map((u) => (
-              <article key={u.t} className="group relative overflow-hidden">
-                <div className="aspect-[16/11] overflow-hidden">
-                  <img
-                    src={u.img}
-                    alt={u.t}
-                    loading="lazy"
-                    className="w-full h-full object-cover transition-transform duration-[1400ms] ease-out group-hover:scale-105"
-                  />
-                </div>
-                <div className="absolute inset-0 bg-gradient-to-t from-nor-green/95 via-nor-green/30 to-transparent" />
-                <div className="absolute inset-0 p-8 md:p-12 flex flex-col justify-end">
-                  <div className="eyebrow text-nor-beige mb-3">{u.tag}</div>
-                  <h3 className="font-display text-3xl md:text-5xl text-nor-cream">{u.t}</h3>
-                  <p className="mt-4 max-w-md text-sm text-nor-cream/80 font-light leading-relaxed">
-                    {u.d}
-                  </p>
-                  <div className="mt-6 flex items-center gap-4">
-                    <a
-                      href="#contato"
-                      className="text-[11px] uppercase tracking-[0.28em] border border-nor-cream/50 px-5 py-3 hover:bg-nor-cream hover:text-nor-green transition-colors"
-                    >
-                      Ver planos
-                    </a>
-                    <a
-                      href="#contato"
-                      className="text-[11px] uppercase tracking-[0.28em] text-nor-cream/80 border-b border-nor-cream/30 pb-1 hover:text-nor-cream"
-                    >
-                      WhatsApp
-                    </a>
-                  </div>
-                </div>
-              </article>
-            ))}
-          </div>
-        </div>
-      </section>
 
       {/* DEPOIMENTOS */}
       <section className="border-t border-nor-cream/10">
@@ -477,15 +413,23 @@ function NorLanding() {
           <div className="grid grid-cols-2 sm:grid-cols-3 gap-8 text-xs uppercase tracking-[0.24em] text-nor-cream/70">
             <div>
               <div className="text-nor-beige mb-2">Endereço</div>
-              Sudoeste · Brasília
+              Rua 7 de Setembro, 827
+              <br />
+              Centro, Soledade/RS
             </div>
             <div>
               <div className="text-nor-beige mb-2">Contato</div>
-              contato@nor.club
+              <div className="space-y-1">
+                <div>nor.soledade@gmail.com</div>
+                <div>WhatsApp</div>
+                <div>@nor.soledade</div>
+              </div>
             </div>
             <div>
               <div className="text-nor-beige mb-2">Horário</div>
-              Seg–Sáb · 06h–22h
+              Seg–Sex · 06h–21h
+              <br />
+              Sáb · 08h–12h
             </div>
           </div>
         </div>
