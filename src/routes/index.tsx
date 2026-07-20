@@ -46,12 +46,17 @@ function NorLanding() {
 
       {/* HERO — full bleed cinematic */}
       <section id="top" className="relative min-h-screen w-full overflow-hidden">
-        <img
-          src={heroImg}
-          alt="Interior da NOR Academia Boutique"
+        {/* [VÍDEO A SUBSTITUIR — inserir arquivo .mp4 da academia aqui] */}
+        <video
+          src={heroVideo.url}
+          poster={heroImg}
+          autoPlay
+          muted
+          loop
+          playsInline
+          preload="metadata"
+          aria-label="Interior da NOR Academia Boutique"
           className="absolute inset-0 w-full h-full object-cover"
-          width={1920}
-          height={1080}
         />
         <div className="absolute inset-0 bg-gradient-to-b from-nor-green/40 via-nor-green/20 to-nor-green/95" />
         <div className="relative z-10 mx-auto max-w-[1500px] px-6 md:px-10 min-h-screen flex flex-col items-center justify-center text-center">
