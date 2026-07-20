@@ -4,7 +4,7 @@ import heroImg from "@/assets/nor-hero.jpg";
 import methodImg from "@/assets/nor-method.jpg";
 import experienceImg from "@/assets/nor-experience.jpg";
 import detailImg from "@/assets/nor-detail.jpg";
-import norIcon from "@/assets/nor-icon.png";
+import norLogo from "@/assets/nor-logo.jpeg.asset.json";
 
 export const Route = createFileRoute("/")({
   component: NorLanding,
@@ -26,21 +26,7 @@ function NorLanding() {
       <header className="fixed top-0 left-0 right-0 z-40 backdrop-blur-md bg-nor-green/70 border-b border-nor-cream/10">
         <div className="mx-auto max-w-[1500px] px-6 md:px-10 h-16 flex items-center justify-between">
           <a href="#top" aria-label="NOR" className="flex items-center">
-            <span className="w-10 h-10 rounded-full bg-nor-beige flex items-center justify-center">
-              <span
-                className="w-7 h-7 bg-nor-green"
-                style={{
-                  WebkitMaskImage: `url(${norIcon})`,
-                  maskImage: `url(${norIcon})`,
-                  WebkitMaskSize: "contain",
-                  maskSize: "contain",
-                  WebkitMaskRepeat: "no-repeat",
-                  maskRepeat: "no-repeat",
-                  WebkitMaskPosition: "center",
-                  maskPosition: "center",
-                }}
-              />
-            </span>
+            <img src={norLogo.url} alt="NOR" className="h-10 w-auto" />
           </a>
           <nav className="hidden md:flex items-center gap-12 text-[11px] uppercase tracking-[0.28em] text-nor-cream/80">
             <a href="#programas" className="hover:text-nor-cream transition">Programas</a>
