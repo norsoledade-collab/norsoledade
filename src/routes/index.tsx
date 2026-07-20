@@ -82,7 +82,7 @@ function NorLanding() {
             className="max-w-4xl"
           >
             <motion.div variants={fadeUp} className="eyebrow text-nor-beige mb-8">
-              Academia Boutique · Soledade
+              NOR Academia Boutique - Soledade
             </motion.div>
             <motion.h1
               variants={fadeUp}
