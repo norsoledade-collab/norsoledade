@@ -34,12 +34,19 @@ function NorLanding() {
             <a href="#experiencia" className="hover:text-nor-cream transition">Experiência</a>
             <a href="#contato" className="hover:text-nor-cream transition">Contato</a>
           </nav>
-          <a
-            href="#contato"
-            className="text-[11px] uppercase tracking-[0.28em] border border-nor-cream/40 px-4 py-2 hover:bg-nor-cream hover:text-nor-green transition-colors"
-          >
-            Agende sua visita
-          </a>
+          <div className="flex items-center gap-4">
+            <a
+              href="#contato"
+              className="text-[11px] uppercase tracking-[0.28em] border border-nor-cream/40 px-4 py-2 hover:bg-nor-cream hover:text-nor-green transition-colors"
+            >
+              Agende sua visita
+            </a>
+            <img
+              src={norIcon}
+              alt="NOR"
+              className="h-9 w-auto"
+            />
+          </div>
         </div>
       </header>
 
