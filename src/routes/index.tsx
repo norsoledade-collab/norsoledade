@@ -88,23 +88,9 @@ function NorLanding() {
               O lugar perfeito para construir<br />
               a melhor versão de você.
             </motion.p>
-            <motion.div variants={fadeUp} className="mt-14">
-              <a
-                href="#contato"
-                className="group inline-flex items-center gap-3 border border-nor-cream/70 text-nor-cream px-8 py-4 text-[11px] uppercase tracking-[0.32em] hover:bg-nor-cream hover:text-nor-green transition-colors"
-              >
-                Conheça a NOR
-                <span className="inline-block w-6 h-px bg-current transition-all group-hover:w-12" />
-              </a>
-            </motion.div>
           </motion.div>
         </div>
-        <div className="absolute bottom-8 left-0 right-0 z-10 flex justify-center">
-          <div className="eyebrow text-nor-cream/50 flex items-center gap-3">
-            <span className="w-px h-8 bg-nor-cream/40 animate-pulse" />
-            Role para explorar
-          </div>
-        </div>
+
       </section>
 
       {/* INTRO — statement */}
