@@ -224,16 +224,14 @@ function NorLanding() {
             viewport={{ once: true, margin: "-10%" }}
             className="lg:col-span-5 lg:sticky lg:top-28 space-y-12"
           >
-            <div className="border-l border-nor-cream/40 pl-4 md:pl-6 space-y-8">
+            <div className="border-l border-nor-cream/40 pl-4 md:pl-6 space-y-6 md:space-y-8">
               <div className="eyebrow text-nor-beige">— Método NOR</div>
-              <h2 className="font-display italic font-light text-[2.5rem] sm:text-6xl md:text-7xl lg:text-[6.5rem] leading-[0.95] md:leading-[0.88] tracking-tight text-nor-cream">
-                Uma
-                <br />
-                abordagem
+              <h2 className="font-display italic font-light text-[2rem] sm:text-6xl md:text-7xl lg:text-[6.5rem] leading-[1] md:leading-[0.88] tracking-tight text-nor-cream">
+                Uma abordagem
                 <br />
                 única
               </h2>
-              <p className="max-w-md text-base md:text-xl font-light leading-relaxed text-nor-cream/80">
+              <p className="max-w-md text-sm md:text-xl font-light leading-relaxed text-nor-cream/80">
                 Onde a precisão técnica encontra o cuidado artesanal. Uma
                 experiência desenhada para quem exige o extraordinário.
               </p>
@@ -252,14 +250,14 @@ function NorLanding() {
           </motion.div>
 
           {/* Pillars column — index editorial compacto */}
-          <div className="lg:col-span-7 grid grid-cols-1 sm:grid-cols-2 gap-x-10 md:gap-x-12 gap-y-10 md:gap-y-12">
+          <div className="lg:col-span-7 grid grid-cols-2 gap-x-5 md:gap-x-12 gap-y-8 md:gap-y-12">
             {[
-              { n: "I", t: "Professor acompanha todo o treino", d: "Supervisão integral para garantir técnica impecável em cada série." },
-              { n: "II", t: "Até 5 alunos por professor", d: "Atenção individualizada de verdade em um ambiente controlado." },
-              { n: "III", t: "Planejamento individual", d: "Periodização inteligente baseada na sua biologia e objetivos únicos." },
-              { n: "IV", t: "Nutrição inteligente", d: "Suporte nutricional integrado para potencializar resultados físicos." },
-              { n: "V", t: "Bioimpedância mensal", d: "Acompanhamento métrico rigoroso da sua evolução corporal." },
-              { n: "VI", t: "Ajustes constantes", d: "Adaptação contínua do treino conforme seu corpo responde e evolui." },
+              { n: "I", t: "Professor em todo treino", d: "Supervisão integral, técnica impecável." },
+              { n: "II", t: "Até 5 alunos por professor", d: "Atenção individualizada de verdade." },
+              { n: "III", t: "Planejamento individual", d: "Periodização baseada em você." },
+              { n: "IV", t: "Nutrição inteligente", d: "Suporte integrado aos resultados." },
+              { n: "V", t: "Bioimpedância mensal", d: "Acompanhamento métrico rigoroso." },
+              { n: "VI", t: "Ajustes constantes", d: "Adaptação contínua ao seu corpo." },
             ].map((s, i) => (
               <motion.div
                 key={s.n}
@@ -267,15 +265,15 @@ function NorLanding() {
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.9, delay: i * 0.06, ease: [0.22, 1, 0.36, 1] }}
                 viewport={{ once: true, margin: "-10%" }}
-                className="space-y-3"
+                className="space-y-2 md:space-y-3"
               >
-                <span className="block font-display italic text-base md:text-lg text-nor-cream/40 border-b border-nor-cream/15 pb-2">
+                <span className="block font-display italic text-sm md:text-lg text-nor-cream/40 border-b border-nor-cream/15 pb-2">
                   {s.n}
                 </span>
-                <h3 className="text-nor-cream text-base md:text-lg font-medium leading-snug tracking-tight">
+                <h3 className="text-nor-cream text-[13px] md:text-lg font-medium leading-snug tracking-tight">
                   {s.t}
                 </h3>
-                <p className="text-nor-cream/60 text-xs md:text-sm leading-relaxed">
+                <p className="text-nor-cream/60 text-[11px] md:text-sm leading-relaxed">
                   {s.d}
                 </p>
               </motion.div>
