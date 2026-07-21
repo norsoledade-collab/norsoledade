@@ -303,7 +303,7 @@ function NorLanding() {
                 { k: "12", l: "Alunos por horário" },
                 { k: "1:5", l: "Proporção professor/aluno" },
                 { k: "24m", l: "Sessão personalizada" },
-                { k: "06", l: "Pilares do método" },
+                { k: "03", l: "Pilares do método" },
               ].map((d) => (
                 <div key={d.l}>
                   <div className="font-display text-4xl md:text-6xl text-nor-cream">{d.k}</div>
