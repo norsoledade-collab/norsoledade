@@ -94,7 +94,19 @@ function NorLanding() {
           </motion.div>
         </div>
 
+        <motion.a
+          href="#programas"
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ delay: 1.4, duration: 1 }}
+          className="absolute bottom-8 md:bottom-10 left-1/2 -translate-x-1/2 z-10 flex flex-col items-center gap-3 text-nor-cream/70 hover:text-nor-cream transition-colors"
+          aria-label="Role para explorar"
+        >
+          <span className="eyebrow text-[10px]">Role para explorar</span>
+          <span className="block w-px h-10 bg-nor-cream/50 animate-pulse" />
+        </motion.a>
       </section>
+
 
       {/* INTRO — statement */}
       <section className="mx-auto max-w-[1500px] px-6 md:px-10 pt-10 pb-20 md:pt-16 md:pb-28">
