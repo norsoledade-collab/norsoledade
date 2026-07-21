@@ -104,26 +104,30 @@ function NorLanding() {
       </section>
 
       {/* INTRO — statement */}
-      <section className="mx-auto max-w-[1500px] px-6 md:px-10 py-28 md:py-40 text-center">
+      <section className="mx-auto max-w-[1500px] px-6 md:px-10 py-28 md:py-40">
         <motion.div
           initial="hidden"
           whileInView="show"
           viewport={{ once: true, margin: "-100px" }}
           variants={fadeUp}
+          className="max-w-4xl mx-auto"
         >
-          <div className="eyebrow text-nor-beige mb-8">— NOR Academia Boutique</div>
-          <h2 className="font-display text-3xl md:text-5xl leading-[1.2] tracking-[-0.01em] max-w-4xl mx-auto text-nor-cream">
-            Somos uma academia boutique feita para quem entende que
-            <span className="italic font-light"> evolução exige método</span>,
-            atenção individual e um ambiente à altura do seu tempo.
-          </h2>
+          <div className="eyebrow text-nor-beige mb-8 text-center">— NOR Academia Boutique</div>
+          <div className="border-l border-nor-cream/40 pl-6 md:pl-10">
+            <h2 className="font-display text-3xl md:text-5xl leading-[1.2] tracking-[-0.01em] text-nor-cream">
+              Somos uma academia boutique feita para quem entende que
+              <span className="italic font-light"> evolução exige método</span>,
+              atenção individual e um ambiente à altura do seu tempo.
+            </h2>
+          </div>
           <div className="hairline max-w-24 mx-auto mt-14 opacity-40" />
         </motion.div>
       </section>
 
       {/* PROGRAMAS — 3 cards com foto (padrão Unique) */}
       <section id="programas" className="mx-auto max-w-[1500px] px-6 md:px-10 pb-24 md:pb-36">
-        <div className="text-center mb-16">
+        <div className="text-center mb-24 md:mb-32">
+
           <div className="eyebrow text-nor-beige mb-6">— Nossos Programas</div>
           <h2 className="font-display text-4xl md:text-6xl leading-[1.05] text-nor-cream">
             Liderados por <span className="italic font-light">especialistas.</span>
