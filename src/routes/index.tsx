@@ -97,7 +97,7 @@ function NorLanding() {
       </section>
 
       {/* INTRO — statement */}
-      <section className="mx-auto max-w-[1500px] px-6 md:px-10 py-28 md:py-40">
+      <section className="mx-auto max-w-[1500px] px-6 md:px-10 pt-10 pb-20 md:pt-16 md:pb-28">
         <motion.div
           initial="hidden"
           whileInView="show"
