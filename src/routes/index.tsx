@@ -417,28 +417,29 @@ function NorLanding() {
               Academia Boutique
             </p>
           </div>
-          <div className="grid grid-cols-2 sm:grid-cols-3 gap-8 text-xs uppercase tracking-[0.24em] text-nor-cream/70">
-            <div>
-              <div className="text-nor-beige mb-2">Endereço</div>
+          <div className="grid grid-cols-1 sm:grid-cols-3 gap-8 text-[11px] sm:text-xs tracking-[0.08em] text-nor-cream/70 normal-case w-full md:w-auto">
+            <div className="min-w-0 break-words">
+              <div className="eyebrow text-nor-beige mb-2">Endereço</div>
               Rua 7 de Setembro, 827
               <br />
               Centro, Soledade/RS
             </div>
-            <div>
-              <div className="text-nor-beige mb-2">Contato</div>
+            <div className="min-w-0 break-words">
+              <div className="eyebrow text-nor-beige mb-2">Contato</div>
               <div className="space-y-1">
                 <div>nor.soledade@gmail.com</div>
                 <div>WhatsApp</div>
                 <div>@nor.soledade</div>
               </div>
             </div>
-            <div>
-              <div className="text-nor-beige mb-2">Horário</div>
+            <div className="min-w-0 break-words">
+              <div className="eyebrow text-nor-beige mb-2">Horário</div>
               Seg–Sex · 06h–21h
               <br />
               Sáb · 08h–12h
             </div>
           </div>
+
         </div>
         <div className="border-t border-nor-cream/10">
           <div className="mx-auto max-w-[1500px] px-6 md:px-10 py-6 text-[11px] uppercase tracking-[0.28em] text-nor-cream/50 flex justify-between">
