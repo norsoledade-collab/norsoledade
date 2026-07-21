@@ -167,9 +167,9 @@ function NorLanding() {
               transition={{ duration: 0.9, delay: i * 0.1, ease: [0.22, 1, 0.36, 1] }}
               className="group flex flex-col bg-nor-green"
             >
-              <div className="p-8 md:p-10 min-h-[280px] flex flex-col justify-center">
-                <h3 className="font-display text-3xl md:text-4xl text-nor-cream">{p.t}</h3>
-                <p className="mt-5 text-sm text-nor-cream/75 font-light leading-relaxed">
+              <div className="p-7 md:p-10 min-h-[240px] md:min-h-[280px] flex flex-col justify-center">
+                <h3 className="font-display text-2xl md:text-4xl text-nor-cream">{p.t}</h3>
+                <p className="mt-4 md:mt-5 text-[13px] md:text-sm text-nor-cream/75 font-light leading-relaxed">
                   {p.d}
                 </p>
               </div>
