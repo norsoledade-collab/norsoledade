@@ -202,7 +202,7 @@ function NorLanding() {
                 <span className="h-px w-10 bg-nor-beige/60" />
                 <span className="eyebrow text-nor-beige">Método NOR</span>
               </div>
-              <h2 className="font-display italic font-light text-6xl md:text-7xl lg:text-[6.5rem] leading-[0.88] tracking-tight text-nor-cream">
+              <h2 className="font-display italic font-light text-[2.5rem] sm:text-6xl md:text-7xl lg:text-[6.5rem] leading-[0.95] md:leading-[0.88] tracking-tight text-nor-cream">
                 Uma
                 <br />
                 abordagem
@@ -211,7 +211,7 @@ function NorLanding() {
               </h2>
             </div>
 
-            <p className="max-w-md text-lg md:text-xl font-light leading-relaxed text-nor-cream/80">
+            <p className="max-w-md text-base md:text-xl font-light leading-relaxed text-nor-cream/80">
               Onde a precisão técnica encontra o cuidado artesanal. Uma
               experiência desenhada para quem exige o extraordinário.
             </p>
