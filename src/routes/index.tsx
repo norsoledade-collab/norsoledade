@@ -250,15 +250,15 @@ function NorLanding() {
             </div>
           </motion.div>
 
-          {/* Pillars column */}
-          <div className="lg:col-span-7 md:divide-y md:divide-nor-cream/15">
+          {/* Pillars column — index editorial compacto */}
+          <div className="lg:col-span-7 grid grid-cols-1 sm:grid-cols-2 gap-x-10 md:gap-x-12 gap-y-10 md:gap-y-12">
             {[
-              { n: "I", t: "Professor acompanha todo o treino", d: "Presença ativa do início ao fim, corrigindo, motivando e garantindo sua segurança em cada movimento." },
-              { n: "II", t: "Até 5 alunos por professor", d: "Grupos reduzidos que permitem atenção individualizada e correção personalizada para cada aluno." },
-              { n: "III", t: "Planejamento individual", d: "Cada treino é planejado de acordo com seus objetivos, histórico e momento atual." },
-              { n: "IV", t: "Nutrição inteligente", d: "Plano nutricional inteligente integrado ao seu programa de treinos para potencializar seus resultados." },
-              { n: "V", t: "Bioimpedância mensal", d: "Avaliação mensal completa para acompanhar sua evolução com dados reais e mensuráveis." },
-              { n: "VI", t: "Ajustes constantes", d: "Seu programa evolui com você. Revisões e adaptações periódicas para manter você sempre progredindo." },
+              { n: "I", t: "Professor acompanha todo o treino", d: "Supervisão integral para garantir técnica impecável em cada série." },
+              { n: "II", t: "Até 5 alunos por professor", d: "Atenção individualizada de verdade em um ambiente controlado." },
+              { n: "III", t: "Planejamento individual", d: "Periodização inteligente baseada na sua biologia e objetivos únicos." },
+              { n: "IV", t: "Nutrição inteligente", d: "Suporte nutricional integrado para potencializar resultados físicos." },
+              { n: "V", t: "Bioimpedância mensal", d: "Acompanhamento métrico rigoroso da sua evolução corporal." },
+              { n: "VI", t: "Ajustes constantes", d: "Adaptação contínua do treino conforme seu corpo responde e evolui." },
             ].map((s, i) => (
               <motion.div
                 key={s.n}
@@ -266,22 +266,21 @@ function NorLanding() {
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.9, delay: i * 0.06, ease: [0.22, 1, 0.36, 1] }}
                 viewport={{ once: true, margin: "-10%" }}
-                className="group border-b border-nor-cream/15 py-6 flex gap-5 md:border-0 md:py-14 md:gap-14 transition-all duration-500 ease-out md:hover:pl-3 last:border-0 md:last:border-0"
+                className="space-y-3"
               >
-                <span className="font-display italic font-light text-3xl md:text-5xl leading-none text-nor-beige/70 w-8 md:w-16 shrink-0">
+                <span className="block font-display italic text-base md:text-lg text-nor-cream/40 border-b border-nor-cream/15 pb-2">
                   {s.n}
                 </span>
-                <div className="space-y-2 md:space-y-3 min-w-0 flex-1">
-                  <h3 className="font-display text-lg md:text-[1.75rem] leading-tight tracking-tight text-nor-cream">
-                    {s.t}
-                  </h3>
-                  <p className="text-nor-cream/70 font-light text-[13px] md:text-[15px] leading-relaxed max-w-lg">
-                    {s.d}
-                  </p>
-                </div>
+                <h3 className="text-nor-cream text-base md:text-lg font-medium leading-snug tracking-tight">
+                  {s.t}
+                </h3>
+                <p className="text-nor-cream/60 text-xs md:text-sm leading-relaxed">
+                  {s.d}
+                </p>
               </motion.div>
             ))}
           </div>
+
         </div>
       </section>
 
