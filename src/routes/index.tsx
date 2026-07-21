@@ -129,23 +129,22 @@ function NorLanding() {
         </motion.div>
       </section>
 
-      {/* VÍDEO INSTITUCIONAL */}
-      <section className="w-full">
-        <div className="mx-auto max-w-[1500px] px-6 md:px-10 pb-24 md:pb-36">
-          <div className="relative w-full aspect-video overflow-hidden">
-            <video
-              src={introVideo.url}
-              autoPlay
-              muted
-              loop
-              playsInline
-              preload="metadata"
-              className="absolute inset-0 w-full h-full object-cover"
-            />
-            <div className="absolute inset-0 bg-black/15 pointer-events-none" />
-          </div>
+      {/* VÍDEO INSTITUCIONAL — full-bleed */}
+      <section className="w-full pb-24 md:pb-36">
+        <div className="relative w-screen aspect-video overflow-hidden">
+          <video
+            src={introVideo.url}
+            autoPlay
+            muted
+            loop
+            playsInline
+            preload="auto"
+            className="absolute inset-0 w-full h-full object-cover"
+          />
+          <div className="absolute inset-0 bg-black/15 pointer-events-none" />
         </div>
       </section>
+
 
 
       {/* PROGRAMAS — 3 cards com foto (padrão Unique) */}
