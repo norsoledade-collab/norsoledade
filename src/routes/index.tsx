@@ -249,42 +249,36 @@ function NorLanding() {
             </div>
           </motion.div>
 
-          {/* Pillars column — horizontal scroll no mobile, grid no desktop */}
-          <div className="lg:col-span-7 -mx-6 md:mx-0">
-            <div className="flex md:grid md:grid-cols-2 gap-x-5 md:gap-x-12 gap-y-8 md:gap-y-12 overflow-x-auto md:overflow-visible snap-x snap-mandatory md:snap-none px-6 md:px-0 pb-6 md:pb-0 scroll-pl-6 [scrollbar-width:none] [&::-webkit-scrollbar]:hidden">
+          {/* Pillars column */}
+          <div className="lg:col-span-7">
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-x-10 gap-y-10 md:gap-y-12">
               {[
-                { n: "I", t: "Professor em todo treino", d: "Supervisão integral, técnica impecável." },
-                { n: "II", t: "Até 5 alunos por professor", d: "Atenção individualizada de verdade." },
-                { n: "III", t: "Planejamento individual", d: "Periodização baseada em você." },
-                { n: "IV", t: "Nutrição inteligente", d: "Suporte integrado aos resultados." },
-                { n: "V", t: "Bioimpedância mensal", d: "Acompanhamento métrico rigoroso." },
-                { n: "VI", t: "Ajustes constantes", d: "Adaptação contínua ao seu corpo." },
+                { n: "I", t: "Exclusividade no atendimento", d: "1 professor para até 5 alunos." },
+                { n: "II", t: "Atendimento multidisciplinar", d: "Personal + plano nutricional inteligente." },
+                { n: "III", t: "Entrega de resultados", d: "Avaliação por bioimpedância + mapa de metas." },
               ].map((s, i) => (
                 <motion.div
                   key={s.n}
                   initial={{ opacity: 0, y: 20 }}
                   whileInView={{ opacity: 1, y: 0 }}
-                  transition={{ duration: 0.9, delay: i * 0.06, ease: [0.22, 1, 0.36, 1] }}
+                  transition={{ duration: 0.9, delay: i * 0.08, ease: [0.22, 1, 0.36, 1] }}
                   viewport={{ once: true, margin: "-10%" }}
-                  className="shrink-0 basis-[70%] md:basis-auto md:shrink snap-start space-y-2 md:space-y-3"
+                  className="space-y-3"
                 >
                   <span className="block font-display italic text-sm md:text-lg text-nor-cream/40 border-b border-nor-cream/15 pb-2">
                     {s.n}
                   </span>
-                  <h3 className="text-nor-cream text-sm md:text-lg font-medium leading-snug tracking-tight">
+                  <h3 className="text-nor-cream text-base md:text-lg font-medium leading-snug tracking-tight">
                     {s.t}
                   </h3>
-                  <p className="text-nor-cream/60 text-xs md:text-sm leading-relaxed">
+                  <p className="text-nor-cream/60 text-sm leading-relaxed">
                     {s.d}
                   </p>
                 </motion.div>
               ))}
             </div>
-            <div className="md:hidden mt-2 px-6 eyebrow text-nor-cream/40 text-[10px] flex items-center gap-2">
-              <span className="w-6 h-px bg-nor-cream/30" />
-              Arraste para o lado
-            </div>
           </div>
+
 
         </div>
       </section>
@@ -309,7 +303,7 @@ function NorLanding() {
                 { k: "12", l: "Alunos por horário" },
                 { k: "1:5", l: "Proporção professor/aluno" },
                 { k: "24m", l: "Sessão personalizada" },
-                { k: "06", l: "Pilares do método" },
+                { k: "03", l: "Pilares do método" },
               ].map((d) => (
                 <div key={d.l}>
                   <div className="font-display text-4xl md:text-6xl text-nor-cream">{d.k}</div>
