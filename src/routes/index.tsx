@@ -267,10 +267,10 @@ function NorLanding() {
               ].map((s, i) => (
                 <motion.div
                   key={s.n}
-                  initial={{ opacity: 0, y: 20 }}
-                  whileInView={{ opacity: 1, y: 0 }}
-                  transition={{ duration: 0.9, delay: i * 0.08, ease: [0.22, 1, 0.36, 1] }}
-                  viewport={{ once: true, margin: "-10%" }}
+                  initial={{ opacity: 0, x: -80 }}
+                  whileInView={{ opacity: 1, x: 0 }}
+                  transition={{ duration: 1, delay: i * 0.5, ease: [0.22, 1, 0.36, 1] }}
+                  viewport={{ once: true, margin: "-15%" }}
                   className="space-y-3"
                 >
                   <span className="block font-display italic text-sm md:text-lg text-nor-cream/40 border-b border-nor-cream/15 pb-2">
