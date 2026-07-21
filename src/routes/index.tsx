@@ -126,16 +126,17 @@ function NorLanding() {
 
       {/* PROGRAMAS — 3 cards com foto (padrão Unique) */}
       <section id="programas" className="mx-auto max-w-[1500px] px-6 md:px-10 pb-24 md:pb-36">
-        <div className="text-center mb-24 md:mb-32">
-
-          <div className="eyebrow text-nor-beige mb-6">— Nossos Programas</div>
-          <h2 className="font-display text-2xl sm:text-3xl md:text-6xl leading-[1.15] md:leading-[1.05] text-nor-cream">
-            Liderados por <span className="italic font-light">especialistas.</span>
-          </h2>
-          <p className="mt-5 md:mt-6 max-w-2xl mx-auto text-sm md:text-base text-nor-cream/75 font-light">
-            Modalidades pensadas para cada objetivo, cada corpo e cada etapa da vida.
-            Uma experiência personalizada, do primeiro treino ao seu melhor resultado.
-          </p>
+        <div className="mb-24 md:mb-32">
+          <div className="border-l border-nor-cream/40 pl-4 md:pl-6 w-fit mx-auto text-left">
+            <div className="eyebrow text-nor-beige mb-6">— Nossos Programas</div>
+            <h2 className="font-display text-2xl sm:text-3xl md:text-6xl leading-[1.15] md:leading-[1.05] text-nor-cream">
+              Liderados por <span className="italic font-light">especialistas.</span>
+            </h2>
+            <p className="mt-5 md:mt-6 max-w-2xl text-sm md:text-base text-nor-cream/75 font-light">
+              Modalidades pensadas para cada objetivo, cada corpo e cada etapa da vida.
+              Uma experiência personalizada, do primeiro treino ao seu melhor resultado.
+            </p>
+          </div>
         </div>
 
         <div className="grid md:grid-cols-3 gap-6">
