@@ -68,7 +68,7 @@ function NorLanding() {
         <div className="absolute inset-0 bg-gradient-to-b from-nor-green/70 via-nor-green/55 to-nor-green/95" />
         <div className="absolute inset-0 bg-black/25" />
 
-        <div className="relative z-10 mx-auto max-w-[1500px] px-6 md:px-10 min-h-screen flex flex-col items-center justify-center text-center">
+        <div className="relative z-10 mx-auto max-w-[1500px] px-6 md:px-10 min-h-screen flex flex-col items-center justify-start pt-28 md:justify-center md:pt-0 text-center">
           <motion.div
             initial="hidden"
             animate="show"
