@@ -71,7 +71,7 @@ function NorLanding() {
             variants={{ show: { transition: { staggerChildren: 0.18 } } }}
             className="max-w-4xl"
           >
-            <motion.div variants={fadeUp} className="eyebrow text-nor-beige mb-8">
+            <motion.div variants={fadeUp} className="eyebrow text-nor-beige mb-8 whitespace-nowrap text-[9px] sm:text-xs">
               NOR Academia Boutique - Soledade
             </motion.div>
             <motion.h1
