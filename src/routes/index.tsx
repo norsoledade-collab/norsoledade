@@ -300,9 +300,9 @@ function NorLanding() {
             <div className="hairline my-10 md:my-12 opacity-40" />
             <dl className="grid grid-cols-2 gap-8 md:gap-10">
               {[
-                { k: "12", l: "Alunos por horário" },
+                { k: "15", l: "Alunos por horário" },
                 { k: "1:5", l: "Proporção professor/aluno" },
-                { k: "24m", l: "Sessão personalizada" },
+                { k: "280m", l: "Área da academia" },
                 { k: "03", l: "Pilares do método" },
               ].map((d) => (
                 <div key={d.l}>
@@ -312,18 +312,12 @@ function NorLanding() {
               ))}
             </dl>
           </div>
-          <div className="md:col-span-6 grid grid-cols-2 gap-4">
+          <div className="md:col-span-6">
             <img
               src={experienceImg.url}
               alt="Interior da NOR"
               loading="lazy"
-              className="w-full h-[420px] md:h-[560px] object-cover"
-            />
-            <img
-              src={detailImg.url}
-              alt="Fachada da NOR"
-              loading="lazy"
-              className="w-full h-[420px] md:h-[560px] object-cover mt-16"
+              className="w-full h-[420px] md:h-[640px] object-cover"
             />
           </div>
         </div>
