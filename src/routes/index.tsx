@@ -186,10 +186,11 @@ function NorLanding() {
           ].map((p, i) => (
             <motion.article
               key={p.t}
-              initial={{ opacity: 0, y: 40 }}
-              whileInView={{ opacity: 1, y: 0 }}
+              initial={{ opacity: 0, x: -80 }}
+              whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true, margin: "-80px" }}
-              transition={{ duration: 0.9, delay: i * 0.1, ease: [0.22, 1, 0.36, 1] }}
+              transition={{ duration: 1, delay: i * 0.2, ease: [0.22, 1, 0.36, 1] }}
+
               className="group flex flex-col bg-nor-green"
             >
               <div className="p-7 md:p-10 min-h-[240px] md:min-h-[280px] flex flex-col justify-center">
