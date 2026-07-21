@@ -74,13 +74,13 @@ function NorLanding() {
             </motion.div>
             <motion.h1
               variants={fadeUp}
-              className="font-display text-[12vw] md:text-[6.5vw] leading-[0.95] tracking-[-0.02em] text-nor-cream"
+              className="font-display text-[2.5rem] sm:text-6xl md:text-[6.5vw] leading-[1] tracking-[-0.02em] text-nor-cream"
             >
               Cada treino é <span className="italic font-light">único.</span>
             </motion.h1>
             <motion.p
               variants={fadeUp}
-              className="mt-8 text-base md:text-lg text-nor-cream/85 font-light max-w-xl mx-auto"
+              className="mt-6 md:mt-8 text-sm md:text-lg text-nor-cream/85 font-light max-w-xl mx-auto"
             >
               O lugar perfeito para construir a melhor versão de você.
             </motion.p>
@@ -114,7 +114,7 @@ function NorLanding() {
         >
           <div className="eyebrow text-nor-beige mb-8 text-center">— NOR Academia Boutique</div>
           <div className="border-l border-nor-cream/40 pl-6 md:pl-10">
-            <h2 className="font-display text-3xl md:text-5xl leading-[1.2] tracking-[-0.01em] text-nor-cream">
+            <h2 className="font-display text-xl sm:text-2xl md:text-5xl leading-[1.3] md:leading-[1.2] tracking-[-0.01em] text-nor-cream">
               Somos uma academia boutique feita para quem entende que
               <span className="italic font-light"> evolução exige método</span>,
               atenção individual e um ambiente à altura do seu tempo.
@@ -129,10 +129,10 @@ function NorLanding() {
         <div className="text-center mb-24 md:mb-32">
 
           <div className="eyebrow text-nor-beige mb-6">— Nossos Programas</div>
-          <h2 className="font-display text-4xl md:text-6xl leading-[1.05] text-nor-cream">
+          <h2 className="font-display text-2xl sm:text-3xl md:text-6xl leading-[1.15] md:leading-[1.05] text-nor-cream">
             Liderados por <span className="italic font-light">especialistas.</span>
           </h2>
-          <p className="mt-6 max-w-2xl mx-auto text-nor-cream/75 font-light">
+          <p className="mt-5 md:mt-6 max-w-2xl mx-auto text-sm md:text-base text-nor-cream/75 font-light">
             Modalidades pensadas para cada objetivo, cada corpo e cada etapa da vida.
             Uma experiência personalizada, do primeiro treino ao seu melhor resultado.
           </p>
@@ -167,9 +167,9 @@ function NorLanding() {
               transition={{ duration: 0.9, delay: i * 0.1, ease: [0.22, 1, 0.36, 1] }}
               className="group flex flex-col bg-nor-green"
             >
-              <div className="p-8 md:p-10 min-h-[280px] flex flex-col justify-center">
-                <h3 className="font-display text-3xl md:text-4xl text-nor-cream">{p.t}</h3>
-                <p className="mt-5 text-sm text-nor-cream/75 font-light leading-relaxed">
+              <div className="p-7 md:p-10 min-h-[240px] md:min-h-[280px] flex flex-col justify-center">
+                <h3 className="font-display text-2xl md:text-4xl text-nor-cream">{p.t}</h3>
+                <p className="mt-4 md:mt-5 text-[13px] md:text-sm text-nor-cream/75 font-light leading-relaxed">
                   {p.d}
                 </p>
               </div>
@@ -202,7 +202,7 @@ function NorLanding() {
                 <span className="h-px w-10 bg-nor-beige/60" />
                 <span className="eyebrow text-nor-beige">Método NOR</span>
               </div>
-              <h2 className="font-display italic font-light text-6xl md:text-7xl lg:text-[6.5rem] leading-[0.88] tracking-tight text-nor-cream">
+              <h2 className="font-display italic font-light text-[2.5rem] sm:text-6xl md:text-7xl lg:text-[6.5rem] leading-[0.95] md:leading-[0.88] tracking-tight text-nor-cream">
                 Uma
                 <br />
                 abordagem
@@ -211,7 +211,7 @@ function NorLanding() {
               </h2>
             </div>
 
-            <p className="max-w-md text-lg md:text-xl font-light leading-relaxed text-nor-cream/80">
+            <p className="max-w-md text-base md:text-xl font-light leading-relaxed text-nor-cream/80">
               Onde a precisão técnica encontra o cuidado artesanal. Uma
               experiência desenhada para quem exige o extraordinário.
             </p>
@@ -245,14 +245,14 @@ function NorLanding() {
                 viewport={{ once: true, margin: "-10%" }}
                 className="group border-b border-nor-cream/15 py-6 flex gap-5 md:border-0 md:py-14 md:gap-14 transition-all duration-500 ease-out md:hover:pl-3 last:border-0 md:last:border-0"
               >
-                <span className="font-display italic font-light text-4xl md:text-5xl leading-none text-nor-beige/70 w-10 md:w-16 shrink-0">
+                <span className="font-display italic font-light text-3xl md:text-5xl leading-none text-nor-beige/70 w-8 md:w-16 shrink-0">
                   {s.n}
                 </span>
                 <div className="space-y-2 md:space-y-3 min-w-0 flex-1">
-                  <h3 className="font-display text-xl md:text-[1.75rem] leading-tight tracking-tight text-nor-cream">
+                  <h3 className="font-display text-lg md:text-[1.75rem] leading-tight tracking-tight text-nor-cream">
                     {s.t}
                   </h3>
-                  <p className="text-nor-cream/70 font-light text-sm md:text-[15px] leading-relaxed max-w-lg">
+                  <p className="text-nor-cream/70 font-light text-[13px] md:text-[15px] leading-relaxed max-w-lg">
                     {s.d}
                   </p>
                 </div>
@@ -267,17 +267,17 @@ function NorLanding() {
         <div className="grid md:grid-cols-12 gap-12 items-center">
           <div className="md:col-span-6">
             <div className="eyebrow text-nor-beige mb-6">— A Experiência</div>
-            <h2 className="font-display text-4xl md:text-6xl leading-[1.05] text-nor-cream">
+            <h2 className="font-display text-2xl sm:text-3xl md:text-6xl leading-[1.15] md:leading-[1.05] text-nor-cream">
               Um ambiente
               <br />
               <span className="italic font-light">para quem exige mais.</span>
             </h2>
-            <p className="mt-8 max-w-md text-nor-cream/75 font-light leading-relaxed">
+            <p className="mt-6 md:mt-8 max-w-md text-sm md:text-base text-nor-cream/75 font-light leading-relaxed">
               Mais atenção, mais precisão, mais cuidado. Cada detalhe pensado
               para quem busca o extraordinário em cada treino.
             </p>
-            <div className="hairline my-12 opacity-40" />
-            <dl className="grid grid-cols-2 gap-10">
+            <div className="hairline my-10 md:my-12 opacity-40" />
+            <dl className="grid grid-cols-2 gap-8 md:gap-10">
               {[
                 { k: "12", l: "Alunos por horário" },
                 { k: "1:5", l: "Proporção professor/aluno" },
@@ -285,8 +285,8 @@ function NorLanding() {
                 { k: "06", l: "Pilares do método" },
               ].map((d) => (
                 <div key={d.l}>
-                  <div className="font-display text-5xl md:text-6xl text-nor-cream">{d.k}</div>
-                  <div className="eyebrow mt-3 text-nor-cream/60">{d.l}</div>
+                  <div className="font-display text-4xl md:text-6xl text-nor-cream">{d.k}</div>
+                  <div className="eyebrow mt-2 md:mt-3 text-nor-cream/60 text-[10px] md:text-xs">{d.l}</div>
                 </div>
               ))}
             </dl>
@@ -334,7 +334,7 @@ function NorLanding() {
                 variants={fadeUp}
                 className="border-t border-nor-cream/20 pt-8"
               >
-                <blockquote className="font-display italic text-2xl md:text-3xl leading-[1.3] text-nor-cream">
+                <blockquote className="font-display italic text-lg md:text-3xl leading-[1.35] md:leading-[1.3] text-nor-cream">
                   “{t.q}”
                 </blockquote>
                 <figcaption className="mt-8 flex items-center gap-4 text-sm">
@@ -357,14 +357,14 @@ function NorLanding() {
         <div className="mx-auto max-w-[1500px] px-6 md:px-10 py-24 md:py-36 grid md:grid-cols-12 gap-12">
           <div className="md:col-span-7">
             <div className="eyebrow text-nor-beige mb-6">— Vagas limitadas</div>
-            <h2 className="font-display text-5xl md:text-7xl leading-[0.98] tracking-[-0.02em] text-nor-cream">
+            <h2 className="font-display text-3xl sm:text-4xl md:text-7xl leading-[1.05] md:leading-[0.98] tracking-[-0.02em] text-nor-cream">
               A NOR abre
               <br />
               <span className="italic font-light">poucas portas</span>
               <br />
               por mês.
             </h2>
-            <p className="mt-8 max-w-lg text-nor-cream/75 font-light leading-relaxed">
+            <p className="mt-6 md:mt-8 max-w-lg text-sm md:text-base text-nor-cream/75 font-light leading-relaxed">
               Reserve uma avaliação sem compromisso. Conheça o espaço, converse
               com nossa equipe e descubra se a NOR é o próximo passo da sua jornada.
             </p>
