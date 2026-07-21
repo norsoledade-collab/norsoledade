@@ -253,9 +253,9 @@ function NorLanding() {
           <div className="lg:col-span-7">
             <div className="grid grid-cols-1 md:grid-cols-3 gap-x-10 gap-y-10 md:gap-y-12">
               {[
-                { n: "I", t: "Exclusividade no atendimento", d: "1 professor para até 5 alunos." },
-                { n: "II", t: "Atendimento multidisciplinar", d: "Personal + plano nutricional inteligente." },
-                { n: "III", t: "Entrega de resultados", d: "Avaliação por bioimpedância + mapa de metas." },
+                { n: "I", t: "Exclusividade em cada treino", d: "1 professor para até 5 alunos, garantindo acompanhamento próximo em todos os momentos." },
+                { n: "II", t: "Método integrado", d: "Treino personalizado aliado a um plano nutricional inteligente para potencializar seus resultados." },
+                { n: "III", t: "Evolução comprovada", d: "Bioimpedância e mapa de metas para acompanhar seu progresso com clareza." },
               ].map((s, i) => (
                 <motion.div
                   key={s.n}
