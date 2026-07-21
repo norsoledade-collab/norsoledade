@@ -113,7 +113,7 @@ function NorLanding() {
           className="max-w-4xl mx-auto"
         >
           <div className="eyebrow text-nor-beige mb-8 text-center">— NOR Academia Boutique</div>
-          <h2 className="font-display text-xl sm:text-2xl md:text-5xl leading-[1.3] md:leading-[1.2] tracking-[-0.01em] text-nor-cream text-left border-l border-nor-cream/40 pl-4 md:pl-6 max-w-2xl mx-auto">
+          <h2 className="font-display text-xl sm:text-2xl md:text-5xl leading-[1.3] md:leading-[1.2] tracking-[-0.01em] text-nor-cream text-left border-l border-nor-cream/40 pl-4 md:pl-6 w-fit mx-auto">
             Somos uma academia boutique<br />
             feita para quem entende que<br />
             <span className="italic font-light">evolução exige método</span>,<br />
