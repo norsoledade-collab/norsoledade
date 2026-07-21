@@ -269,8 +269,8 @@ function NorLanding() {
               <span className="italic font-light">para quem exige mais.</span>
             </h2>
             <p className="mt-8 max-w-md text-nor-cream/75 font-light leading-relaxed">
-              Menos ruído. Menos gente. Menos improviso. Mais atenção, mais
-              precisão, mais cuidado com cada detalhe da sua rotina.
+              Mais atenção, mais precisão, mais cuidado. Cada detalhe pensado
+              para quem busca o extraordinário em cada treino.
             </p>
             <div className="hairline my-12 opacity-40" />
             <dl className="grid grid-cols-2 gap-10">
