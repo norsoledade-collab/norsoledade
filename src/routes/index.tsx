@@ -138,10 +138,11 @@ function NorLanding() {
             muted
             loop
             playsInline
-            preload="auto"
+            preload="none"
             className="absolute inset-0 w-full h-full object-cover"
           />
-          <div className="absolute inset-0 bg-black/40 pointer-events-none" />
+          <div className="absolute inset-0 bg-black/60 pointer-events-none" />
+
         </div>
       </section>
 
