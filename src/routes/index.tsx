@@ -82,7 +82,7 @@ function NorLanding() {
             </motion.h1>
             <motion.p
               variants={fadeUp}
-              className="mt-6 md:mt-8 text-lg sm:text-xl md:text-3xl text-nor-cream/85 font-light max-w-3xl mx-auto leading-snug"
+              className="mt-6 md:mt-8 text-[11px] sm:text-xl md:text-3xl text-nor-cream/85 font-light max-w-3xl mx-auto leading-snug whitespace-nowrap"
             >
               O lugar perfeito para construir a melhor versão de você.
             </motion.p>
