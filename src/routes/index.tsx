@@ -74,13 +74,13 @@ function NorLanding() {
             </motion.div>
             <motion.h1
               variants={fadeUp}
-              className="font-display text-[12vw] md:text-[6.5vw] leading-[0.95] tracking-[-0.02em] text-nor-cream"
+              className="font-display text-[2.5rem] sm:text-6xl md:text-[6.5vw] leading-[1] tracking-[-0.02em] text-nor-cream"
             >
               Cada treino é <span className="italic font-light">único.</span>
             </motion.h1>
             <motion.p
               variants={fadeUp}
-              className="mt-8 text-base md:text-lg text-nor-cream/85 font-light max-w-xl mx-auto"
+              className="mt-6 md:mt-8 text-sm md:text-lg text-nor-cream/85 font-light max-w-xl mx-auto"
             >
               O lugar perfeito para construir a melhor versão de você.
             </motion.p>
