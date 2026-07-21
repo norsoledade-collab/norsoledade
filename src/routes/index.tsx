@@ -245,14 +245,14 @@ function NorLanding() {
                 viewport={{ once: true, margin: "-10%" }}
                 className="group border-b border-nor-cream/15 py-6 flex gap-5 md:border-0 md:py-14 md:gap-14 transition-all duration-500 ease-out md:hover:pl-3 last:border-0 md:last:border-0"
               >
-                <span className="font-display italic font-light text-4xl md:text-5xl leading-none text-nor-beige/70 w-10 md:w-16 shrink-0">
+                <span className="font-display italic font-light text-3xl md:text-5xl leading-none text-nor-beige/70 w-8 md:w-16 shrink-0">
                   {s.n}
                 </span>
                 <div className="space-y-2 md:space-y-3 min-w-0 flex-1">
-                  <h3 className="font-display text-xl md:text-[1.75rem] leading-tight tracking-tight text-nor-cream">
+                  <h3 className="font-display text-lg md:text-[1.75rem] leading-tight tracking-tight text-nor-cream">
                     {s.t}
                   </h3>
-                  <p className="text-nor-cream/70 font-light text-sm md:text-[15px] leading-relaxed max-w-lg">
+                  <p className="text-nor-cream/70 font-light text-[13px] md:text-[15px] leading-relaxed max-w-lg">
                     {s.d}
                   </p>
                 </div>
