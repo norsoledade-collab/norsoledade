@@ -334,7 +334,7 @@ function NorLanding() {
                 variants={fadeUp}
                 className="border-t border-nor-cream/20 pt-8"
               >
-                <blockquote className="font-display italic text-2xl md:text-3xl leading-[1.3] text-nor-cream">
+                <blockquote className="font-display italic text-lg md:text-3xl leading-[1.35] md:leading-[1.3] text-nor-cream">
                   “{t.q}”
                 </blockquote>
                 <figcaption className="mt-8 flex items-center gap-4 text-sm">
