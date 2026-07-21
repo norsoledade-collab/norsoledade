@@ -267,17 +267,17 @@ function NorLanding() {
         <div className="grid md:grid-cols-12 gap-12 items-center">
           <div className="md:col-span-6">
             <div className="eyebrow text-nor-beige mb-6">— A Experiência</div>
-            <h2 className="font-display text-4xl md:text-6xl leading-[1.05] text-nor-cream">
+            <h2 className="font-display text-2xl sm:text-3xl md:text-6xl leading-[1.15] md:leading-[1.05] text-nor-cream">
               Um ambiente
               <br />
               <span className="italic font-light">para quem exige mais.</span>
             </h2>
-            <p className="mt-8 max-w-md text-nor-cream/75 font-light leading-relaxed">
+            <p className="mt-6 md:mt-8 max-w-md text-sm md:text-base text-nor-cream/75 font-light leading-relaxed">
               Mais atenção, mais precisão, mais cuidado. Cada detalhe pensado
               para quem busca o extraordinário em cada treino.
             </p>
-            <div className="hairline my-12 opacity-40" />
-            <dl className="grid grid-cols-2 gap-10">
+            <div className="hairline my-10 md:my-12 opacity-40" />
+            <dl className="grid grid-cols-2 gap-8 md:gap-10">
               {[
                 { k: "12", l: "Alunos por horário" },
                 { k: "1:5", l: "Proporção professor/aluno" },
@@ -285,8 +285,8 @@ function NorLanding() {
                 { k: "06", l: "Pilares do método" },
               ].map((d) => (
                 <div key={d.l}>
-                  <div className="font-display text-5xl md:text-6xl text-nor-cream">{d.k}</div>
-                  <div className="eyebrow mt-3 text-nor-cream/60">{d.l}</div>
+                  <div className="font-display text-4xl md:text-6xl text-nor-cream">{d.k}</div>
+                  <div className="eyebrow mt-2 md:mt-3 text-nor-cream/60 text-[10px] md:text-xs">{d.l}</div>
                 </div>
               ))}
             </dl>
