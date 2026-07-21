@@ -43,9 +43,9 @@
 }
 
 :root {
-  /* Cores oficiais NOR — Manual de Marca */
-  --nor-green: #002B2A;        /* PANTONE 20-0182 TPM */
-  --nor-green-light: #0F4544;  /* tom auxiliar */
+  /* Cores oficiais NOR — Manual de Marca (ajustado para tom mais escuro) */
+  --nor-green: #001A1A;        /* PANTONE 20-0182 TPM, aprofundado */
+  --nor-green-light: #0A2B2A;  /* tom auxiliar mais fechado */
   --nor-cream: #E8E2D0;        /* PANTONE 11-0202 TCX */
   --nor-beige: #D4CBB4;        /* tom auxiliar */
   --nor-brown: #594535;        /* PANTONE 19-1119 TCX */
