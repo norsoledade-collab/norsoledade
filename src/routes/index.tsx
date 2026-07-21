@@ -9,6 +9,7 @@ import heroVideo from "@/assets/nor-hero.mp4.asset.json";
 import personalImg from "@/assets/nor-personal.jpg.asset.json";
 import crossImg from "@/assets/nor-cross.jpg.asset.json";
 import runImg from "@/assets/nor-run.jpg.asset.json";
+import introVideo from "@/assets/nor-intro.mp4.asset.json";
 
 export const Route = createFileRoute("/")({
   component: NorLanding,
@@ -127,6 +128,25 @@ function NorLanding() {
           <div className="hairline max-w-24 mx-auto mt-14 opacity-40" />
         </motion.div>
       </section>
+
+      {/* VÍDEO INSTITUCIONAL */}
+      <section className="w-full">
+        <div className="mx-auto max-w-[1500px] px-6 md:px-10 pb-24 md:pb-36">
+          <div className="relative w-full aspect-video overflow-hidden">
+            <video
+              src={introVideo.url}
+              autoPlay
+              muted
+              loop
+              playsInline
+              preload="metadata"
+              className="absolute inset-0 w-full h-full object-cover"
+            />
+            <div className="absolute inset-0 bg-black/15 pointer-events-none" />
+          </div>
+        </div>
+      </section>
+
 
       {/* PROGRAMAS — 3 cards com foto (padrão Unique) */}
       <section id="programas" className="mx-auto max-w-[1500px] px-6 md:px-10 pb-24 md:pb-36">
