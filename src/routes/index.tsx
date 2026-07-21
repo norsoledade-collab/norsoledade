@@ -223,11 +223,8 @@ function NorLanding() {
             viewport={{ once: true, margin: "-10%" }}
             className="lg:col-span-5 lg:sticky lg:top-28 space-y-12"
           >
-            <div className="space-y-8">
-              <div className="flex items-center gap-4">
-                <span className="h-px w-10 bg-nor-beige/60" />
-                <span className="eyebrow text-nor-beige">Método NOR</span>
-              </div>
+            <div className="border-l border-nor-cream/40 pl-4 md:pl-6 space-y-8">
+              <div className="eyebrow text-nor-beige">— Método NOR</div>
               <h2 className="font-display italic font-light text-[2.5rem] sm:text-6xl md:text-7xl lg:text-[6.5rem] leading-[0.95] md:leading-[0.88] tracking-tight text-nor-cream">
                 Uma
                 <br />
@@ -235,12 +232,12 @@ function NorLanding() {
                 <br />
                 única
               </h2>
+              <p className="max-w-md text-base md:text-xl font-light leading-relaxed text-nor-cream/80">
+                Onde a precisão técnica encontra o cuidado artesanal. Uma
+                experiência desenhada para quem exige o extraordinário.
+              </p>
             </div>
 
-            <p className="max-w-md text-base md:text-xl font-light leading-relaxed text-nor-cream/80">
-              Onde a precisão técnica encontra o cuidado artesanal. Uma
-              experiência desenhada para quem exige o extraordinário.
-            </p>
 
             <div className="relative w-full aspect-[3/4] overflow-hidden border border-nor-cream/10 group">
               <img
