@@ -357,14 +357,14 @@ function NorLanding() {
         <div className="mx-auto max-w-[1500px] px-6 md:px-10 py-24 md:py-36 grid md:grid-cols-12 gap-12">
           <div className="md:col-span-7">
             <div className="eyebrow text-nor-beige mb-6">— Vagas limitadas</div>
-            <h2 className="font-display text-5xl md:text-7xl leading-[0.98] tracking-[-0.02em] text-nor-cream">
+            <h2 className="font-display text-3xl sm:text-4xl md:text-7xl leading-[1.05] md:leading-[0.98] tracking-[-0.02em] text-nor-cream">
               A NOR abre
               <br />
               <span className="italic font-light">poucas portas</span>
               <br />
               por mês.
             </h2>
-            <p className="mt-8 max-w-lg text-nor-cream/75 font-light leading-relaxed">
+            <p className="mt-6 md:mt-8 max-w-lg text-sm md:text-base text-nor-cream/75 font-light leading-relaxed">
               Reserve uma avaliação sem compromisso. Conheça o espaço, converse
               com nossa equipe e descubra se a NOR é o próximo passo da sua jornada.
             </p>
