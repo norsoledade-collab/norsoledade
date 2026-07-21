@@ -10,6 +10,8 @@ import personalImg from "@/assets/nor-personal.jpg.asset.json";
 import crossImg from "@/assets/nor-cross.jpg.asset.json";
 import runImg from "@/assets/nor-run.jpg.asset.json";
 import introVideo from "@/assets/nor-intro.mp4.asset.json";
+import footerLogo from "@/assets/nor-footer-logo.jpeg.asset.json";
+
 
 export const Route = createFileRoute("/")({
   component: NorLanding,
