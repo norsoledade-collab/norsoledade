@@ -224,7 +224,7 @@ function NorLanding() {
           </motion.div>
 
           {/* Pillars column */}
-          <div className="lg:col-span-7 grid grid-cols-2 gap-x-4 gap-y-6 md:block md:divide-y md:divide-nor-cream/15">
+          <div className="lg:col-span-7 md:divide-y md:divide-nor-cream/15">
             {[
               { n: "I", t: "Professor acompanha todo o treino", d: "Presença ativa do início ao fim, corrigindo, motivando e garantindo sua segurança em cada movimento." },
               { n: "II", t: "Até 5 alunos por professor", d: "Grupos reduzidos que permitem atenção individualizada e correção personalizada para cada aluno." },
@@ -239,16 +239,16 @@ function NorLanding() {
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.9, delay: i * 0.06, ease: [0.22, 1, 0.36, 1] }}
                 viewport={{ once: true, margin: "-10%" }}
-                className="group border border-nor-cream/15 p-5 flex flex-col gap-2 md:border-0 md:p-0 md:py-14 md:flex-row md:gap-14 transition-all duration-500 ease-out md:hover:pl-3"
+                className="group border-b border-nor-cream/15 py-6 flex gap-5 md:border-0 md:py-14 md:gap-14 transition-all duration-500 ease-out md:hover:pl-3 last:border-0 md:last:border-0"
               >
-                <span className="font-display italic font-light text-3xl md:text-5xl leading-none text-nor-beige/70 md:w-16 shrink-0">
+                <span className="font-display italic font-light text-4xl md:text-5xl leading-none text-nor-beige/70 w-10 md:w-16 shrink-0">
                   {s.n}
                 </span>
-                <div className="space-y-2 md:space-y-3 min-w-0">
-                  <h3 className="font-display text-lg md:text-[1.75rem] leading-tight tracking-tight text-nor-cream">
+                <div className="space-y-2 md:space-y-3 min-w-0 flex-1">
+                  <h3 className="font-display text-xl md:text-[1.75rem] leading-tight tracking-tight text-nor-cream">
                     {s.t}
                   </h3>
-                  <p className="hidden md:block max-w-lg text-nor-cream/70 font-light text-[15px] leading-relaxed">
+                  <p className="text-nor-cream/70 font-light text-sm md:text-[15px] leading-relaxed max-w-lg">
                     {s.d}
                   </p>
                 </div>
