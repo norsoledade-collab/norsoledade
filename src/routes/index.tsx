@@ -141,7 +141,7 @@ function NorLanding() {
             preload="auto"
             className="absolute inset-0 w-full h-full object-cover"
           />
-          <div className="absolute inset-0 bg-black/15 pointer-events-none" />
+          <div className="absolute inset-0 bg-black/40 pointer-events-none" />
         </div>
       </section>
 
