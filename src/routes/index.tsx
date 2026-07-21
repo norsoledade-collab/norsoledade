@@ -266,7 +266,7 @@ function NorLanding() {
             <h2 className="font-display text-4xl md:text-6xl leading-[1.05] text-nor-cream">
               Um ambiente
               <br />
-              <span className="italic font-light">para quem escolhe menos.</span>
+              <span className="italic font-light">para quem exige mais.</span>
             </h2>
             <p className="mt-8 max-w-md text-nor-cream/75 font-light leading-relaxed">
               Menos ruído. Menos gente. Menos improviso. Mais atenção, mais
