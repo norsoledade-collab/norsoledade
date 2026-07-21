@@ -129,10 +129,10 @@ function NorLanding() {
         <div className="text-center mb-24 md:mb-32">
 
           <div className="eyebrow text-nor-beige mb-6">— Nossos Programas</div>
-          <h2 className="font-display text-4xl md:text-6xl leading-[1.05] text-nor-cream">
+          <h2 className="font-display text-2xl sm:text-3xl md:text-6xl leading-[1.15] md:leading-[1.05] text-nor-cream">
             Liderados por <span className="italic font-light">especialistas.</span>
           </h2>
-          <p className="mt-6 max-w-2xl mx-auto text-nor-cream/75 font-light">
+          <p className="mt-5 md:mt-6 max-w-2xl mx-auto text-sm md:text-base text-nor-cream/75 font-light">
             Modalidades pensadas para cada objetivo, cada corpo e cada etapa da vida.
             Uma experiência personalizada, do primeiro treino ao seu melhor resultado.
           </p>
