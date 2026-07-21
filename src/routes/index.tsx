@@ -10,7 +10,7 @@ import personalImg from "@/assets/nor-personal.jpg.asset.json";
 import crossImg from "@/assets/nor-cross.jpg.asset.json";
 import runImg from "@/assets/nor-run.jpg.asset.json";
 import introVideo from "@/assets/nor-intro.mp4.asset.json";
-import footerLogo from "@/assets/nor-footer-logo.jpeg.asset.json";
+import footerLogo from "@/assets/nor-footer-logo-transparent.png.asset.json";
 
 
 export const Route = createFileRoute("/")({
@@ -414,7 +414,7 @@ function NorLanding() {
       <footer className="border-t border-nor-cream/10">
         <div className="mx-auto max-w-[1500px] px-6 md:px-10 py-12 flex flex-col md:flex-row items-start md:items-center justify-between gap-8">
           <div>
-            <img src={footerLogo.url} alt="NOR" className="h-14 md:h-16 w-auto" />
+            <img src={footerLogo.url} alt="NOR" className="h-8 md:h-10 w-auto" />
             <p className="mt-3 text-xs uppercase tracking-[0.28em] text-nor-cream/50">
               Academia Boutique
             </p>
