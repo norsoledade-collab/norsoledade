@@ -10,6 +10,8 @@ import personalImg from "@/assets/nor-personal.jpg.asset.json";
 import crossImg from "@/assets/nor-cross.jpg.asset.json";
 import runImg from "@/assets/nor-run.jpg.asset.json";
 import introVideo from "@/assets/nor-intro.mp4.asset.json";
+import footerLogo from "@/assets/nor-footer-logo.jpeg.asset.json";
+
 
 export const Route = createFileRoute("/")({
   component: NorLanding,
@@ -412,11 +414,12 @@ function NorLanding() {
       <footer className="border-t border-nor-cream/10">
         <div className="mx-auto max-w-[1500px] px-6 md:px-10 py-12 flex flex-col md:flex-row items-start md:items-center justify-between gap-8">
           <div>
-            <div className="font-display text-3xl tracking-[0.32em] text-nor-cream">NOR</div>
+            <img src={footerLogo.url} alt="NOR" className="h-14 md:h-16 w-auto" />
             <p className="mt-3 text-xs uppercase tracking-[0.28em] text-nor-cream/50">
               Academia Boutique
             </p>
           </div>
+
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-8 text-[11px] sm:text-xs tracking-[0.08em] text-nor-cream/70 normal-case w-full md:w-auto">
             <div className="min-w-0 break-words">
               <div className="eyebrow text-nor-beige mb-2">Endereço</div>
