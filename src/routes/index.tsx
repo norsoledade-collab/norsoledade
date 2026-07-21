@@ -289,14 +289,14 @@ function NorLanding() {
           </div>
           <div className="md:col-span-6 grid grid-cols-2 gap-4">
             <img
-              src={experienceImg}
-              alt="Treino personalizado"
+              src={experienceImg.url}
+              alt="Interior da NOR"
               loading="lazy"
               className="w-full h-[420px] md:h-[560px] object-cover"
             />
             <img
-              src={detailImg}
-              alt="Detalhe boutique"
+              src={detailImg.url}
+              alt="Fachada da NOR"
               loading="lazy"
               className="w-full h-[420px] md:h-[560px] object-cover mt-16"
             />
