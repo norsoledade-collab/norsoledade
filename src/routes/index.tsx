@@ -147,7 +147,7 @@ function NorLanding() {
             loop
             playsInline
             preload="none"
-            className="absolute inset-0 w-full h-full object-cover"
+            className="absolute inset-0 w-full h-full object-cover scale-125"
           />
           <div className="absolute inset-0 bg-gradient-to-t from-nor-green/40 to-transparent pointer-events-none" />
 
