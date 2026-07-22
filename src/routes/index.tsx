@@ -65,8 +65,7 @@ function NorLanding() {
           aria-label="Interior da NOR Academia Boutique"
           className="absolute inset-0 w-full h-full object-cover object-center"
         />
-        <div className="absolute inset-0 bg-gradient-to-b from-nor-green/70 via-nor-green/55 to-nor-green/95" />
-        <div className="absolute inset-0 bg-black/25" />
+        <div className="absolute inset-0 bg-gradient-to-t from-nor-green/60 via-nor-green/20 to-transparent" />
 
         <div className="relative z-10 mx-auto max-w-[1500px] px-6 md:px-10 min-h-screen flex flex-col items-center justify-start pt-[45vh] md:justify-center md:pt-0 text-center">
           <motion.div
@@ -150,7 +149,7 @@ function NorLanding() {
             preload="none"
             className="absolute inset-0 w-full h-full object-cover"
           />
-          <div className="absolute inset-0 bg-black/60 pointer-events-none" />
+          <div className="absolute inset-0 bg-gradient-to-t from-nor-green/40 to-transparent pointer-events-none" />
 
         </div>
       </section>
