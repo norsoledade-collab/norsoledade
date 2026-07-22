@@ -64,7 +64,9 @@ function NorLanding() {
           preload="metadata"
           aria-label="Interior da NOR Academia Boutique"
           className="absolute inset-0 w-full h-full object-cover object-center scale-125"
+          style={{ filter: "saturate(1.25) contrast(1.12) brightness(0.95) sepia(0.18) hue-rotate(-8deg)" }}
         />
+        <div className="absolute inset-0 bg-[#3a1e00] mix-blend-color opacity-20 pointer-events-none" />
         <div className="absolute inset-0 bg-gradient-to-t from-nor-green/60 via-nor-green/20 to-transparent" />
 
         <div className="relative z-10 mx-auto max-w-[1500px] px-6 md:px-10 min-h-screen flex flex-col items-center justify-start pt-[45vh] md:justify-center md:pt-0 text-center">
@@ -148,7 +150,9 @@ function NorLanding() {
             playsInline
             preload="none"
             className="absolute inset-0 w-full h-full object-cover scale-125"
+            style={{ filter: "saturate(1.25) contrast(1.12) brightness(0.95) sepia(0.18) hue-rotate(-8deg)" }}
           />
+          <div className="absolute inset-0 bg-[#3a1e00] mix-blend-color opacity-20 pointer-events-none" />
           <div className="absolute inset-0 bg-gradient-to-t from-nor-green/40 to-transparent pointer-events-none" />
 
         </div>
