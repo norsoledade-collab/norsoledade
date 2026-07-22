@@ -149,7 +149,7 @@ function NorLanding() {
             preload="none"
             className="absolute inset-0 w-full h-full object-cover"
           />
-          <div className="absolute inset-0 bg-black/60 pointer-events-none" />
+          <div className="absolute inset-0 bg-gradient-to-t from-nor-green/40 to-transparent pointer-events-none" />
 
         </div>
       </section>
