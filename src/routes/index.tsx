@@ -67,31 +67,32 @@ function NorLanding() {
           style={{ filter: "saturate(1.25) contrast(1.12) brightness(0.95) sepia(0.18) hue-rotate(-8deg)" }}
         />
         <div className="absolute inset-0 bg-[#3a1e00] mix-blend-color opacity-20 pointer-events-none" />
-        <div className="absolute inset-0 bg-gradient-to-t from-nor-green/60 via-nor-green/20 to-transparent" />
+        <div className="absolute inset-0 bg-gradient-to-t from-nor-green/70 via-nor-green/30 to-nor-green/20" />
 
         <div className="relative z-10 mx-auto max-w-[1500px] px-6 md:px-10 min-h-screen flex flex-col items-center justify-start pt-[45vh] md:justify-center md:pt-0 text-center">
           <motion.div
             initial="hidden"
             animate="show"
             variants={{ show: { transition: { staggerChildren: 0.18 } } }}
-            className="max-w-4xl"
+            className="max-w-4xl [text-shadow:0_2px_18px_rgba(0,0,0,0.55)]"
           >
-            <motion.div variants={fadeUp} className="eyebrow text-nor-beige mb-8 whitespace-nowrap text-[9px] sm:text-xs">
+            <motion.div variants={fadeUp} className="eyebrow text-nor-cream mb-8 whitespace-nowrap text-[9px] sm:text-xs">
               NOR Academia Boutique
             </motion.div>
             <motion.h1
               variants={fadeUp}
-              className="font-display text-[2rem] sm:text-6xl md:text-[6.5vw] leading-[1] tracking-[-0.02em] text-nor-cream whitespace-nowrap"
+              className="font-display text-[2rem] sm:text-6xl md:text-[6.5vw] leading-[1] tracking-[-0.02em] text-white whitespace-nowrap"
             >
               Cada treino é <span className="italic font-light">único.</span>
             </motion.h1>
             <motion.p
               variants={fadeUp}
-              className="mt-6 md:mt-8 text-xl sm:text-2xl md:text-4xl text-nor-cream/85 font-light max-w-3xl mx-auto leading-snug"
+              className="mt-6 md:mt-8 text-xl sm:text-2xl md:text-4xl text-nor-cream font-light max-w-3xl mx-auto leading-snug"
             >
               O lugar perfeito para construir<br />
               a melhor versão de você.
             </motion.p>
+
           </motion.div>
         </div>
 
