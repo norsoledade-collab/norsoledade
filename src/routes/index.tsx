@@ -164,53 +164,17 @@ function NorLanding() {
           </div>
         </div>
 
-        <div className="grid md:grid-cols-3 gap-6">
-          {[
-            {
-              img: personalImg.url,
-              tag: "Musculação",
-              t: "NOR Personal",
-              d: "Treinamento personalizado com acompanhamento próximo em grupos de até 5 alunos. Sessões planejadas conforme seus objetivos, com avaliações periódicas e ajustes constantes para um processo seguro, eficiente e consistente.",
-            },
-            {
-              img: crossImg.url,
-              tag: "Funcional",
-              t: "NOR Cross",
-              d: "Metodologia que combina força, condicionamento, mobilidade e resistência em sessões dinâmicas. Cada treino é adaptado ao seu nível, elevando capacidade física e qualidade de movimento.",
-            },
-            {
-              img: runImg.url,
-              tag: "Clube de Corrida",
-              t: "Clube de Corrida NOR",
-              d: "Mais do que correr: uma experiência de comunidade e evolução. Treinos orientados para desenvolver performance e compartilhar a jornada com quem tem o mesmo propósito.",
-            },
-          ].map((p, i) => (
-            <motion.article
-              key={p.t}
-              initial={{ opacity: 0, x: -80 }}
-              whileInView={{ opacity: 1, x: 0 }}
-              viewport={{ once: true, margin: "-80px" }}
-              transition={{ duration: 1, delay: i * 0.2, ease: [0.22, 1, 0.36, 1] }}
-
-              className="group flex flex-col bg-nor-green"
-            >
-              <div className="p-7 md:p-10 min-h-[240px] md:min-h-[280px] flex flex-col justify-center">
-                <h3 className="font-display text-2xl md:text-4xl text-nor-cream">{p.t}</h3>
-                <p className="mt-4 md:mt-5 text-[13px] md:text-sm text-nor-cream/75 font-light leading-relaxed">
-                  {p.d}
-                </p>
-              </div>
-              <div className="aspect-[4/5] overflow-hidden">
-                <img
-                  src={p.img}
-                  alt={p.t}
-                  loading="lazy"
-                  className="w-full h-full object-cover transition-transform duration-[1400ms] ease-out group-hover:scale-105"
-                />
-              </div>
-            </motion.article>
-          ))}
-        </div>
+        <motion.div
+          initial="hidden"
+          whileInView="show"
+          viewport={{ once: true, margin: "-100px" }}
+          variants={fadeUp}
+          className="max-w-3xl mx-auto"
+        >
+          <p className="text-base md:text-xl text-nor-cream/85 font-light leading-relaxed md:leading-[1.7] text-left">
+            Muitas pessoas acreditam que não conseguem manter uma rotina de treinos por falta de disciplina. Mas, em muitos casos, o verdadeiro problema está na ausência de acompanhamento. Você recebe uma ficha pronta, aprende alguns exercícios e depois precisa continuar sozinho. Ninguém percebe quando sua execução está errada. Ninguém acompanha sua frequência. Ninguém verifica se o treino ainda faz sentido. Ninguém mostra, com dados, se você realmente está evoluindo. Com o tempo, surgem a insegurança, a falta de motivação e a sensação de que todo o esforço não está trazendo resultado.
+          </p>
+        </motion.div>
       </section>
 
       {/* MÉTODO — sensory editorial grid */}
