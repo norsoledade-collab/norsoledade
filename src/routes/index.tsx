@@ -126,6 +126,20 @@ function NorLanding() {
               Na NOR, você não recebe uma ficha genérica para depois se virar sozinho. Cada aluno conta com <span className="italic font-light">planejamento individual</span>, professor presente durante toda a sessão, nutrição integrada, avaliações mensais e ajustes constantes. Até 5 alunos por professor. <span className="italic font-light">Atenção individual do início ao fim.</span>
             </h2>
           </div>
+          <div className="mt-12 flex flex-col items-center gap-4 text-center">
+            <a
+              href="https://wa.me/5554993835053?text=Ol%C3%A1%2C%20quero%20conhecer%20o%20M%C3%A9todo%20NOR"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="group inline-flex items-center gap-3 bg-nor-cream text-nor-green px-8 py-4 text-[11px] uppercase tracking-[0.28em] font-medium hover:bg-nor-beige transition-colors"
+            >
+              Quero conhecer o Método NOR
+              <span className="inline-block w-6 h-px bg-nor-green transition-all group-hover:w-10" />
+            </a>
+            <p className="text-xs md:text-sm text-nor-cream/70 font-light max-w-md">
+              Aula experimental para conhecer nossa estrutura, atendimento e metodologia.
+            </p>
+          </div>
           <div className="hairline max-w-24 mx-auto mt-14 opacity-40" />
         </motion.div>
       </section>
