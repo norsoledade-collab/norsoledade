@@ -144,7 +144,7 @@ function NorLanding() {
       <section className="w-full pb-24 md:pb-36">
         <div className="relative w-screen h-[85vh] md:h-[90vh] overflow-hidden">
           <video
-            src={introVideo.url}
+            src={introVideo}
             autoPlay
             muted
             loop
