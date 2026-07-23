@@ -266,7 +266,7 @@ function NorLanding() {
       {/* EXPERIÊNCIA */}
       <section id="experiencia" className="mx-auto max-w-[1500px] px-6 md:px-10 py-24 md:py-36">
         <div className="max-w-4xl mx-auto">
-          <div className="eyebrow text-nor-beige mb-6">— A Experiência</div>
+          
           <h2 className="font-display text-2xl sm:text-3xl md:text-6xl leading-[1.15] md:leading-[1.05] text-nor-cream">
             Foi para mudar essa experiência que a{" "}
             <span className="italic font-light">NOR criou uma forma diferente de treinar.</span>
