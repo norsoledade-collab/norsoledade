@@ -55,7 +55,7 @@ function NorLanding() {
       <section id="top" className="relative min-h-screen w-full overflow-hidden">
         {/* [VÍDEO A SUBSTITUIR — inserir arquivo .mp4 da academia aqui] */}
         <video
-          src={heroVideo.url}
+          src={heroVideo}
           poster={heroImg}
           autoPlay
           muted
