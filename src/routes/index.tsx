@@ -153,7 +153,7 @@ function NorLanding() {
 
       {/* PROGRAMAS — 3 cards com foto (padrão Unique) */}
       <section id="programas" className="mx-auto max-w-[1500px] px-6 md:px-10 pb-24 md:pb-36">
-        <div className="mb-24 md:mb-32">
+        <div className="mb-10 md:mb-14">
           <div className="border-l border-nor-cream/40 pl-4 md:pl-6 w-fit mx-auto text-left">
             
             <h2 className="font-display text-2xl sm:text-3xl md:text-6xl leading-[1.15] md:leading-[1.05] text-nor-cream">
@@ -174,6 +174,20 @@ function NorLanding() {
           <p className="text-base md:text-xl text-nor-cream/85 font-light leading-relaxed md:leading-[1.7] text-left">
             Muitas pessoas acreditam que não conseguem manter uma rotina de treinos por falta de disciplina. Mas, em muitos casos, o verdadeiro problema está na ausência de acompanhamento. Você recebe uma ficha pronta, aprende alguns exercícios e depois precisa continuar sozinho. Ninguém percebe quando sua execução está errada. Ninguém acompanha sua frequência. Ninguém verifica se o treino ainda faz sentido. Ninguém mostra, com dados, se você realmente está evoluindo. Com o tempo, surgem a insegurança, a falta de motivação e a sensação de que todo o esforço não está trazendo resultado.
           </p>
+        </motion.div>
+
+        <motion.div
+          initial="hidden"
+          whileInView="show"
+          viewport={{ once: true, margin: "-100px" }}
+          variants={fadeUp}
+          className="max-w-3xl mx-auto mt-16 md:mt-24"
+        >
+          <blockquote className="border-l-2 border-nor-beige pl-6 md:pl-8 font-display italic font-light text-xl sm:text-2xl md:text-4xl leading-[1.25] md:leading-[1.2] text-nor-cream">
+            Talvez não tenha faltado vontade.
+            <br />
+            Talvez tenha faltado <span className="text-nor-beige">método, atenção e acompanhamento.</span>
+          </blockquote>
         </motion.div>
       </section>
 
