@@ -5,11 +5,11 @@ import methodImg from "@/assets/nor-method.jpg";
 import experienceImg from "@/assets/nor-interior.jpg.asset.json";
 import detailImg from "@/assets/nor-fachada.jpg.asset.json";
 import norLogo from "@/assets/nor-logo.jpeg.asset.json";
-import heroVideo from "@/assets/nor-hero.mp4.asset.json";
+import heroVideo from "@/assets/nor-hero.mp4";
 import personalImg from "@/assets/nor-personal.jpg.asset.json";
 import crossImg from "@/assets/nor-cross.jpg.asset.json";
 import runImg from "@/assets/nor-run.jpg.asset.json";
-import introVideo from "@/assets/nor-intro.mp4.asset.json";
+import introVideo from "@/assets/nor-intro.mp4";
 import footerLogo from "@/assets/nor-footer-logo-transparent.png.asset.json";
 
 
@@ -55,7 +55,7 @@ function NorLanding() {
       <section id="top" className="relative min-h-screen w-full overflow-hidden">
         {/* [VÍDEO A SUBSTITUIR — inserir arquivo .mp4 da academia aqui] */}
         <video
-          src={heroVideo.url}
+          src={heroVideo}
           poster={heroImg}
           autoPlay
           muted
@@ -144,7 +144,7 @@ function NorLanding() {
       <section className="w-full pb-24 md:pb-36">
         <div className="relative w-screen h-[85vh] md:h-[90vh] overflow-hidden">
           <video
-            src={introVideo.url}
+            src={introVideo}
             autoPlay
             muted
             loop
