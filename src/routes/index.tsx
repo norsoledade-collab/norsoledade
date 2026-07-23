@@ -207,10 +207,39 @@ function NorLanding() {
               <h2 className="font-display italic font-light text-[2rem] sm:text-5xl md:text-6xl lg:text-7xl leading-[1.05] md:leading-[1] tracking-tight text-nor-cream">
                 O que acontece quando você treina sem direção?
               </h2>
-              <p className="max-w-md text-sm md:text-xl font-light leading-relaxed text-nor-cream/80">
-                Onde a precisão técnica encontra o cuidado artesanal. Uma
-                experiência desenhada para quem exige o extraordinário.
-              </p>
+              <ul className="max-w-md space-y-6 md:space-y-7 text-nor-cream/80">
+                {[
+                  {
+                    title: "Treinos genéricos",
+                    desc: "O mesmo planejamento é utilizado para pessoas com objetivos, históricos e limitações completamente diferentes.",
+                  },
+                  {
+                    title: "Execuções incorretas",
+                    desc: "Sem um professor próximo, pequenos erros podem comprometer o exercício, diminuir sua eficiência e aumentar o risco de desconfortos ou lesões.",
+                  },
+                  {
+                    title: "Falta de constância",
+                    desc: "Quando ninguém acompanha sua rotina e seus resultados, torna-se muito mais fácil perder a motivação e desistir.",
+                  },
+                  {
+                    title: "Resultados difíceis de perceber",
+                    desc: "Sem avaliações periódicas, você não sabe com clareza o que evoluiu e o que ainda precisa ser ajustado.",
+                  },
+                  {
+                    title: "Meses no mesmo treino",
+                    desc: "O corpo evolui, mas o planejamento continua igual. Isso reduz o estímulo e pode fazer você estagnar.",
+                  },
+                ].map((item) => (
+                  <li key={item.title} className="border-t border-nor-cream/15 pt-5 md:pt-6">
+                    <h3 className="font-display italic text-xl md:text-2xl text-nor-cream mb-2">
+                      {item.title}
+                    </h3>
+                    <p className="text-sm md:text-base font-light leading-relaxed">
+                      {item.desc}
+                    </p>
+                  </li>
+                ))}
+              </ul>
             </div>
 
 
