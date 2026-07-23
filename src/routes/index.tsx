@@ -155,7 +155,7 @@ function NorLanding() {
       <section id="programas" className="mx-auto max-w-[1500px] px-6 md:px-10 pb-24 md:pb-36">
         <div className="mb-24 md:mb-32">
           <div className="border-l border-nor-cream/40 pl-4 md:pl-6 w-fit mx-auto text-left">
-            <div className="eyebrow text-nor-beige mb-6">— Nossos Programas</div>
+            
             <h2 className="font-display text-2xl sm:text-3xl md:text-6xl leading-[1.15] md:leading-[1.05] text-nor-cream">
               Você já começou uma academia e <span className="italic font-light">desistiu depois de algumas semanas?</span>
             </h2>
