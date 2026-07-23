@@ -5,7 +5,7 @@ import methodImg from "@/assets/nor-method.jpg";
 import experienceImg from "@/assets/nor-interior.jpg.asset.json";
 import detailImg from "@/assets/nor-fachada.jpg.asset.json";
 import norLogo from "@/assets/nor-logo.jpeg.asset.json";
-import heroVideo from "@/assets/nor-hero.mp4.asset.json";
+import heroVideo from "@/assets/nor-hero.mp4";
 import personalImg from "@/assets/nor-personal.jpg.asset.json";
 import crossImg from "@/assets/nor-cross.jpg.asset.json";
 import runImg from "@/assets/nor-run.jpg.asset.json";
