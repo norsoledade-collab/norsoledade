@@ -295,44 +295,71 @@ function NorLanding() {
       </section>
 
 
-      {/* DEPOIMENTOS */}
+      {/* MÉTODO — 6 PILARES */}
       <section className="border-t border-nor-cream/10">
         <div className="mx-auto max-w-[1500px] px-6 md:px-10 py-24 md:py-36">
-          <div className="eyebrow text-nor-beige mb-16 text-center">— Vozes NOR</div>
-          <div className="grid md:grid-cols-2 gap-16">
+          <div className="eyebrow text-nor-beige mb-10 md:mb-12">— A experiência NOR</div>
+          <motion.h2
+            initial="hidden"
+            whileInView="show"
+            viewport={{ once: true, margin: "-100px" }}
+            variants={fadeUp}
+            className="font-display text-3xl sm:text-4xl md:text-6xl lg:text-7xl leading-[1.05] md:leading-[0.98] tracking-[-0.02em] text-nor-cream max-w-5xl"
+          >
+            Um método construído
+            <br />
+            <span className="italic font-light">para acompanhar sua evolução.</span>
+          </motion.h2>
+
+          <div className="mt-16 md:mt-24 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-x-10 md:gap-x-14 gap-y-12 md:gap-y-16">
             {[
               {
-                q: "É a primeira vez em anos que o treino se encaixa em quem eu sou, e não o contrário. A NOR entende ritmo.",
-                a: "Camila R.",
-                r: "Aluna há 8 meses",
+                n: "01",
+                t: "Professor durante todo o treino",
+                d: "O professor permanece presente do início ao fim da sessão. Ele orienta, corrige os movimentos, acompanha sua execução e ajuda você a manter o foco durante o treino. Você não recebe apenas uma explicação inicial para depois continuar sozinho.",
               },
               {
-                q: "O acompanhamento é minucioso. Você sente que existe um plano, e que alguém está olhando por ele todos os dias.",
-                a: "Rafael M.",
-                r: "Aluno há 1 ano",
+                n: "02",
+                t: "Até 5 alunos por professor",
+                d: "A proporção máxima de cinco alunos por professor permite oferecer uma atenção que não seria possível em grupos grandes. Isso significa mais proximidade, mais correções e mais direcionamento durante toda a sessão.",
               },
-            ].map((t) => (
-              <motion.figure
-                key={t.a}
-                initial="hidden"
-                whileInView="show"
-                viewport={{ once: true, margin: "-80px" }}
-                variants={fadeUp}
-                className="border-t border-nor-cream/20 pt-8"
+              {
+                n: "03",
+                t: "Planejamento individual",
+                d: "Seu treino é construído de acordo com seu objetivo, seu histórico, sua rotina e o momento atual do seu corpo. Na NOR, você não precisa se adaptar a um planejamento genérico. O planejamento é desenvolvido para se adaptar a você.",
+              },
+              {
+                n: "04",
+                t: "Nutrição inteligente",
+                d: "O plano nutricional é integrado ao programa de treinamento. Assim, treino e alimentação trabalham em conjunto, criando uma estratégia mais coerente com o resultado que você deseja alcançar.",
+              },
+              {
+                n: "05",
+                t: "Bioimpedância mensal",
+                d: "Todos os meses, sua evolução é acompanhada por meio da bioimpedância. A avaliação fornece dados sobre a composição corporal e permite entender como seu corpo está respondendo ao processo. Aqui, sua evolução não depende apenas do espelho ou de percepções subjetivas. Ela é acompanhada por números.",
+              },
+              {
+                n: "06",
+                t: "Ajustes constantes",
+                d: "Seu programa não permanece igual indefinidamente. Com base nas avaliações, no seu desempenho e na sua evolução, o planejamento é revisado e ajustado periodicamente. O método evolui junto com você.",
+              },
+            ].map((p, i) => (
+              <motion.div
+                key={p.n}
+                initial={{ opacity: 0, y: 40 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true, margin: "-60px" }}
+                transition={{ duration: 0.7, ease: [0.22, 1, 0.36, 1], delay: (i % 3) * 0.1 }}
+                className="border-t border-nor-cream/20 pt-6"
               >
-                <blockquote className="font-display italic text-lg md:text-3xl leading-[1.35] md:leading-[1.3] text-nor-cream">
-                  “{t.q}”
-                </blockquote>
-                <figcaption className="mt-8 flex items-center gap-4 text-sm">
-                  <span className="w-10 h-10 rounded-full bg-nor-cream text-nor-green inline-flex items-center justify-center font-display">
-                    {t.a[0]}
-                  </span>
-                  <div>
-                    <div className="font-medium text-nor-cream">{t.a}</div>
-                    <div className="text-nor-cream/60 text-xs uppercase tracking-[0.2em] mt-1">{t.r}</div>
-                  </div>
-                </figcaption>
-              </motion.figure>
+                <div className="font-display text-nor-beige/80 text-sm tracking-[0.2em] mb-4">{p.n}</div>
+                <h3 className="font-display italic font-light text-2xl md:text-3xl leading-tight text-nor-cream mb-4">
+                  {p.t}
+                </h3>
+                <p className="text-sm md:text-base text-nor-cream/75 font-light leading-relaxed">
+                  {p.d}
+                </p>
+              </motion.div>
             ))}
           </div>
         </div>
