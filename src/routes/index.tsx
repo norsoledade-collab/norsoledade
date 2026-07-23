@@ -365,57 +365,35 @@ function NorLanding() {
         </div>
       </section>
 
-      {/* CTA / CONTATO */}
+      {/* CTA / BENEFÍCIOS */}
       <section id="contato" className="border-t border-nor-cream/10">
-        <div className="mx-auto max-w-[1500px] px-6 md:px-10 py-24 md:py-36 grid md:grid-cols-12 gap-12">
-          <div className="md:col-span-7">
-            <div className="eyebrow text-nor-beige mb-6">— Vagas limitadas</div>
-            <h2 className="font-display text-3xl sm:text-4xl md:text-7xl leading-[1.05] md:leading-[0.98] tracking-[-0.02em] text-nor-cream">
-              A NOR abre
-              <br />
-              <span className="italic font-light">poucas portas</span>
-              <br />
-              por mês.
+        <div className="mx-auto max-w-[1500px] px-6 md:px-10 py-24 md:py-36">
+          <div className="max-w-4xl">
+            <h2 className="font-display text-3xl sm:text-4xl md:text-6xl leading-[1.05] md:leading-[0.98] tracking-[-0.02em] text-nor-cream">
+              O que muda quando você treina com o{" "}
+              <span className="italic font-light">Método NOR?</span>
             </h2>
-            <p className="mt-6 md:mt-8 max-w-lg text-sm md:text-base text-nor-cream/75 font-light leading-relaxed">
-              Reserve uma avaliação sem compromisso. Conheça o espaço, converse
-              com nossa equipe e descubra se a NOR é o próximo passo da sua jornada.
-            </p>
           </div>
 
-          <form onSubmit={(e) => e.preventDefault()} className="md:col-span-5 space-y-6">
-            <div>
-              <label className="eyebrow text-nor-beige">Nome</label>
-              <input
-                type="text"
-                className="mt-3 w-full bg-transparent border-b border-nor-cream/30 py-3 focus:outline-none focus:border-nor-cream placeholder:text-nor-cream/40 text-nor-cream"
-                placeholder="Como podemos te chamar"
-              />
-            </div>
-            <div>
-              <label className="eyebrow text-nor-beige">Contato</label>
-              <input
-                type="text"
-                className="mt-3 w-full bg-transparent border-b border-nor-cream/30 py-3 focus:outline-none focus:border-nor-cream placeholder:text-nor-cream/40 text-nor-cream"
-                placeholder="WhatsApp ou e-mail"
-              />
-            </div>
-            <div>
-              <label className="eyebrow text-nor-beige">Horário de preferência</label>
-              <input
-                type="text"
-                className="mt-3 w-full bg-transparent border-b border-nor-cream/30 py-3 focus:outline-none focus:border-nor-cream placeholder:text-nor-cream/40 text-nor-cream"
-                placeholder="Manhã, tarde ou noite"
-              />
-            </div>
-            <button
-              type="submit"
-              className="group inline-flex items-center gap-3 bg-nor-cream text-nor-green px-8 py-4 text-[11px] uppercase tracking-[0.28em] font-medium hover:bg-nor-beige transition-colors mt-6"
-            >
-              Solicitar convite
-              <span className="inline-block w-6 h-px bg-nor-green transition-all group-hover:w-10" />
-            </button>
-          </form>
+          <div className="mt-16 md:mt-24 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-12 gap-y-12">
+            {[
+              { t: "Mais segurança", d: "Você recebe orientação e correção durante a execução dos exercícios." },
+              { t: "Mais direção", d: "Cada treino possui um propósito dentro do seu planejamento." },
+              { t: "Mais constância", d: "A equipe acompanha sua rotina e ajuda você a não abandonar o processo." },
+              { t: "Mais clareza", d: "As avaliações mensais mostram o que está evoluindo e o que precisa ser ajustado." },
+              { t: "Mais individualização", d: "Seu programa considera seu corpo, seu momento e seus objetivos." },
+              { t: "Mais eficiência", d: "Treino, nutrição e acompanhamento trabalham de forma integrada." },
+            ].map((b) => (
+              <div key={b.t} className="border-t border-nor-cream/15 pt-6">
+                <h3 className="font-display italic text-2xl md:text-3xl text-nor-cream tracking-[-0.01em]">
+                  {b.t}
+                </h3>
+                <p className="mt-3 text-sm md:text-base text-nor-cream/75 font-light leading-relaxed">
+                  {b.d}
+                </p>
+              </div>
+            ))}
+          </div>
         </div>
       </section>
 
