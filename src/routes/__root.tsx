@@ -76,7 +76,7 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
   head: () => ({
     meta: [
       { charSet: "utf-8" },
-      { name: "viewport", content: "width=device-width, initial-scale=1" },
+      { name: "viewport", content: "width=1440" },
       { title: "NOR Academia Boutique — Mais que treino. Construção de resultados." },
       { name: "description", content: "Academia boutique com acompanhamento individualizado, treinos planejados e atendimento de excelência. Exclusividade, método e evolução." },
       { property: "og:title", content: "NOR Academia Boutique — Mais que treino. Construção de resultados." },
