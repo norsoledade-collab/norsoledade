@@ -122,19 +122,8 @@ function NorLanding() {
         >
           <div className="border-l border-nor-cream/40 pl-4 md:pl-6 w-fit mx-auto">
             <div className="eyebrow text-nor-beige mb-8">— NOR Academia Boutique</div>
-            <h2 className="font-display text-base sm:text-xl md:text-4xl leading-[1.4] md:leading-[1.25] tracking-[-0.01em] text-nor-cream text-left">
-              <span className="md:hidden">
-                Somos uma academia boutique<br />
-                feita para quem entende que<br />
-                <span className="italic font-light">evolução exige método</span>, atenção<br />
-                individual à altura do seu tempo.
-              </span>
-              <span className="hidden md:inline">
-                Somos uma academia boutique feita<br />
-                para quem entende que <span className="italic font-light">evolução</span><br />
-                <span className="italic font-light">exige método</span>, atenção individual e um<br />
-                ambiente à altura do seu tempo.
-              </span>
+            <h2 className="font-display text-base sm:text-xl md:text-3xl leading-[1.5] md:leading-[1.4] tracking-[-0.01em] text-nor-cream text-left">
+              Na NOR, você não recebe uma ficha genérica para depois se virar sozinho. Cada aluno conta com <span className="italic font-light">planejamento individual</span>, professor presente durante toda a sessão, nutrição integrada, avaliações mensais e ajustes constantes. Até 5 alunos por professor. <span className="italic font-light">Atenção individual do início ao fim.</span>
             </h2>
           </div>
           <div className="hairline max-w-24 mx-auto mt-14 opacity-40" />
