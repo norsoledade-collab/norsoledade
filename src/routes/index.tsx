@@ -77,7 +77,7 @@ function NorLanding() {
             className="max-w-4xl [text-shadow:0_2px_18px_rgba(0,0,0,0.55)]"
           >
             <motion.div variants={fadeUp} className="eyebrow text-nor-cream mb-8 whitespace-nowrap text-[9px] sm:text-xs">
-              NOR Academia Boutique
+              A única Academia Boutique de Soledade
             </motion.div>
             <motion.h1
               variants={fadeUp}
