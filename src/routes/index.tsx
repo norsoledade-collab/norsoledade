@@ -204,10 +204,8 @@ function NorLanding() {
           >
             <div className="border-l border-nor-cream/40 pl-4 md:pl-6 space-y-6 md:space-y-8">
               <div className="eyebrow text-nor-beige">— Método NOR</div>
-              <h2 className="font-display italic font-light text-[2rem] sm:text-6xl md:text-7xl lg:text-[6.5rem] leading-[1] md:leading-[0.88] tracking-tight text-nor-cream">
-                Uma abordagem
-                <br />
-                única
+              <h2 className="font-display italic font-light text-[2rem] sm:text-5xl md:text-6xl lg:text-7xl leading-[1.05] md:leading-[1] tracking-tight text-nor-cream">
+                O que acontece quando você treina sem direção?
               </h2>
               <p className="max-w-md text-sm md:text-xl font-light leading-relaxed text-nor-cream/80">
                 Onde a precisão técnica encontra o cuidado artesanal. Uma
@@ -227,35 +225,6 @@ function NorLanding() {
             </div>
           </motion.div>
 
-          {/* Pillars column */}
-          <div className="lg:col-span-7">
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-x-10 gap-y-10 md:gap-y-12">
-              {[
-                { n: "I", t: "Exclusividade em cada treino", d: "1 professor para até 5 alunos, garantindo acompanhamento próximo em todos os momentos." },
-                { n: "II", t: "Método integrado", d: "Treino personalizado aliado a um plano nutricional inteligente para potencializar seus resultados." },
-                { n: "III", t: "Evolução comprovada", d: "Bioimpedância e mapa de metas para acompanhar seu progresso com clareza." },
-              ].map((s, i) => (
-                <motion.div
-                  key={s.n}
-                  initial={{ opacity: 0, x: -80 }}
-                  whileInView={{ opacity: 1, x: 0 }}
-                  transition={{ duration: 1, delay: i * 0.5, ease: [0.22, 1, 0.36, 1] }}
-                  viewport={{ once: true, margin: "-15%" }}
-                  className="space-y-3"
-                >
-                  <span className="block font-display italic text-sm md:text-lg text-nor-cream/40 border-b border-nor-cream/15 pb-2">
-                    {s.n}
-                  </span>
-                  <h3 className="text-nor-cream text-base md:text-lg font-medium leading-snug tracking-tight">
-                    {s.t}
-                  </h3>
-                  <p className="text-nor-cream/60 text-sm leading-relaxed">
-                    {s.d}
-                  </p>
-                </motion.div>
-              ))}
-            </div>
-          </div>
 
 
         </div>
