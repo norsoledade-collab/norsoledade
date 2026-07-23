@@ -9,7 +9,7 @@ import heroVideo from "@/assets/nor-hero.mp4";
 import personalImg from "@/assets/nor-personal.jpg.asset.json";
 import crossImg from "@/assets/nor-cross.jpg.asset.json";
 import runImg from "@/assets/nor-run.jpg.asset.json";
-import introVideo from "@/assets/nor-intro.mp4.asset.json";
+import introVideo from "@/assets/nor-intro.mp4";
 import footerLogo from "@/assets/nor-footer-logo-transparent.png.asset.json";
 
 
