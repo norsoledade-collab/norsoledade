@@ -159,10 +159,8 @@ function NorLanding() {
             <h2 className="font-display text-2xl sm:text-3xl md:text-6xl leading-[1.15] md:leading-[1.05] text-nor-cream">
               Você já começou uma academia e <span className="italic font-light">desistiu depois de algumas semanas?</span>
             </h2>
-            <p className="mt-5 md:mt-6 max-w-2xl text-sm md:text-base text-nor-cream/75 font-light">
-              Modalidades pensadas para cada objetivo, cada corpo e cada etapa da vida.
-              Uma experiência personalizada, do primeiro treino ao seu melhor resultado.
-            </p>
+
+
           </div>
         </div>
 
