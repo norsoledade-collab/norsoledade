@@ -450,6 +450,365 @@ function NorLanding() {
         </div>
       </section>
 
+      {/* PARA QUEM É A NOR */}
+      <section className="border-t border-nor-cream/10">
+        <div className="mx-auto max-w-[1500px] px-6 md:px-10 py-24 md:py-36">
+          <div className="max-w-4xl">
+            <div className="eyebrow text-nor-beige mb-8">— Para quem é a NOR</div>
+            <h2 className="font-display text-3xl sm:text-4xl md:text-6xl leading-[1.05] md:leading-[0.98] tracking-[-0.02em] text-nor-cream">
+              A NOR é <span className="italic font-light">para você que:</span>
+            </h2>
+          </div>
+          <ul className="mt-12 md:mt-16 grid grid-cols-1 md:grid-cols-2 gap-x-12 gap-y-6 max-w-5xl">
+            {[
+              "Já frequentou outras academias, mas não conseguiu manter a constância;",
+              "Sente insegurança ao executar exercícios sozinho;",
+              "Quer emagrecer com planejamento e acompanhamento;",
+              "Busca ganho de massa muscular com uma estratégia individual;",
+              "Deseja melhorar o condicionamento e a qualidade de vida;",
+              "Possui uma rotina corrida e quer aproveitar melhor seu tempo de treino;",
+              "Não quer ser apenas mais um aluno dentro de uma academia;",
+              "Valoriza acompanhamento, organização e evolução mensurável.",
+            ].map((item) => (
+              <li key={item} className="flex gap-4 items-start border-t border-nor-cream/15 pt-4">
+                <span className="text-nor-beige font-display text-lg leading-none pt-1">●</span>
+                <span className="text-base md:text-lg text-nor-cream/85 font-light leading-relaxed">{item}</span>
+              </li>
+            ))}
+          </ul>
+        </div>
+      </section>
+
+      {/* PROGRAMAS NOR */}
+      <section className="border-t border-nor-cream/10">
+        <div className="mx-auto max-w-[1500px] px-6 md:px-10 py-24 md:py-36">
+          <div className="max-w-4xl">
+            <div className="eyebrow text-nor-beige mb-8">— Programas NOR</div>
+            <h2 className="font-display text-3xl sm:text-4xl md:text-6xl leading-[1.05] md:leading-[0.98] tracking-[-0.02em] text-nor-cream">
+              Escolha a experiência mais{" "}
+              <span className="italic font-light">alinhada ao seu objetivo.</span>
+            </h2>
+          </div>
+          <div className="mt-14 md:mt-20 grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-10">
+            {[
+              { img: personalImg.url, t: "NOR Personal", d: "Treinamento personalizado, realizado em grupos de até cinco alunos por professor, com planejamento individual e acompanhamento durante toda a sessão." },
+              { img: crossImg.url, t: "NOR Cross", d: "Metodologia que combina força, condicionamento, mobilidade e resistência em sessões dinâmicas, adaptadas ao nível de cada aluno." },
+              { img: runImg.url, t: "Clube de Corrida NOR", d: "Treinos orientados para desenvolver condicionamento e performance, combinando evolução individual e experiência em comunidade." },
+            ].map((p, i) => (
+              <motion.div
+                key={p.t}
+                initial={{ opacity: 0, x: -80 }}
+                whileInView={{ opacity: 1, x: 0 }}
+                viewport={{ once: true, margin: "-60px" }}
+                transition={{ duration: 0.9, ease: [0.22, 1, 0.36, 1], delay: i * 0.15 }}
+                className="flex flex-col"
+              >
+                <div className="bg-nor-green-light p-8 md:p-10">
+                  <h3 className="font-display italic font-light text-2xl md:text-3xl text-nor-cream mb-4">{p.t}</h3>
+                  <p className="text-sm md:text-base text-nor-cream/80 font-light leading-relaxed">{p.d}</p>
+                </div>
+                <div className="aspect-[4/5] overflow-hidden">
+                  <img src={p.img} alt={p.t} className="w-full h-full object-cover" />
+                </div>
+              </motion.div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* COMPARATIVO */}
+      <section className="border-t border-nor-cream/10">
+        <div className="mx-auto max-w-[1500px] px-6 md:px-10 py-24 md:py-36">
+          <div className="max-w-4xl">
+            <div className="eyebrow text-nor-beige mb-8">— Comparativo</div>
+            <h2 className="font-display text-3xl sm:text-4xl md:text-6xl leading-[1.05] md:leading-[0.98] tracking-[-0.02em] text-nor-cream">
+              Academia tradicional ou{" "}
+              <span className="italic font-light">Academia Boutique?</span>
+            </h2>
+          </div>
+
+          <div className="mt-14 md:mt-20 grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-10">
+            <div className="border border-nor-cream/15 p-8 md:p-10">
+              <div className="eyebrow text-nor-cream/50 mb-6">Em uma academia tradicional</div>
+              <ul className="space-y-4">
+                {[
+                  "Grande volume de alunos;",
+                  "Pouca proximidade com o professor;",
+                  "Ficha de treino padronizada;",
+                  "Acompanhamento pontual;",
+                  "Avaliação sem frequência definida;",
+                  "Aluno responsável por conduzir praticamente todo o processo.",
+                ].map((it) => (
+                  <li key={it} className="flex gap-3 text-nor-cream/70 font-light text-sm md:text-base leading-relaxed">
+                    <span className="text-nor-cream/40">—</span>
+                    <span>{it}</span>
+                  </li>
+                ))}
+              </ul>
+            </div>
+            <div className="bg-nor-cream text-nor-green p-8 md:p-10">
+              <div className="eyebrow text-nor-green/70 mb-6">Na NOR Academia Boutique</div>
+              <ul className="space-y-4">
+                {[
+                  "Até cinco alunos por professor;",
+                  "Professor durante toda a sessão;",
+                  "Planejamento individual;",
+                  "Nutrição integrada;",
+                  "Bioimpedância mensal;",
+                  "Ajustes constantes;",
+                  "Acompanhamento de toda a jornada.",
+                ].map((it) => (
+                  <li key={it} className="flex gap-3 font-medium text-sm md:text-base leading-relaxed">
+                    <span className="text-nor-green/60">●</span>
+                    <span>{it}</span>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          </div>
+
+          <blockquote className="mt-14 md:mt-20 max-w-3xl mx-auto border-l-2 border-nor-beige pl-6 md:pl-8 font-display italic font-light text-xl sm:text-2xl md:text-3xl leading-[1.3] text-nor-cream text-center md:text-left">
+            A diferença não está apenas na estrutura.
+            <br />
+            <span className="text-nor-beige">Está na atenção dedicada à sua evolução.</span>
+          </blockquote>
+        </div>
+      </section>
+
+      {/* PROVA SOCIAL */}
+      <section className="border-t border-nor-cream/10 bg-nor-green-light/30">
+        <div className="mx-auto max-w-[1500px] px-6 md:px-10 py-24 md:py-36">
+          <div className="max-w-4xl mx-auto text-center">
+            <div className="eyebrow text-nor-beige mb-8">— Prova social</div>
+            <h2 className="font-display text-3xl sm:text-4xl md:text-6xl leading-[1.05] md:leading-[0.98] tracking-[-0.02em] text-nor-cream">
+              Quem conhece o Método NOR{" "}
+              <span className="italic font-light">entende a diferença.</span>
+            </h2>
+          </div>
+
+          <div className="mt-16 md:mt-24 max-w-4xl mx-auto">
+            <blockquote className="font-display italic font-light text-2xl sm:text-3xl md:text-5xl leading-[1.2] text-nor-cream text-center">
+              “Eu já havia tentado outras vezes.
+              <br />
+              Na NOR, encontrei o{" "}
+              <span className="text-nor-beige">acompanhamento que faltava.”</span>
+            </blockquote>
+          </div>
+
+          <div className="mt-16 md:mt-20 grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8 max-w-5xl mx-auto">
+            {[
+              "Depoimentos em vídeo dos alunos",
+              "Avaliações do Google",
+              "Evolução mensurada por avaliações",
+            ].map((t) => (
+              <div key={t} className="border border-nor-cream/15 p-8 text-center">
+                <div className="font-display italic text-lg md:text-xl text-nor-cream/70 font-light">
+                  {t}
+                </div>
+                <p className="mt-3 text-xs uppercase tracking-[0.2em] text-nor-cream/40">
+                  Em breve
+                </p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* CONVERSÃO — FORMULÁRIO */}
+      <section id="agendar" className="border-t border-nor-cream/10">
+        <div className="mx-auto max-w-[1500px] px-6 md:px-10 py-24 md:py-36">
+          <div className="max-w-4xl mx-auto text-center">
+            <div className="eyebrow text-nor-beige mb-8">— Aula experimental</div>
+            <h2 className="font-display text-3xl sm:text-4xl md:text-6xl leading-[1.05] md:leading-[0.98] tracking-[-0.02em] text-nor-cream">
+              Antes de tentar mais uma vez sozinho,{" "}
+              <span className="italic font-light">conheça uma forma diferente de treinar.</span>
+            </h2>
+            <p className="mt-8 text-base md:text-lg text-nor-cream/75 font-light leading-relaxed max-w-2xl mx-auto">
+              Agende uma aula experimental e entenda como o Método NOR pode ser aplicado ao seu objetivo, à sua rotina e ao seu momento atual.
+            </p>
+          </div>
+
+          <div className="mt-14 md:mt-20 grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-16 max-w-5xl mx-auto">
+            <div>
+              <div className="eyebrow text-nor-beige mb-6">Na aula experimental, você poderá:</div>
+              <ul className="space-y-4">
+                {[
+                  "Conhecer o espaço;",
+                  "Entender como funciona o acompanhamento;",
+                  "Conversar sobre seus objetivos;",
+                  "Conhecer os programas da NOR;",
+                  "Experimentar uma sessão acompanhada.",
+                ].map((it) => (
+                  <li key={it} className="flex gap-3 text-nor-cream/85 font-light text-base leading-relaxed border-t border-nor-cream/15 pt-4">
+                    <span className="text-nor-beige">●</span>
+                    <span>{it}</span>
+                  </li>
+                ))}
+              </ul>
+            </div>
+
+            <form
+              onSubmit={(e) => {
+                e.preventDefault();
+                const fd = new FormData(e.currentTarget);
+                const nome = fd.get("nome");
+                const whats = fd.get("whatsapp");
+                const objetivo = fd.get("objetivo");
+                const periodo = fd.get("periodo");
+                const msg = `Olá, quero agendar minha aula experimental na NOR.%0A%0ANome: ${nome}%0AWhatsApp: ${whats}%0AObjetivo: ${objetivo}%0APeríodo: ${periodo}`;
+                window.open(`https://wa.me/5554993835053?text=${msg}`, "_blank");
+              }}
+              className="space-y-5"
+            >
+              <div>
+                <label className="eyebrow text-nor-cream/60 mb-2 block">Nome completo</label>
+                <input
+                  name="nome"
+                  required
+                  className="w-full bg-transparent border-b border-nor-cream/30 focus:border-nor-beige outline-none py-2 text-nor-cream placeholder:text-nor-cream/30 transition-colors"
+                />
+              </div>
+              <div>
+                <label className="eyebrow text-nor-cream/60 mb-2 block">WhatsApp</label>
+                <input
+                  name="whatsapp"
+                  required
+                  type="tel"
+                  className="w-full bg-transparent border-b border-nor-cream/30 focus:border-nor-beige outline-none py-2 text-nor-cream placeholder:text-nor-cream/30 transition-colors"
+                />
+              </div>
+              <div>
+                <label className="eyebrow text-nor-cream/60 mb-2 block">Seu principal objetivo</label>
+                <select
+                  name="objetivo"
+                  required
+                  defaultValue=""
+                  className="w-full bg-nor-green border-b border-nor-cream/30 focus:border-nor-beige outline-none py-2 text-nor-cream transition-colors"
+                >
+                  <option value="" disabled>Selecione</option>
+                  <option>Emagrecimento</option>
+                  <option>Ganho de massa muscular</option>
+                  <option>Condicionamento físico</option>
+                  <option>Saúde e qualidade de vida</option>
+                  <option>Voltar a treinar com acompanhamento</option>
+                </select>
+              </div>
+              <div>
+                <label className="eyebrow text-nor-cream/60 mb-2 block">Período de preferência</label>
+                <select
+                  name="periodo"
+                  required
+                  defaultValue=""
+                  className="w-full bg-nor-green border-b border-nor-cream/30 focus:border-nor-beige outline-none py-2 text-nor-cream transition-colors"
+                >
+                  <option value="" disabled>Selecione</option>
+                  <option>Manhã</option>
+                  <option>Tarde</option>
+                  <option>Noite</option>
+                </select>
+              </div>
+              <button
+                type="submit"
+                className="group w-full inline-flex items-center justify-center gap-3 bg-nor-cream text-nor-green px-8 py-4 text-[11px] uppercase tracking-[0.28em] font-medium hover:bg-nor-beige transition-colors mt-6"
+              >
+                Quero agendar minha aula experimental
+                <span className="inline-block w-6 h-px bg-nor-green transition-all group-hover:w-10" />
+              </button>
+              <p className="text-xs text-nor-cream/50 font-light text-center">
+                Após o envio, nossa equipe entrará em contato para confirmar o melhor dia e horário.
+              </p>
+            </form>
+          </div>
+        </div>
+      </section>
+
+      {/* FAQ */}
+      <section className="border-t border-nor-cream/10">
+        <div className="mx-auto max-w-[1500px] px-6 md:px-10 py-24 md:py-36">
+          <div className="max-w-4xl">
+            <div className="eyebrow text-nor-beige mb-8">— Perguntas frequentes</div>
+            <h2 className="font-display text-3xl sm:text-4xl md:text-6xl leading-[1.05] md:leading-[0.98] tracking-[-0.02em] text-nor-cream">
+              Dúvidas <span className="italic font-light">antes de começar.</span>
+            </h2>
+          </div>
+
+          <div className="mt-14 md:mt-20 max-w-4xl">
+            {[
+              { q: "Preciso já ter experiência com academia?", a: "Não. O Método NOR é adaptado ao nível, histórico e momento atual de cada aluno." },
+              { q: "O professor realmente acompanha toda a sessão?", a: "Sim. O acompanhamento durante toda a sessão é um dos pilares do Método NOR." },
+              { q: "Quantos alunos treinam com cada professor?", a: "Trabalhamos com grupos de até cinco alunos por professor." },
+              { q: "O treino é igual para todos?", a: "Não. Cada aluno recebe um planejamento construído conforme seus objetivos, histórico e evolução." },
+              { q: "Como os resultados são acompanhados?", a: "A evolução é monitorada por meio do acompanhamento diário, da bioimpedância mensal e de ajustes periódicos no programa." },
+              { q: "A nutrição faz parte do método?", a: "Sim. O planejamento nutricional é integrado ao programa de treinamento." },
+              { q: "Como faço para conhecer a NOR?", a: "Preencha o formulário ou entre em contato pelo WhatsApp para agendar sua aula experimental." },
+            ].map((f) => (
+              <details
+                key={f.q}
+                className="group border-t border-nor-cream/15 py-6 last:border-b"
+              >
+                <summary className="flex items-center justify-between cursor-pointer list-none">
+                  <span className="font-display italic font-light text-xl md:text-2xl text-nor-cream pr-8">
+                    {f.q}
+                  </span>
+                  <span className="shrink-0 text-nor-beige text-2xl transition-transform group-open:rotate-45">
+                    +
+                  </span>
+                </summary>
+                <p className="mt-4 text-sm md:text-base text-nor-cream/75 font-light leading-relaxed max-w-3xl">
+                  {f.a}
+                </p>
+              </details>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* CHAMADA FINAL */}
+      <section className="border-t border-nor-cream/10 bg-nor-green-light/40">
+        <div className="mx-auto max-w-[1500px] px-6 md:px-10 py-28 md:py-40 text-center">
+          <motion.div
+            initial="hidden"
+            whileInView="show"
+            viewport={{ once: true, margin: "-100px" }}
+            variants={fadeUp}
+            className="max-w-4xl mx-auto"
+          >
+            <h2 className="font-display text-3xl sm:text-4xl md:text-6xl leading-[1.1] md:leading-[1] tracking-[-0.02em] text-nor-cream">
+              Sua evolução não precisa depender de tentativas,{" "}
+              <span className="italic font-light">treinos genéricos ou falta de direção.</span>
+            </h2>
+            <p className="mt-8 text-base md:text-xl text-nor-cream/80 font-light leading-relaxed max-w-3xl mx-auto">
+              Na NOR, você conta com método, atenção individual e acompanhamento em cada etapa. Conheça a única Academia Boutique de Soledade.
+            </p>
+
+            <div className="mt-12 flex justify-center">
+              <a
+                href="#agendar"
+                className="group inline-flex items-center gap-3 bg-nor-cream text-nor-green px-10 py-4 text-[11px] uppercase tracking-[0.28em] font-medium hover:bg-nor-beige transition-colors"
+              >
+                Agendar aula experimental
+                <span className="inline-block w-6 h-px bg-nor-green transition-all group-hover:w-10" />
+              </a>
+            </div>
+
+            <div className="hairline max-w-24 mx-auto mt-16 opacity-40" />
+
+            <div className="mt-10 space-y-2 text-sm md:text-base text-nor-cream/70 font-light">
+              <p>Rua 7 de Setembro, 827 — Centro — Soledade/RS</p>
+              <p>WhatsApp: (54) 99383-5053</p>
+            </div>
+
+            <div className="mt-10">
+              <p className="eyebrow text-nor-beige">— NOR Academia Boutique</p>
+              <p className="mt-4 font-display italic font-light text-xl md:text-2xl text-nor-cream/85">
+                Método. Atenção individual. Evolução constante.
+              </p>
+            </div>
+          </motion.div>
+        </div>
+      </section>
+
+
       {/* FOOTER */}
       <footer className="border-t border-nor-cream/10">
         <div className="mx-auto max-w-[1500px] px-6 md:px-10 py-12 flex flex-col md:flex-row items-start md:items-center justify-between gap-8">
