@@ -367,7 +367,7 @@ function NorLanding() {
 
       {/* CTA / BENEFÍCIOS */}
       <section id="contato" className="border-t border-nor-cream/10">
-        <div className="mx-auto max-w-[1500px] px-6 md:px-10 py-24 md:py-36">
+        <div className="mx-auto max-w-[1500px] px-6 md:px-10 pt-12 pb-24 md:pt-16 md:pb-36">
           <div className="max-w-4xl">
             <h2 className="font-display text-3xl sm:text-4xl md:text-6xl leading-[1.05] md:leading-[0.98] tracking-[-0.02em] text-nor-cream">
               O que muda quando você treina com o{" "}
@@ -375,7 +375,7 @@ function NorLanding() {
             </h2>
           </div>
 
-          <div className="mt-16 md:mt-24 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-12 gap-y-12">
+          <div className="mt-10 md:mt-14 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-12 gap-y-12">
             {[
               { t: "Mais segurança", d: "Você recebe orientação e correção durante a execução dos exercícios." },
               { t: "Mais direção", d: "Cada treino possui um propósito dentro do seu planejamento." },
