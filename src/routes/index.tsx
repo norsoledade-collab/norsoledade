@@ -263,43 +263,34 @@ function NorLanding() {
       </section>
 
 
-      {/* EXPERIÊNCIA — dados */}
+      {/* EXPERIÊNCIA */}
       <section id="experiencia" className="mx-auto max-w-[1500px] px-6 md:px-10 py-24 md:py-36">
-        <div className="grid md:grid-cols-12 gap-12 items-center">
-          <div className="md:col-span-6">
-            <div className="eyebrow text-nor-beige mb-6">— A Experiência</div>
-            <h2 className="font-display text-2xl sm:text-3xl md:text-6xl leading-[1.15] md:leading-[1.05] text-nor-cream">
-              Um ambiente
+        <div className="max-w-4xl mx-auto">
+          <div className="eyebrow text-nor-beige mb-6">— A Experiência</div>
+          <h2 className="font-display text-2xl sm:text-3xl md:text-6xl leading-[1.15] md:leading-[1.05] text-nor-cream">
+            Foi para mudar essa experiência que a{" "}
+            <span className="italic font-light">NOR criou uma forma diferente de treinar.</span>
+          </h2>
+          <p className="mt-6 md:mt-8 max-w-2xl text-sm md:text-base text-nor-cream/75 font-light leading-relaxed">
+            A NOR é uma Academia Boutique em Soledade, estruturada para atender poucos alunos por vez e acompanhar cada pessoa de forma próxima. Aqui, você não é apenas mais um aluno dentro da academia. Sua jornada começa com uma avaliação, passa por um planejamento individual e continua com acompanhamento durante cada sessão, mensuração dos resultados e ajustes periódicos.
+          </p>
+          <div className="hairline my-10 md:my-12 opacity-40" />
+          <p className="text-base md:text-xl text-nor-cream/85 font-light leading-relaxed">
+            Não entregamos apenas acesso aos equipamentos.
+          </p>
+          <motion.div
+            initial="hidden"
+            whileInView="show"
+            viewport={{ once: true, margin: "-100px" }}
+            variants={fadeUp}
+            className="mt-10 md:mt-14"
+          >
+            <blockquote className="border-l-2 border-nor-beige pl-6 md:pl-8 font-display italic font-light text-xl sm:text-2xl md:text-4xl leading-[1.25] md:leading-[1.2] text-nor-cream">
+              Entregamos um processo completo de acompanhamento.
               <br />
-              <span className="italic font-light">para quem exige mais.</span>
-            </h2>
-            <p className="mt-6 md:mt-8 max-w-md text-sm md:text-base text-nor-cream/75 font-light leading-relaxed">
-              Mais atenção, mais precisão, mais cuidado. Cada detalhe pensado
-              para quem busca o extraordinário em cada treino.
-            </p>
-            <div className="hairline my-10 md:my-12 opacity-40" />
-            <dl className="grid grid-cols-2 gap-8 md:gap-10">
-              {[
-                { k: "15", l: "Alunos por horário" },
-                { k: "1:5", l: "Proporção professor/aluno" },
-                { k: "280m", l: "Área da academia" },
-                { k: "03", l: "Pilares do método" },
-              ].map((d) => (
-                <div key={d.l}>
-                  <div className="font-display text-4xl md:text-6xl text-nor-cream">{d.k}</div>
-                  <div className="eyebrow mt-2 md:mt-3 text-nor-cream/60 text-[10px] md:text-xs">{d.l}</div>
-                </div>
-              ))}
-            </dl>
-          </div>
-          <div className="md:col-span-6">
-            <img
-              src={experienceImg.url}
-              alt="Interior da NOR"
-              loading="lazy"
-              className="w-full h-[420px] md:h-[640px] object-cover"
-            />
-          </div>
+              <span className="text-nor-beige">Método. Atenção individual. Evolução constante.</span>
+            </blockquote>
+          </motion.div>
         </div>
       </section>
 
