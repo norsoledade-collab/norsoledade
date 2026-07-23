@@ -90,8 +90,8 @@ function NorLanding() {
               variants={fadeUp}
               className="mt-6 md:mt-8 text-xl sm:text-2xl md:text-4xl text-nor-cream font-light max-w-3xl mx-auto leading-snug"
             >
-              O lugar perfeito para construir<br />
-              a melhor versão de você.
+              Precisa de um método que<br />
+              acompanhe sua evolução.
             </motion.p>
 
           </motion.div>
