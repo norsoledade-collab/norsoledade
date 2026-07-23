@@ -191,73 +191,63 @@ function NorLanding() {
         </motion.div>
       </section>
 
-      {/* MÉTODO — sensory editorial grid */}
       <section id="especialistas" className="border-y border-nor-cream/10 bg-nor-green">
-        <div className="mx-auto max-w-[1500px] px-6 md:px-10 py-28 md:py-44 grid grid-cols-1 lg:grid-cols-12 gap-16 lg:gap-24 items-start">
-          {/* Brand & vision column */}
+        <div className="mx-auto max-w-[1500px] px-6 md:px-10 py-24 md:py-36 space-y-16 md:space-y-24">
           <motion.div
             initial={{ opacity: 0, y: 24 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 1.1, ease: [0.22, 1, 0.36, 1] }}
             viewport={{ once: true, margin: "-10%" }}
-            className="lg:col-span-5 lg:sticky lg:top-28 space-y-12"
+            className="max-w-3xl border-l border-nor-cream/40 pl-4 md:pl-6"
           >
-            <div className="border-l border-nor-cream/40 pl-4 md:pl-6 space-y-6 md:space-y-8">
-              <div className="eyebrow text-nor-beige">— Método NOR</div>
-              <h2 className="font-display italic font-light text-[2rem] sm:text-5xl md:text-6xl lg:text-7xl leading-[1.05] md:leading-[1] tracking-tight text-nor-cream">
-                O que acontece quando você treina sem direção?
-              </h2>
-              <ul className="max-w-md space-y-6 md:space-y-7 text-nor-cream/80">
-                {[
-                  {
-                    title: "Treinos genéricos",
-                    desc: "O mesmo planejamento é utilizado para pessoas com objetivos, históricos e limitações completamente diferentes.",
-                  },
-                  {
-                    title: "Execuções incorretas",
-                    desc: "Sem um professor próximo, pequenos erros podem comprometer o exercício, diminuir sua eficiência e aumentar o risco de desconfortos ou lesões.",
-                  },
-                  {
-                    title: "Falta de constância",
-                    desc: "Quando ninguém acompanha sua rotina e seus resultados, torna-se muito mais fácil perder a motivação e desistir.",
-                  },
-                  {
-                    title: "Resultados difíceis de perceber",
-                    desc: "Sem avaliações periódicas, você não sabe com clareza o que evoluiu e o que ainda precisa ser ajustado.",
-                  },
-                  {
-                    title: "Meses no mesmo treino",
-                    desc: "O corpo evolui, mas o planejamento continua igual. Isso reduz o estímulo e pode fazer você estagnar.",
-                  },
-                ].map((item) => (
-                  <li key={item.title} className="border-t border-nor-cream/15 pt-5 md:pt-6">
-                    <h3 className="font-display italic text-xl md:text-2xl text-nor-cream mb-2">
-                      {item.title}
-                    </h3>
-                    <p className="text-sm md:text-base font-light leading-relaxed">
-                      {item.desc}
-                    </p>
-                  </li>
-                ))}
-              </ul>
-            </div>
-
-
-            <div className="relative w-full aspect-[3/4] overflow-hidden border border-nor-cream/10 group">
-              <img
-                src={methodImg}
-                alt="Detalhe NOR"
-                loading="lazy"
-                className="w-full h-full object-cover opacity-90 transition-transform duration-[2000ms] ease-out group-hover:scale-105"
-              />
-              <div className="absolute inset-0 bg-gradient-to-t from-nor-green/40 to-transparent pointer-events-none" />
-            </div>
+            <h2 className="font-display italic font-light text-[2rem] sm:text-5xl md:text-6xl lg:text-7xl leading-[1.05] md:leading-[1] tracking-tight text-nor-cream">
+              O que acontece quando você treina sem direção?
+            </h2>
           </motion.div>
 
-
-
+          <ul className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-8 md:gap-10 text-nor-cream/80">
+            {[
+              {
+                title: "Treinos genéricos",
+                desc: "O mesmo planejamento é utilizado para pessoas com objetivos, históricos e limitações completamente diferentes.",
+              },
+              {
+                title: "Execuções incorretas",
+                desc: "Sem um professor próximo, pequenos erros podem comprometer o exercício, diminuir sua eficiência e aumentar o risco de desconfortos ou lesões.",
+              },
+              {
+                title: "Falta de constância",
+                desc: "Quando ninguém acompanha sua rotina e seus resultados, torna-se muito mais fácil perder a motivação e desistir.",
+              },
+              {
+                title: "Resultados difíceis de perceber",
+                desc: "Sem avaliações periódicas, você não sabe com clareza o que evoluiu e o que ainda precisa ser ajustado.",
+              },
+              {
+                title: "Meses no mesmo treino",
+                desc: "O corpo evolui, mas o planejamento continua igual. Isso reduz o estímulo e pode fazer você estagnar.",
+              },
+            ].map((item, i) => (
+              <motion.li
+                key={item.title}
+                initial={{ opacity: 0, y: 24 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.9, delay: i * 0.1, ease: [0.22, 1, 0.36, 1] }}
+                viewport={{ once: true, margin: "-10%" }}
+                className="border-t border-nor-cream/20 pt-6"
+              >
+                <h3 className="font-display italic text-xl md:text-2xl text-nor-cream mb-3">
+                  {item.title}
+                </h3>
+                <p className="text-sm md:text-base font-light leading-relaxed">
+                  {item.desc}
+                </p>
+              </motion.li>
+            ))}
+          </ul>
         </div>
       </section>
+
 
       {/* EXPERIÊNCIA — dados */}
       <section id="experiencia" className="mx-auto max-w-[1500px] px-6 md:px-10 py-24 md:py-36">
