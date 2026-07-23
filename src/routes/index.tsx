@@ -157,7 +157,7 @@ function NorLanding() {
           <div className="border-l border-nor-cream/40 pl-4 md:pl-6 w-fit mx-auto text-left">
             <div className="eyebrow text-nor-beige mb-6">— Nossos Programas</div>
             <h2 className="font-display text-2xl sm:text-3xl md:text-6xl leading-[1.15] md:leading-[1.05] text-nor-cream">
-              Liderados por <span className="italic font-light">especialistas.</span>
+              Você já começou uma academia e <span className="italic font-light">desistiu depois de algumas semanas?</span>
             </h2>
             <p className="mt-5 md:mt-6 max-w-2xl text-sm md:text-base text-nor-cream/75 font-light">
               Modalidades pensadas para cada objetivo, cada corpo e cada etapa da vida.
