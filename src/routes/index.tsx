@@ -397,6 +397,59 @@ function NorLanding() {
         </div>
       </section>
 
+      {/* JORNADA */}
+      <section className="border-t border-nor-cream/10">
+        <div className="mx-auto max-w-[1500px] px-6 md:px-10 py-24 md:py-36">
+          <div className="max-w-4xl">
+            <div className="eyebrow text-nor-beige mb-8">— Sua jornada</div>
+            <h2 className="font-display text-3xl sm:text-4xl md:text-6xl leading-[1.05] md:leading-[0.98] tracking-[-0.02em] text-nor-cream">
+              Como funciona sua{" "}
+              <span className="italic font-light">jornada dentro da NOR?</span>
+            </h2>
+          </div>
+
+          <div className="mt-14 md:mt-20 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-12 gap-y-12">
+            {[
+              { n: "01", t: "Avaliação inicial", d: "Primeiro, buscamos entender seus objetivos, histórico, rotina e as dificuldades que impediram você de alcançar resultados anteriormente." },
+              { n: "02", t: "Planejamento individual", d: "A partir da avaliação, construímos um programa de treinamento alinhado às suas necessidades." },
+              { n: "03", t: "Treino acompanhado", d: "Durante cada sessão, o professor acompanha sua execução do início ao fim, dentro de um grupo de até cinco alunos." },
+              { n: "04", t: "Nutrição integrada", d: "Sua alimentação é alinhada ao treinamento e aos resultados que você deseja alcançar." },
+              { n: "05", t: "Avaliação mensal", d: "A bioimpedância permite acompanhar sua evolução por meio de dados reais." },
+              { n: "06", t: "Ajustes contínuos", d: "Com base nos resultados, o planejamento é atualizado para continuar estimulando sua evolução." },
+            ].map((s, i) => (
+              <motion.div
+                key={s.n}
+                initial={{ opacity: 0, y: 40 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true, margin: "-60px" }}
+                transition={{ duration: 0.7, ease: [0.22, 1, 0.36, 1], delay: (i % 3) * 0.1 }}
+                className="border-t border-nor-cream/20 pt-6"
+              >
+                <div className="font-display text-nor-beige/80 text-sm tracking-[0.2em] mb-4">{s.n}</div>
+                <h3 className="font-display italic font-light text-2xl md:text-3xl leading-tight text-nor-cream mb-4">
+                  {s.t}
+                </h3>
+                <p className="text-sm md:text-base text-nor-cream/75 font-light leading-relaxed">
+                  {s.d}
+                </p>
+              </motion.div>
+            ))}
+          </div>
+
+          <div className="mt-16 md:mt-20 flex justify-center">
+            <a
+              href="https://wa.me/5554993835053?text=Ol%C3%A1%2C%20quero%20iniciar%20minha%20jornada%20na%20NOR"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="group inline-flex items-center gap-3 bg-nor-cream text-nor-green px-8 py-4 text-[11px] uppercase tracking-[0.28em] font-medium hover:bg-nor-beige transition-colors"
+            >
+              Quero iniciar minha jornada
+              <span className="inline-block w-6 h-px bg-nor-green transition-all group-hover:w-10" />
+            </a>
+          </div>
+        </div>
+      </section>
+
       {/* FOOTER */}
       <footer className="border-t border-nor-cream/10">
         <div className="mx-auto max-w-[1500px] px-6 md:px-10 py-12 flex flex-col md:flex-row items-start md:items-center justify-between gap-8">
