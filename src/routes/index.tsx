@@ -165,16 +165,15 @@ function NorLanding() {
 
 
 
-      {/* PROGRAMAS — 3 cards com foto (padrão Unique) */}
+      {/* IDENTIFICAÇÃO COM A DOR */}
       <section id="programas" className="mx-auto max-w-[1500px] px-6 md:px-10 pb-24 md:pb-36">
         <div className="mb-10 md:mb-14">
           <div className="border-l border-nor-cream/40 pl-4 md:pl-6 w-fit mx-auto text-left">
-            
             <h2 className="font-display text-2xl sm:text-3xl md:text-6xl leading-[1.15] md:leading-[1.05] text-nor-cream">
               Você já começou uma academia e <span className="italic font-light">desistiu depois de algumas semanas?</span>
+              <br />
+              <span className="italic font-light text-nor-beige">Descubra por quê.</span>
             </h2>
-
-
           </div>
         </div>
 
@@ -186,9 +185,32 @@ function NorLanding() {
           className="max-w-3xl mx-auto"
         >
           <p className="text-base md:text-xl text-nor-cream/85 font-light leading-relaxed md:leading-[1.7] text-left">
-            Muitas pessoas acreditam que não conseguem manter uma rotina de treinos por falta de disciplina. Mas, em muitos casos, o verdadeiro problema está na ausência de acompanhamento. Você recebe uma ficha pronta, aprende alguns exercícios e depois precisa continuar sozinho. Ninguém percebe quando sua execução está errada. Ninguém acompanha sua frequência. Ninguém verifica se o treino ainda faz sentido. Ninguém mostra, com dados, se você realmente está evoluindo. Com o tempo, surgem a insegurança, a falta de motivação e a sensação de que todo o esforço não está trazendo resultado.
+            Muitas pessoas acreditam que não conseguem manter uma rotina de treinos por falta de disciplina. Mas, em muitos casos, o verdadeiro problema está na ausência de acompanhamento. Você recebe uma ficha pronta, aprende alguns exercícios e depois precisa continuar sozinho.
           </p>
         </motion.div>
+
+        <motion.ul
+          initial="hidden"
+          whileInView="show"
+          viewport={{ once: true, margin: "-80px" }}
+          variants={{ show: { transition: { staggerChildren: 0.25 } } }}
+          className="max-w-3xl mx-auto mt-12 md:mt-16 space-y-6 md:space-y-8"
+        >
+          {[
+            "Ninguém percebe quando sua execução está errada.",
+            "Ninguém acompanha sua frequência.",
+            "Ninguém verifica se o treino ainda faz sentido.",
+            "Ninguém mostra, com dados, se você realmente está evoluindo.",
+          ].map((line) => (
+            <motion.li
+              key={line}
+              variants={fadeUp}
+              className="font-display italic font-light text-lg sm:text-xl md:text-3xl leading-[1.3] text-nor-cream/90 border-l border-nor-cream/25 pl-5 md:pl-6"
+            >
+              {line}
+            </motion.li>
+          ))}
+        </motion.ul>
 
         <motion.div
           initial="hidden"
@@ -265,37 +287,48 @@ function NorLanding() {
 
       {/* EXPERIÊNCIA */}
       <section id="experiencia" className="mx-auto max-w-[1500px] px-6 md:px-10 py-24 md:py-36">
-        <div className="max-w-4xl mx-auto">
-          
-          <h2 className="font-display text-2xl sm:text-3xl md:text-6xl leading-[1.15] md:leading-[1.05] text-nor-cream">
-            Foi para mudar essa experiência que a{" "}
-            <span className="italic font-light">NOR criou uma forma diferente de treinar.</span>
-          </h2>
-          <p className="mt-6 md:mt-8 max-w-2xl text-sm md:text-base text-nor-cream/75 font-light leading-relaxed">
-            A NOR é uma Academia Boutique em Soledade, estruturada para atender poucos alunos por vez e acompanhar cada pessoa de forma próxima. Aqui, você não é apenas mais um aluno dentro da academia. Sua jornada começa com uma avaliação, passa por um planejamento individual e continua com acompanhamento durante cada sessão, mensuração dos resultados e ajustes periódicos.
-          </p>
-          <div className="hairline my-10 md:my-12 opacity-40" />
-          <p className="text-base md:text-xl text-nor-cream/85 font-light leading-relaxed">
-            Não entregamos apenas acesso aos equipamentos.
-          </p>
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-12 md:gap-16 items-center">
+          <div>
+            <h2 className="font-display text-2xl sm:text-3xl md:text-5xl leading-[1.15] md:leading-[1.05] text-nor-cream">
+              Foi para mudar essa experiência que a{" "}
+              <span className="italic font-light">NOR criou uma forma diferente de treinar.</span>
+            </h2>
+            <p className="mt-6 md:mt-8 text-sm md:text-base text-nor-cream/75 font-light leading-relaxed">
+              A NOR é uma Academia Boutique em Soledade, estruturada para atender poucos alunos por vez e acompanhar cada pessoa de forma próxima. Aqui, você não é apenas mais um aluno dentro da academia. Sua jornada começa com uma avaliação, passa por um planejamento individual e continua com acompanhamento durante cada sessão, mensuração dos resultados e ajustes periódicos.
+            </p>
+            <div className="hairline my-8 md:my-10 opacity-40" />
+            <p className="text-base md:text-lg text-nor-cream/85 font-light leading-relaxed">
+              Não entregamos apenas acesso aos equipamentos.
+            </p>
+          </div>
           <motion.div
-            initial="hidden"
-            whileInView="show"
+            initial={{ opacity: 0, scale: 1.05 }}
+            whileInView={{ opacity: 1, scale: 1 }}
             viewport={{ once: true, margin: "-100px" }}
-            variants={fadeUp}
-            className="mt-10 md:mt-14"
+            transition={{ duration: 1.1, ease: [0.22, 1, 0.36, 1] }}
+            className="aspect-[4/5] overflow-hidden"
           >
-            <blockquote className="border-l-2 border-nor-beige pl-6 md:pl-8 font-display italic font-light text-xl sm:text-2xl md:text-4xl leading-[1.25] md:leading-[1.2] text-nor-cream">
-              Entregamos um processo completo de acompanhamento.
-              <br />
-              <span className="text-nor-beige">Método. Atenção individual. Evolução constante.</span>
-            </blockquote>
+            <img src={experienceImg.url} alt="Interior da NOR Academia Boutique" className="w-full h-full object-cover" />
           </motion.div>
         </div>
+
+        <motion.div
+          initial="hidden"
+          whileInView="show"
+          viewport={{ once: true, margin: "-100px" }}
+          variants={fadeUp}
+          className="mt-16 md:mt-24 max-w-4xl mx-auto"
+        >
+          <blockquote className="border-l-2 border-nor-beige pl-6 md:pl-8 font-display italic font-light text-xl sm:text-2xl md:text-4xl leading-[1.25] md:leading-[1.2] text-nor-cream">
+            Entregamos um processo completo de acompanhamento.
+            <br />
+            <span className="text-nor-beige">Método. Atenção individual. Evolução constante.</span>
+          </blockquote>
+        </motion.div>
       </section>
 
 
-      {/* MÉTODO — 6 PILARES */}
+      {/* MÉTODO — 6 PILARES (grid acordeão) */}
       <section className="border-t border-nor-cream/10">
         <div className="mx-auto max-w-[1500px] px-6 md:px-10 py-24 md:py-36">
           <div className="eyebrow text-nor-beige mb-10 md:mb-12">— A experiência NOR</div>
@@ -306,66 +339,57 @@ function NorLanding() {
             variants={fadeUp}
             className="font-display text-3xl sm:text-4xl md:text-6xl lg:text-7xl leading-[1.05] md:leading-[0.98] tracking-[-0.02em] text-nor-cream max-w-5xl"
           >
-            Um método construído
-            <br />
-            <span className="italic font-light">para acompanhar sua evolução.</span>
+            O que muda no seu treino{" "}
+            <span className="italic font-light">a partir do primeiro dia.</span>
           </motion.h2>
 
-          <div className="mt-16 md:mt-24 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-x-10 md:gap-x-14 gap-y-12 md:gap-y-16">
+          <div className="mt-16 md:mt-24 grid grid-cols-2 lg:grid-cols-3 gap-x-6 md:gap-x-10 gap-y-4 md:gap-y-6">
             {[
-              {
-                n: "01",
-                t: "Professor durante todo o treino",
-                d: "O professor permanece presente do início ao fim da sessão. Ele orienta, corrige os movimentos, acompanha sua execução e ajuda você a manter o foco durante o treino. Você não recebe apenas uma explicação inicial para depois continuar sozinho.",
-              },
-              {
-                n: "02",
-                t: "Até 5 alunos por professor",
-                d: "A proporção máxima de cinco alunos por professor permite oferecer uma atenção que não seria possível em grupos grandes. Isso significa mais proximidade, mais correções e mais direcionamento durante toda a sessão.",
-              },
-              {
-                n: "03",
-                t: "Planejamento individual",
-                d: "Seu treino é construído de acordo com seu objetivo, seu histórico, sua rotina e o momento atual do seu corpo. Na NOR, você não precisa se adaptar a um planejamento genérico. O planejamento é desenvolvido para se adaptar a você.",
-              },
-              {
-                n: "04",
-                t: "Nutrição inteligente",
-                d: "O plano nutricional é integrado ao programa de treinamento. Assim, treino e alimentação trabalham em conjunto, criando uma estratégia mais coerente com o resultado que você deseja alcançar.",
-              },
-              {
-                n: "05",
-                t: "Bioimpedância mensal",
-                d: "Todos os meses, sua evolução é acompanhada por meio da bioimpedância. A avaliação fornece dados sobre a composição corporal e permite entender como seu corpo está respondendo ao processo. Aqui, sua evolução não depende apenas do espelho ou de percepções subjetivas. Ela é acompanhada por números.",
-              },
-              {
-                n: "06",
-                t: "Ajustes constantes",
-                d: "Seu programa não permanece igual indefinidamente. Com base nas avaliações, no seu desempenho e na sua evolução, o planejamento é revisado e ajustado periodicamente. O método evolui junto com você.",
-              },
+              { n: "01", t: "Professor durante todo o treino", s: "Presença ativa em cada sessão.", d: "O professor permanece presente do início ao fim da sessão. Ele orienta, corrige os movimentos, acompanha sua execução e ajuda você a manter o foco durante o treino. Você não recebe apenas uma explicação inicial para depois continuar sozinho." },
+              { n: "02", t: "Até 5 alunos por professor", s: "Grupos pequenos, atenção real.", d: "A proporção máxima de cinco alunos por professor permite oferecer uma atenção que não seria possível em grupos grandes. Isso significa mais proximidade, mais correções e mais direcionamento durante toda a sessão." },
+              { n: "03", t: "Planejamento individual", s: "Um treino construído para você.", d: "Seu treino é construído de acordo com seu objetivo, seu histórico, sua rotina e o momento atual do seu corpo. Na NOR, você não precisa se adaptar a um planejamento genérico. O planejamento é desenvolvido para se adaptar a você." },
+              { n: "04", t: "Nutrição inteligente", s: "Treino e alimentação integrados.", d: "O plano nutricional é integrado ao programa de treinamento. Assim, treino e alimentação trabalham em conjunto, criando uma estratégia mais coerente com o resultado que você deseja alcançar." },
+              { n: "05", t: "Bioimpedância mensal", s: "Sua evolução medida por dados.", d: "Todos os meses, sua evolução é acompanhada por meio da bioimpedância. A avaliação fornece dados sobre a composição corporal e permite entender como seu corpo está respondendo ao processo. Aqui, sua evolução não depende apenas do espelho ou de percepções subjetivas. Ela é acompanhada por números." },
+              { n: "06", t: "Ajustes constantes", s: "O método evolui junto com você.", d: "Seu programa não permanece igual indefinidamente. Com base nas avaliações, no seu desempenho e na sua evolução, o planejamento é revisado e ajustado periodicamente. O método evolui junto com você." },
             ].map((p, i) => (
-              <motion.div
+              <motion.details
                 key={p.n}
-                initial={{ opacity: 0, y: 40 }}
+                initial={{ opacity: 0, y: 30 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true, margin: "-60px" }}
-                transition={{ duration: 0.7, ease: [0.22, 1, 0.36, 1], delay: (i % 3) * 0.1 }}
-                className="border-t border-nor-cream/20 pt-6"
+                transition={{ duration: 0.6, ease: [0.22, 1, 0.36, 1], delay: (i % 3) * 0.08 }}
+                className="group border-t border-nor-cream/20 pt-4 md:pt-6"
               >
-                <div className="font-display text-nor-beige/80 text-sm tracking-[0.2em] mb-4">{p.n}</div>
-                <h3 className="font-display italic font-light text-2xl md:text-3xl leading-tight text-nor-cream mb-4">
-                  {p.t}
-                </h3>
-                <p className="text-sm md:text-base text-nor-cream/75 font-light leading-relaxed">
+                <summary className="list-none cursor-pointer flex items-start gap-3 md:gap-4">
+                  <div className="font-display text-nor-beige/80 text-xs md:text-sm tracking-[0.2em] pt-1">{p.n}</div>
+                  <div className="flex-1 min-w-0">
+                    <h3 className="font-display italic font-light text-lg md:text-2xl leading-tight text-nor-cream mb-1">
+                      {p.t}
+                    </h3>
+                    <p className="text-xs md:text-sm text-nor-cream/60 font-light">{p.s}</p>
+                  </div>
+                  <span className="shrink-0 text-nor-beige text-xl md:text-2xl transition-transform group-open:rotate-45">+</span>
+                </summary>
+                <p className="mt-4 md:mt-5 text-sm md:text-base text-nor-cream/80 font-light leading-relaxed">
                   {p.d}
                 </p>
-              </motion.div>
+              </motion.details>
             ))}
+          </div>
+
+          <div className="mt-14 md:mt-20 flex justify-center">
+            <a
+              href="#agendar"
+              className="group inline-flex items-center gap-3 border border-nor-cream/40 text-nor-cream px-8 py-4 text-[11px] uppercase tracking-[0.28em] font-medium hover:bg-nor-cream hover:text-nor-green transition-colors"
+            >
+              Quero entender como funciona minha avaliação
+              <span className="inline-block w-6 h-px bg-current transition-all group-hover:w-10" />
+            </a>
           </div>
         </div>
       </section>
 
-      {/* CTA / BENEFÍCIOS */}
+      {/* BENEFÍCIOS — citações alternadas */}
       <section id="contato" className="border-t border-nor-cream/10">
         <div className="mx-auto max-w-[1500px] px-6 md:px-10 pt-12 pb-24 md:pt-16 md:pb-36">
           <div className="max-w-4xl">
@@ -375,24 +399,49 @@ function NorLanding() {
             </h2>
           </div>
 
-          <div className="mt-10 md:mt-14 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-12 gap-y-12">
+          <div className="mt-14 md:mt-20 max-w-5xl mx-auto space-y-14 md:space-y-20">
             {[
-              { t: "Mais segurança", d: "Você recebe orientação e correção durante a execução dos exercícios." },
-              { t: "Mais direção", d: "Cada treino possui um propósito dentro do seu planejamento." },
-              { t: "Mais constância", d: "A equipe acompanha sua rotina e ajuda você a não abandonar o processo." },
-              { t: "Mais clareza", d: "As avaliações mensais mostram o que está evoluindo e o que precisa ser ajustado." },
-              { t: "Mais individualização", d: "Seu programa considera seu corpo, seu momento e seus objetivos." },
-              { t: "Mais eficiência", d: "Treino, nutrição e acompanhamento trabalham de forma integrada." },
-            ].map((b) => (
-              <div key={b.t} className="border-t border-nor-cream/15 pt-6">
-                <h3 className="font-display italic text-2xl md:text-3xl text-nor-cream tracking-[-0.01em]">
-                  {b.t}
-                </h3>
-                <p className="mt-3 text-sm md:text-base text-nor-cream/75 font-light leading-relaxed">
-                  {b.d}
-                </p>
-              </div>
-            ))}
+              { t: "Mais segurança.", d: "Você recebe orientação e correção durante a execução." },
+              { t: "Mais direção.", d: "Cada treino possui um propósito dentro do seu planejamento." },
+              { t: "Mais constância.", d: "A equipe acompanha sua rotina e ajuda você a não abandonar o processo." },
+              { image: true as const },
+              { t: "Mais clareza.", d: "As avaliações mensais mostram o que evoluiu e o que precisa ser ajustado." },
+              { t: "Mais individualização.", d: "Seu programa considera seu corpo, seu momento e seus objetivos." },
+              { t: "Mais eficiência.", d: "Treino, nutrição e acompanhamento trabalham de forma integrada." },
+            ].map((b, i) => {
+              if ("image" in b) {
+                return (
+                  <motion.div
+                    key="mid-photo"
+                    initial={{ opacity: 0, scale: 1.05 }}
+                    whileInView={{ opacity: 1, scale: 1 }}
+                    viewport={{ once: true, margin: "-80px" }}
+                    transition={{ duration: 1, ease: [0.22, 1, 0.36, 1] }}
+                    className="aspect-[16/9] overflow-hidden max-w-4xl mx-auto"
+                  >
+                    <img src={detailImg.url} alt="Aluno treinando na NOR" className="w-full h-full object-cover" />
+                  </motion.div>
+                );
+              }
+              const alignRight = i % 2 === 1;
+              return (
+                <motion.blockquote
+                  key={b.t}
+                  initial={{ opacity: 0, y: 30 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  viewport={{ once: true, margin: "-80px" }}
+                  transition={{ duration: 0.8, ease: [0.22, 1, 0.36, 1] }}
+                  className={`max-w-2xl ${alignRight ? "ml-auto text-right border-r-2 pr-6 md:pr-8" : "text-left border-l-2 pl-6 md:pl-8"} border-nor-beige`}
+                >
+                  <p className="font-display italic font-light text-2xl sm:text-3xl md:text-5xl leading-[1.15] text-nor-cream">
+                    “{b.t}”
+                  </p>
+                  <p className="mt-4 text-sm md:text-base text-nor-cream/70 font-light">
+                    {b.d}
+                  </p>
+                </motion.blockquote>
+              );
+            })}
           </div>
         </div>
       </section>
@@ -408,32 +457,37 @@ function NorLanding() {
             </h2>
           </div>
 
-          <div className="mt-14 md:mt-20 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-12 gap-y-12">
-            {[
-              { n: "01", t: "Avaliação inicial", d: "Primeiro, buscamos entender seus objetivos, histórico, rotina e as dificuldades que impediram você de alcançar resultados anteriormente." },
-              { n: "02", t: "Planejamento individual", d: "A partir da avaliação, construímos um programa de treinamento alinhado às suas necessidades." },
-              { n: "03", t: "Treino acompanhado", d: "Durante cada sessão, o professor acompanha sua execução do início ao fim, dentro de um grupo de até cinco alunos." },
-              { n: "04", t: "Nutrição integrada", d: "Sua alimentação é alinhada ao treinamento e aos resultados que você deseja alcançar." },
-              { n: "05", t: "Avaliação mensal", d: "A bioimpedância permite acompanhar sua evolução por meio de dados reais." },
-              { n: "06", t: "Ajustes contínuos", d: "Com base nos resultados, o planejamento é atualizado para continuar estimulando sua evolução." },
-            ].map((s, i) => (
-              <motion.div
-                key={s.n}
-                initial={{ opacity: 0, y: 40 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true, margin: "-60px" }}
-                transition={{ duration: 0.7, ease: [0.22, 1, 0.36, 1], delay: (i % 3) * 0.1 }}
-                className="border-t border-nor-cream/20 pt-6"
-              >
-                <div className="font-display text-nor-beige/80 text-sm tracking-[0.2em] mb-4">{s.n}</div>
-                <h3 className="font-display italic font-light text-2xl md:text-3xl leading-tight text-nor-cream mb-4">
-                  {s.t}
-                </h3>
-                <p className="text-sm md:text-base text-nor-cream/75 font-light leading-relaxed">
-                  {s.d}
-                </p>
-              </motion.div>
-            ))}
+          {/* Timeline horizontal (desktop) / vertical compacta (mobile) */}
+          <div className="mt-14 md:mt-20 relative">
+            <div className="hidden md:block absolute left-0 right-0 top-[38px] h-px bg-nor-cream/20" />
+            <div className="flex md:grid md:grid-cols-6 gap-6 md:gap-4 overflow-x-auto md:overflow-visible snap-x snap-mandatory md:snap-none pb-4 md:pb-0 -mx-6 px-6 md:mx-0 md:px-0">
+              {[
+                { n: "01", t: "Avaliação inicial", d: "Entendemos objetivos, histórico e rotina." },
+                { n: "02", t: "Planejamento individual", d: "Programa alinhado às suas necessidades." },
+                { n: "03", t: "Treino acompanhado", d: "Professor presente do início ao fim." },
+                { n: "04", t: "Nutrição integrada", d: "Alimentação alinhada ao treino." },
+                { n: "05", t: "Avaliação mensal", d: "Bioimpedância acompanha sua evolução." },
+                { n: "06", t: "Ajustes contínuos", d: "Planejamento revisado periodicamente." },
+              ].map((s, i) => (
+                <motion.div
+                  key={s.n}
+                  initial={{ opacity: 0, y: 24 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  viewport={{ once: true, margin: "-40px" }}
+                  transition={{ duration: 0.6, ease: [0.22, 1, 0.36, 1], delay: i * 0.08 }}
+                  className="snap-start shrink-0 w-[75%] sm:w-[45%] md:w-auto flex flex-col items-start"
+                >
+                  <div className="font-display text-nor-beige text-4xl md:text-5xl leading-none tracking-tight">{s.n}</div>
+                  <div className="mt-3 md:mt-4 w-8 h-px bg-nor-beige/50 md:hidden" />
+                  <h3 className="mt-3 md:mt-6 font-display italic font-light text-lg md:text-xl text-nor-cream leading-tight">
+                    {s.t}
+                  </h3>
+                  <p className="mt-2 text-xs md:text-sm text-nor-cream/70 font-light leading-snug">
+                    {s.d}
+                  </p>
+                </motion.div>
+              ))}
+            </div>
           </div>
 
           <div className="mt-16 md:mt-20 flex justify-center">
@@ -459,7 +513,7 @@ function NorLanding() {
               A NOR é <span className="italic font-light">para você que:</span>
             </h2>
           </div>
-          <ul className="mt-12 md:mt-16 grid grid-cols-1 md:grid-cols-2 gap-x-12 gap-y-6 max-w-5xl">
+          <ul className="mt-12 md:mt-16 grid grid-cols-1 md:grid-cols-2 gap-x-10 gap-y-3 md:gap-y-4 max-w-5xl">
             {[
               "Já frequentou outras academias, mas não conseguiu manter a constância;",
               "Sente insegurança ao executar exercícios sozinho;",
@@ -470,9 +524,11 @@ function NorLanding() {
               "Não quer ser apenas mais um aluno dentro de uma academia;",
               "Valoriza acompanhamento, organização e evolução mensurável.",
             ].map((item) => (
-              <li key={item} className="flex gap-4 items-start border-t border-nor-cream/15 pt-4">
-                <span className="text-nor-beige font-display text-lg leading-none pt-1">●</span>
-                <span className="text-base md:text-lg text-nor-cream/85 font-light leading-relaxed">{item}</span>
+              <li key={item} className="flex gap-3 items-start py-2.5 border-b border-nor-cream/10">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="w-5 h-5 shrink-0 mt-0.5 text-nor-beige">
+                  <polyline points="20 6 9 17 4 12" />
+                </svg>
+                <span className="text-sm md:text-base text-nor-cream/85 font-light leading-snug">{item}</span>
               </li>
             ))}
           </ul>
@@ -503,15 +559,27 @@ function NorLanding() {
                 transition={{ duration: 0.9, ease: [0.22, 1, 0.36, 1], delay: i * 0.15 }}
                 className="flex flex-col"
               >
-                <div className="bg-nor-green-light p-8 md:p-10">
-                  <h3 className="font-display italic font-light text-2xl md:text-3xl text-nor-cream mb-4">{p.t}</h3>
+                <div className="bg-nor-green-light p-6 md:p-8">
+                  <h3 className="font-display italic font-light text-xl md:text-2xl text-nor-cream mb-3">{p.t}</h3>
                   <p className="text-sm md:text-base text-nor-cream/80 font-light leading-relaxed">{p.d}</p>
                 </div>
-                <div className="aspect-[4/5] overflow-hidden">
+                <div className="aspect-[3/2] overflow-hidden">
                   <img src={p.img} alt={p.t} className="w-full h-full object-cover" />
                 </div>
               </motion.div>
             ))}
+          </div>
+
+          <div className="mt-12 md:mt-16 flex justify-center">
+            <a
+              href="https://wa.me/5554993835053?text=Ol%C3%A1%2C%20qual%20programa%20da%20NOR%20combina%20comigo%3F"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="group inline-flex items-center gap-3 border border-nor-cream/40 text-nor-cream px-8 py-4 text-[11px] uppercase tracking-[0.28em] font-medium hover:bg-nor-cream hover:text-nor-green transition-colors"
+            >
+              Qual programa combina comigo?
+              <span className="inline-block w-6 h-px bg-current transition-all group-hover:w-10" />
+            </a>
           </div>
         </div>
       </section>
@@ -595,22 +663,6 @@ function NorLanding() {
             </blockquote>
           </div>
 
-          <div className="mt-16 md:mt-20 grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8 max-w-5xl mx-auto">
-            {[
-              "Depoimentos em vídeo dos alunos",
-              "Avaliações do Google",
-              "Evolução mensurada por avaliações",
-            ].map((t) => (
-              <div key={t} className="border border-nor-cream/15 p-8 text-center">
-                <div className="font-display italic text-lg md:text-xl text-nor-cream/70 font-light">
-                  {t}
-                </div>
-                <p className="mt-3 text-xs uppercase tracking-[0.2em] text-nor-cream/40">
-                  Em breve
-                </p>
-              </div>
-            ))}
-          </div>
         </div>
       </section>
 
