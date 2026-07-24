@@ -457,32 +457,37 @@ function NorLanding() {
             </h2>
           </div>
 
-          <div className="mt-14 md:mt-20 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-12 gap-y-12">
-            {[
-              { n: "01", t: "Avaliação inicial", d: "Primeiro, buscamos entender seus objetivos, histórico, rotina e as dificuldades que impediram você de alcançar resultados anteriormente." },
-              { n: "02", t: "Planejamento individual", d: "A partir da avaliação, construímos um programa de treinamento alinhado às suas necessidades." },
-              { n: "03", t: "Treino acompanhado", d: "Durante cada sessão, o professor acompanha sua execução do início ao fim, dentro de um grupo de até cinco alunos." },
-              { n: "04", t: "Nutrição integrada", d: "Sua alimentação é alinhada ao treinamento e aos resultados que você deseja alcançar." },
-              { n: "05", t: "Avaliação mensal", d: "A bioimpedância permite acompanhar sua evolução por meio de dados reais." },
-              { n: "06", t: "Ajustes contínuos", d: "Com base nos resultados, o planejamento é atualizado para continuar estimulando sua evolução." },
-            ].map((s, i) => (
-              <motion.div
-                key={s.n}
-                initial={{ opacity: 0, y: 40 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true, margin: "-60px" }}
-                transition={{ duration: 0.7, ease: [0.22, 1, 0.36, 1], delay: (i % 3) * 0.1 }}
-                className="border-t border-nor-cream/20 pt-6"
-              >
-                <div className="font-display text-nor-beige/80 text-sm tracking-[0.2em] mb-4">{s.n}</div>
-                <h3 className="font-display italic font-light text-2xl md:text-3xl leading-tight text-nor-cream mb-4">
-                  {s.t}
-                </h3>
-                <p className="text-sm md:text-base text-nor-cream/75 font-light leading-relaxed">
-                  {s.d}
-                </p>
-              </motion.div>
-            ))}
+          {/* Timeline horizontal (desktop) / vertical compacta (mobile) */}
+          <div className="mt-14 md:mt-20 relative">
+            <div className="hidden md:block absolute left-0 right-0 top-[38px] h-px bg-nor-cream/20" />
+            <div className="flex md:grid md:grid-cols-6 gap-6 md:gap-4 overflow-x-auto md:overflow-visible snap-x snap-mandatory md:snap-none pb-4 md:pb-0 -mx-6 px-6 md:mx-0 md:px-0">
+              {[
+                { n: "01", t: "Avaliação inicial", d: "Entendemos objetivos, histórico e rotina." },
+                { n: "02", t: "Planejamento individual", d: "Programa alinhado às suas necessidades." },
+                { n: "03", t: "Treino acompanhado", d: "Professor presente do início ao fim." },
+                { n: "04", t: "Nutrição integrada", d: "Alimentação alinhada ao treino." },
+                { n: "05", t: "Avaliação mensal", d: "Bioimpedância acompanha sua evolução." },
+                { n: "06", t: "Ajustes contínuos", d: "Planejamento revisado periodicamente." },
+              ].map((s, i) => (
+                <motion.div
+                  key={s.n}
+                  initial={{ opacity: 0, y: 24 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  viewport={{ once: true, margin: "-40px" }}
+                  transition={{ duration: 0.6, ease: [0.22, 1, 0.36, 1], delay: i * 0.08 }}
+                  className="snap-start shrink-0 w-[75%] sm:w-[45%] md:w-auto flex flex-col items-start"
+                >
+                  <div className="font-display text-nor-beige text-4xl md:text-5xl leading-none tracking-tight">{s.n}</div>
+                  <div className="mt-3 md:mt-4 w-8 h-px bg-nor-beige/50 md:hidden" />
+                  <h3 className="mt-3 md:mt-6 font-display italic font-light text-lg md:text-xl text-nor-cream leading-tight">
+                    {s.t}
+                  </h3>
+                  <p className="mt-2 text-xs md:text-sm text-nor-cream/70 font-light leading-snug">
+                    {s.d}
+                  </p>
+                </motion.div>
+              ))}
+            </div>
           </div>
 
           <div className="mt-16 md:mt-20 flex justify-center">
