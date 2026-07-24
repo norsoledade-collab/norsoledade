@@ -559,15 +559,27 @@ function NorLanding() {
                 transition={{ duration: 0.9, ease: [0.22, 1, 0.36, 1], delay: i * 0.15 }}
                 className="flex flex-col"
               >
-                <div className="bg-nor-green-light p-8 md:p-10">
-                  <h3 className="font-display italic font-light text-2xl md:text-3xl text-nor-cream mb-4">{p.t}</h3>
+                <div className="bg-nor-green-light p-6 md:p-8">
+                  <h3 className="font-display italic font-light text-xl md:text-2xl text-nor-cream mb-3">{p.t}</h3>
                   <p className="text-sm md:text-base text-nor-cream/80 font-light leading-relaxed">{p.d}</p>
                 </div>
-                <div className="aspect-[4/5] overflow-hidden">
+                <div className="aspect-[3/2] overflow-hidden">
                   <img src={p.img} alt={p.t} className="w-full h-full object-cover" />
                 </div>
               </motion.div>
             ))}
+          </div>
+
+          <div className="mt-12 md:mt-16 flex justify-center">
+            <a
+              href="https://wa.me/5554993835053?text=Ol%C3%A1%2C%20qual%20programa%20da%20NOR%20combina%20comigo%3F"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="group inline-flex items-center gap-3 border border-nor-cream/40 text-nor-cream px-8 py-4 text-[11px] uppercase tracking-[0.28em] font-medium hover:bg-nor-cream hover:text-nor-green transition-colors"
+            >
+              Qual programa combina comigo?
+              <span className="inline-block w-6 h-px bg-current transition-all group-hover:w-10" />
+            </a>
           </div>
         </div>
       </section>
