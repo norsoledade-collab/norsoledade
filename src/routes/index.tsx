@@ -165,16 +165,15 @@ function NorLanding() {
 
 
 
-      {/* PROGRAMAS — 3 cards com foto (padrão Unique) */}
+      {/* IDENTIFICAÇÃO COM A DOR */}
       <section id="programas" className="mx-auto max-w-[1500px] px-6 md:px-10 pb-24 md:pb-36">
         <div className="mb-10 md:mb-14">
           <div className="border-l border-nor-cream/40 pl-4 md:pl-6 w-fit mx-auto text-left">
-            
             <h2 className="font-display text-2xl sm:text-3xl md:text-6xl leading-[1.15] md:leading-[1.05] text-nor-cream">
               Você já começou uma academia e <span className="italic font-light">desistiu depois de algumas semanas?</span>
+              <br />
+              <span className="italic font-light text-nor-beige">Descubra por quê.</span>
             </h2>
-
-
           </div>
         </div>
 
@@ -186,9 +185,32 @@ function NorLanding() {
           className="max-w-3xl mx-auto"
         >
           <p className="text-base md:text-xl text-nor-cream/85 font-light leading-relaxed md:leading-[1.7] text-left">
-            Muitas pessoas acreditam que não conseguem manter uma rotina de treinos por falta de disciplina. Mas, em muitos casos, o verdadeiro problema está na ausência de acompanhamento. Você recebe uma ficha pronta, aprende alguns exercícios e depois precisa continuar sozinho. Ninguém percebe quando sua execução está errada. Ninguém acompanha sua frequência. Ninguém verifica se o treino ainda faz sentido. Ninguém mostra, com dados, se você realmente está evoluindo. Com o tempo, surgem a insegurança, a falta de motivação e a sensação de que todo o esforço não está trazendo resultado.
+            Muitas pessoas acreditam que não conseguem manter uma rotina de treinos por falta de disciplina. Mas, em muitos casos, o verdadeiro problema está na ausência de acompanhamento. Você recebe uma ficha pronta, aprende alguns exercícios e depois precisa continuar sozinho.
           </p>
         </motion.div>
+
+        <motion.ul
+          initial="hidden"
+          whileInView="show"
+          viewport={{ once: true, margin: "-80px" }}
+          variants={{ show: { transition: { staggerChildren: 0.25 } } }}
+          className="max-w-3xl mx-auto mt-12 md:mt-16 space-y-6 md:space-y-8"
+        >
+          {[
+            "Ninguém percebe quando sua execução está errada.",
+            "Ninguém acompanha sua frequência.",
+            "Ninguém verifica se o treino ainda faz sentido.",
+            "Ninguém mostra, com dados, se você realmente está evoluindo.",
+          ].map((line) => (
+            <motion.li
+              key={line}
+              variants={fadeUp}
+              className="font-display italic font-light text-lg sm:text-xl md:text-3xl leading-[1.3] text-nor-cream/90 border-l border-nor-cream/25 pl-5 md:pl-6"
+            >
+              {line}
+            </motion.li>
+          ))}
+        </motion.ul>
 
         <motion.div
           initial="hidden"
