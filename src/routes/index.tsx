@@ -663,22 +663,6 @@ function NorLanding() {
             </blockquote>
           </div>
 
-          <div className="mt-16 md:mt-20 grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8 max-w-5xl mx-auto">
-            {[
-              "Depoimentos em vídeo dos alunos",
-              "Avaliações do Google",
-              "Evolução mensurada por avaliações",
-            ].map((t) => (
-              <div key={t} className="border border-nor-cream/15 p-8 text-center">
-                <div className="font-display italic text-lg md:text-xl text-nor-cream/70 font-light">
-                  {t}
-                </div>
-                <p className="mt-3 text-xs uppercase tracking-[0.2em] text-nor-cream/40">
-                  Em breve
-                </p>
-              </div>
-            ))}
-          </div>
         </div>
       </section>
 
