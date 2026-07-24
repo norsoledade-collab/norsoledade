@@ -287,33 +287,44 @@ function NorLanding() {
 
       {/* EXPERIÊNCIA */}
       <section id="experiencia" className="mx-auto max-w-[1500px] px-6 md:px-10 py-24 md:py-36">
-        <div className="max-w-4xl mx-auto">
-          
-          <h2 className="font-display text-2xl sm:text-3xl md:text-6xl leading-[1.15] md:leading-[1.05] text-nor-cream">
-            Foi para mudar essa experiência que a{" "}
-            <span className="italic font-light">NOR criou uma forma diferente de treinar.</span>
-          </h2>
-          <p className="mt-6 md:mt-8 max-w-2xl text-sm md:text-base text-nor-cream/75 font-light leading-relaxed">
-            A NOR é uma Academia Boutique em Soledade, estruturada para atender poucos alunos por vez e acompanhar cada pessoa de forma próxima. Aqui, você não é apenas mais um aluno dentro da academia. Sua jornada começa com uma avaliação, passa por um planejamento individual e continua com acompanhamento durante cada sessão, mensuração dos resultados e ajustes periódicos.
-          </p>
-          <div className="hairline my-10 md:my-12 opacity-40" />
-          <p className="text-base md:text-xl text-nor-cream/85 font-light leading-relaxed">
-            Não entregamos apenas acesso aos equipamentos.
-          </p>
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-12 md:gap-16 items-center">
+          <div>
+            <h2 className="font-display text-2xl sm:text-3xl md:text-5xl leading-[1.15] md:leading-[1.05] text-nor-cream">
+              Foi para mudar essa experiência que a{" "}
+              <span className="italic font-light">NOR criou uma forma diferente de treinar.</span>
+            </h2>
+            <p className="mt-6 md:mt-8 text-sm md:text-base text-nor-cream/75 font-light leading-relaxed">
+              A NOR é uma Academia Boutique em Soledade, estruturada para atender poucos alunos por vez e acompanhar cada pessoa de forma próxima. Aqui, você não é apenas mais um aluno dentro da academia. Sua jornada começa com uma avaliação, passa por um planejamento individual e continua com acompanhamento durante cada sessão, mensuração dos resultados e ajustes periódicos.
+            </p>
+            <div className="hairline my-8 md:my-10 opacity-40" />
+            <p className="text-base md:text-lg text-nor-cream/85 font-light leading-relaxed">
+              Não entregamos apenas acesso aos equipamentos.
+            </p>
+          </div>
           <motion.div
-            initial="hidden"
-            whileInView="show"
+            initial={{ opacity: 0, scale: 1.05 }}
+            whileInView={{ opacity: 1, scale: 1 }}
             viewport={{ once: true, margin: "-100px" }}
-            variants={fadeUp}
-            className="mt-10 md:mt-14"
+            transition={{ duration: 1.1, ease: [0.22, 1, 0.36, 1] }}
+            className="aspect-[4/5] overflow-hidden"
           >
-            <blockquote className="border-l-2 border-nor-beige pl-6 md:pl-8 font-display italic font-light text-xl sm:text-2xl md:text-4xl leading-[1.25] md:leading-[1.2] text-nor-cream">
-              Entregamos um processo completo de acompanhamento.
-              <br />
-              <span className="text-nor-beige">Método. Atenção individual. Evolução constante.</span>
-            </blockquote>
+            <img src={experienceImg.url} alt="Interior da NOR Academia Boutique" className="w-full h-full object-cover" />
           </motion.div>
         </div>
+
+        <motion.div
+          initial="hidden"
+          whileInView="show"
+          viewport={{ once: true, margin: "-100px" }}
+          variants={fadeUp}
+          className="mt-16 md:mt-24 max-w-4xl mx-auto"
+        >
+          <blockquote className="border-l-2 border-nor-beige pl-6 md:pl-8 font-display italic font-light text-xl sm:text-2xl md:text-4xl leading-[1.25] md:leading-[1.2] text-nor-cream">
+            Entregamos um processo completo de acompanhamento.
+            <br />
+            <span className="text-nor-beige">Método. Atenção individual. Evolução constante.</span>
+          </blockquote>
+        </motion.div>
       </section>
 
 
