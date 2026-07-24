@@ -513,7 +513,7 @@ function NorLanding() {
               A NOR é <span className="italic font-light">para você que:</span>
             </h2>
           </div>
-          <ul className="mt-12 md:mt-16 grid grid-cols-1 md:grid-cols-2 gap-x-12 gap-y-6 max-w-5xl">
+          <ul className="mt-12 md:mt-16 grid grid-cols-1 md:grid-cols-2 gap-x-10 gap-y-3 md:gap-y-4 max-w-5xl">
             {[
               "Já frequentou outras academias, mas não conseguiu manter a constância;",
               "Sente insegurança ao executar exercícios sozinho;",
@@ -524,9 +524,11 @@ function NorLanding() {
               "Não quer ser apenas mais um aluno dentro de uma academia;",
               "Valoriza acompanhamento, organização e evolução mensurável.",
             ].map((item) => (
-              <li key={item} className="flex gap-4 items-start border-t border-nor-cream/15 pt-4">
-                <span className="text-nor-beige font-display text-lg leading-none pt-1">●</span>
-                <span className="text-base md:text-lg text-nor-cream/85 font-light leading-relaxed">{item}</span>
+              <li key={item} className="flex gap-3 items-start py-2.5 border-b border-nor-cream/10">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="w-5 h-5 shrink-0 mt-0.5 text-nor-beige">
+                  <polyline points="20 6 9 17 4 12" />
+                </svg>
+                <span className="text-sm md:text-base text-nor-cream/85 font-light leading-snug">{item}</span>
               </li>
             ))}
           </ul>
