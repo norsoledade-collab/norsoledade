@@ -328,7 +328,7 @@ function NorLanding() {
       </section>
 
 
-      {/* MÉTODO — 6 PILARES */}
+      {/* MÉTODO — 6 PILARES (grid acordeão) */}
       <section className="border-t border-nor-cream/10">
         <div className="mx-auto max-w-[1500px] px-6 md:px-10 py-24 md:py-36">
           <div className="eyebrow text-nor-beige mb-10 md:mb-12">— A experiência NOR</div>
@@ -339,66 +339,57 @@ function NorLanding() {
             variants={fadeUp}
             className="font-display text-3xl sm:text-4xl md:text-6xl lg:text-7xl leading-[1.05] md:leading-[0.98] tracking-[-0.02em] text-nor-cream max-w-5xl"
           >
-            Um método construído
-            <br />
-            <span className="italic font-light">para acompanhar sua evolução.</span>
+            O que muda no seu treino{" "}
+            <span className="italic font-light">a partir do primeiro dia.</span>
           </motion.h2>
 
-          <div className="mt-16 md:mt-24 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-x-10 md:gap-x-14 gap-y-12 md:gap-y-16">
+          <div className="mt-16 md:mt-24 grid grid-cols-2 lg:grid-cols-3 gap-x-6 md:gap-x-10 gap-y-4 md:gap-y-6">
             {[
-              {
-                n: "01",
-                t: "Professor durante todo o treino",
-                d: "O professor permanece presente do início ao fim da sessão. Ele orienta, corrige os movimentos, acompanha sua execução e ajuda você a manter o foco durante o treino. Você não recebe apenas uma explicação inicial para depois continuar sozinho.",
-              },
-              {
-                n: "02",
-                t: "Até 5 alunos por professor",
-                d: "A proporção máxima de cinco alunos por professor permite oferecer uma atenção que não seria possível em grupos grandes. Isso significa mais proximidade, mais correções e mais direcionamento durante toda a sessão.",
-              },
-              {
-                n: "03",
-                t: "Planejamento individual",
-                d: "Seu treino é construído de acordo com seu objetivo, seu histórico, sua rotina e o momento atual do seu corpo. Na NOR, você não precisa se adaptar a um planejamento genérico. O planejamento é desenvolvido para se adaptar a você.",
-              },
-              {
-                n: "04",
-                t: "Nutrição inteligente",
-                d: "O plano nutricional é integrado ao programa de treinamento. Assim, treino e alimentação trabalham em conjunto, criando uma estratégia mais coerente com o resultado que você deseja alcançar.",
-              },
-              {
-                n: "05",
-                t: "Bioimpedância mensal",
-                d: "Todos os meses, sua evolução é acompanhada por meio da bioimpedância. A avaliação fornece dados sobre a composição corporal e permite entender como seu corpo está respondendo ao processo. Aqui, sua evolução não depende apenas do espelho ou de percepções subjetivas. Ela é acompanhada por números.",
-              },
-              {
-                n: "06",
-                t: "Ajustes constantes",
-                d: "Seu programa não permanece igual indefinidamente. Com base nas avaliações, no seu desempenho e na sua evolução, o planejamento é revisado e ajustado periodicamente. O método evolui junto com você.",
-              },
+              { n: "01", t: "Professor durante todo o treino", s: "Presença ativa em cada sessão.", d: "O professor permanece presente do início ao fim da sessão. Ele orienta, corrige os movimentos, acompanha sua execução e ajuda você a manter o foco durante o treino. Você não recebe apenas uma explicação inicial para depois continuar sozinho." },
+              { n: "02", t: "Até 5 alunos por professor", s: "Grupos pequenos, atenção real.", d: "A proporção máxima de cinco alunos por professor permite oferecer uma atenção que não seria possível em grupos grandes. Isso significa mais proximidade, mais correções e mais direcionamento durante toda a sessão." },
+              { n: "03", t: "Planejamento individual", s: "Um treino construído para você.", d: "Seu treino é construído de acordo com seu objetivo, seu histórico, sua rotina e o momento atual do seu corpo. Na NOR, você não precisa se adaptar a um planejamento genérico. O planejamento é desenvolvido para se adaptar a você." },
+              { n: "04", t: "Nutrição inteligente", s: "Treino e alimentação integrados.", d: "O plano nutricional é integrado ao programa de treinamento. Assim, treino e alimentação trabalham em conjunto, criando uma estratégia mais coerente com o resultado que você deseja alcançar." },
+              { n: "05", t: "Bioimpedância mensal", s: "Sua evolução medida por dados.", d: "Todos os meses, sua evolução é acompanhada por meio da bioimpedância. A avaliação fornece dados sobre a composição corporal e permite entender como seu corpo está respondendo ao processo. Aqui, sua evolução não depende apenas do espelho ou de percepções subjetivas. Ela é acompanhada por números." },
+              { n: "06", t: "Ajustes constantes", s: "O método evolui junto com você.", d: "Seu programa não permanece igual indefinidamente. Com base nas avaliações, no seu desempenho e na sua evolução, o planejamento é revisado e ajustado periodicamente. O método evolui junto com você." },
             ].map((p, i) => (
-              <motion.div
+              <motion.details
                 key={p.n}
-                initial={{ opacity: 0, y: 40 }}
+                initial={{ opacity: 0, y: 30 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true, margin: "-60px" }}
-                transition={{ duration: 0.7, ease: [0.22, 1, 0.36, 1], delay: (i % 3) * 0.1 }}
-                className="border-t border-nor-cream/20 pt-6"
+                transition={{ duration: 0.6, ease: [0.22, 1, 0.36, 1], delay: (i % 3) * 0.08 }}
+                className="group border-t border-nor-cream/20 pt-4 md:pt-6"
               >
-                <div className="font-display text-nor-beige/80 text-sm tracking-[0.2em] mb-4">{p.n}</div>
-                <h3 className="font-display italic font-light text-2xl md:text-3xl leading-tight text-nor-cream mb-4">
-                  {p.t}
-                </h3>
-                <p className="text-sm md:text-base text-nor-cream/75 font-light leading-relaxed">
+                <summary className="list-none cursor-pointer flex items-start gap-3 md:gap-4">
+                  <div className="font-display text-nor-beige/80 text-xs md:text-sm tracking-[0.2em] pt-1">{p.n}</div>
+                  <div className="flex-1 min-w-0">
+                    <h3 className="font-display italic font-light text-lg md:text-2xl leading-tight text-nor-cream mb-1">
+                      {p.t}
+                    </h3>
+                    <p className="text-xs md:text-sm text-nor-cream/60 font-light">{p.s}</p>
+                  </div>
+                  <span className="shrink-0 text-nor-beige text-xl md:text-2xl transition-transform group-open:rotate-45">+</span>
+                </summary>
+                <p className="mt-4 md:mt-5 text-sm md:text-base text-nor-cream/80 font-light leading-relaxed">
                   {p.d}
                 </p>
-              </motion.div>
+              </motion.details>
             ))}
+          </div>
+
+          <div className="mt-14 md:mt-20 flex justify-center">
+            <a
+              href="#agendar"
+              className="group inline-flex items-center gap-3 border border-nor-cream/40 text-nor-cream px-8 py-4 text-[11px] uppercase tracking-[0.28em] font-medium hover:bg-nor-cream hover:text-nor-green transition-colors"
+            >
+              Quero entender como funciona minha avaliação
+              <span className="inline-block w-6 h-px bg-current transition-all group-hover:w-10" />
+            </a>
           </div>
         </div>
       </section>
 
-      {/* CTA / BENEFÍCIOS */}
+      {/* BENEFÍCIOS — citações alternadas */}
       <section id="contato" className="border-t border-nor-cream/10">
         <div className="mx-auto max-w-[1500px] px-6 md:px-10 pt-12 pb-24 md:pt-16 md:pb-36">
           <div className="max-w-4xl">
@@ -408,24 +399,49 @@ function NorLanding() {
             </h2>
           </div>
 
-          <div className="mt-10 md:mt-14 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-12 gap-y-12">
+          <div className="mt-14 md:mt-20 max-w-5xl mx-auto space-y-14 md:space-y-20">
             {[
-              { t: "Mais segurança", d: "Você recebe orientação e correção durante a execução dos exercícios." },
-              { t: "Mais direção", d: "Cada treino possui um propósito dentro do seu planejamento." },
-              { t: "Mais constância", d: "A equipe acompanha sua rotina e ajuda você a não abandonar o processo." },
-              { t: "Mais clareza", d: "As avaliações mensais mostram o que está evoluindo e o que precisa ser ajustado." },
-              { t: "Mais individualização", d: "Seu programa considera seu corpo, seu momento e seus objetivos." },
-              { t: "Mais eficiência", d: "Treino, nutrição e acompanhamento trabalham de forma integrada." },
-            ].map((b) => (
-              <div key={b.t} className="border-t border-nor-cream/15 pt-6">
-                <h3 className="font-display italic text-2xl md:text-3xl text-nor-cream tracking-[-0.01em]">
-                  {b.t}
-                </h3>
-                <p className="mt-3 text-sm md:text-base text-nor-cream/75 font-light leading-relaxed">
-                  {b.d}
-                </p>
-              </div>
-            ))}
+              { t: "Mais segurança.", d: "Você recebe orientação e correção durante a execução." },
+              { t: "Mais direção.", d: "Cada treino possui um propósito dentro do seu planejamento." },
+              { t: "Mais constância.", d: "A equipe acompanha sua rotina e ajuda você a não abandonar o processo." },
+              { image: true as const },
+              { t: "Mais clareza.", d: "As avaliações mensais mostram o que evoluiu e o que precisa ser ajustado." },
+              { t: "Mais individualização.", d: "Seu programa considera seu corpo, seu momento e seus objetivos." },
+              { t: "Mais eficiência.", d: "Treino, nutrição e acompanhamento trabalham de forma integrada." },
+            ].map((b, i) => {
+              if ("image" in b) {
+                return (
+                  <motion.div
+                    key="mid-photo"
+                    initial={{ opacity: 0, scale: 1.05 }}
+                    whileInView={{ opacity: 1, scale: 1 }}
+                    viewport={{ once: true, margin: "-80px" }}
+                    transition={{ duration: 1, ease: [0.22, 1, 0.36, 1] }}
+                    className="aspect-[16/9] overflow-hidden max-w-4xl mx-auto"
+                  >
+                    <img src={detailImg.url} alt="Aluno treinando na NOR" className="w-full h-full object-cover" />
+                  </motion.div>
+                );
+              }
+              const alignRight = i % 2 === 1;
+              return (
+                <motion.blockquote
+                  key={b.t}
+                  initial={{ opacity: 0, y: 30 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  viewport={{ once: true, margin: "-80px" }}
+                  transition={{ duration: 0.8, ease: [0.22, 1, 0.36, 1] }}
+                  className={`max-w-2xl ${alignRight ? "ml-auto text-right border-r-2 pr-6 md:pr-8" : "text-left border-l-2 pl-6 md:pl-8"} border-nor-beige`}
+                >
+                  <p className="font-display italic font-light text-2xl sm:text-3xl md:text-5xl leading-[1.15] text-nor-cream">
+                    “{b.t}”
+                  </p>
+                  <p className="mt-4 text-sm md:text-base text-nor-cream/70 font-light">
+                    {b.d}
+                  </p>
+                </motion.blockquote>
+              );
+            })}
           </div>
         </div>
       </section>
